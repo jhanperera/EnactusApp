@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,6 +8,8 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <!--Google font Fjalla One-->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -28,9 +30,40 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
+        <div class="bar bar-header bar-positive">
+            <button class="button icon ion-navicon"></button>
+            <h1 class="title">iFinance</h1>
+            <button class="button">Edit</button>
+        </div>
+        
+        <div class="content padding has-header">
+           <div class="main h-center">
+               <p style="font-family:'Fjalla One'">
+                   Welcome to the beta release of the iFinance app by Enactus. 
+                   <br />
+                   Some buttons and elements might not be working at this time. 
+                   <br />
+                   Stay tunned for more information on upcoming beta builds. 
+               </p>
+               <div class="row responsive-sm">
+                   <div class="col">
+                       <button class="button button-large button-positive" style="width: 100%">
+                           Chapter 1
+                       </button>
+                   </div>
+                   <div class="col">
+                       <button class="button button-large button-positive" style="width: 100%">
+                           Chapter 2
+                       </button>
+                   </div>    
+                   <div class="col">
+                       <div class="card">
+                           <div class="item item-text-wrap">
+                               More chapters coming soon.
+                           </div>
+                       </div>
+                   </div>
+        </div>       
       <ion-content>
       </ion-content>
     </ion-pane>
