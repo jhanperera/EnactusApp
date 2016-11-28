@@ -27,44 +27,42 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
-
+  <body ng-app="starter" class="platform-android platform-cordova platform-webview">
     <ion-pane>
         <div class="bar bar-header bar-positive">
-            <button class="button icon ion-navicon"></button>
+            <button class="button icon-left ion-chevron-left button-clear button-light">Back</button>
             <h1 class="title">iFinance</h1>
             <button class="button">Edit</button>
-        </div>
-        
-        <div class="content padding has-header">
-           <div class="main h-center">
-               <p style="font-family:'Fjalla One'">
-                   Welcome to the beta release of the iFinance app by Enactus. 
-                   <br />
-                   Some buttons and elements might not be working at this time. 
-                   <br />
-                   Stay tunned for more information on upcoming beta builds. 
-               </p>
-               <div class="row responsive-sm">
-                   <div class="col">
-                       <button class="button button-large button-positive" style="width: 100%">
-                           Chapter 1
-                       </button>
-                   </div>
-                   <div class="col">
-                       <button class="button button-large button-positive" style="width: 100%">
-                           Chapter 2
-                       </button>
-                   </div>    
-                   <div class="col">
-                       <div class="card">
-                           <div class="item item-text-wrap">
-                               More chapters comming soon.
-                           </div>
-                       </div>
-                   </div>
-        </div>       
+        </div>      
       <ion-content>
+          <div class="content padding has-header">
+              <div class="main h-center">
+                  <p style="font-family:'Fjalla One'">
+                      Welcome to the beta release of the iFinance app by Enactus.
+                      <br />
+                      Some buttons and elements might not be working at this time.
+                      <br />
+                      Stay tunned for more information on upcoming beta builds.
+                  </p>
+                  <div class="row responsive-sm">
+                      <div class="col">
+                          <button class="button button-large button-positive" style="width: 100%">
+                              Budget
+                          </button>
+                      </div>
+                      <div class="col">
+                          <button class="button button-large button-positive" style="width: 100%">
+                              Credit
+                          </button>
+                      </div>
+                      <div class="col">
+                          <button class="button button-large" style="width: 100%">
+                              More coming soon
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div> 
       </ion-content>
     </ion-pane>
   </body>
