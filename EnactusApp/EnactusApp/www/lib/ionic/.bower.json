@@ -1,6 +1,7 @@
 {
   "name": "ionic",
-  "codename": "delhi",
+  "version": "1.3.1",
+  "codename": "el salvador",
   "homepage": "https://github.com/driftyco/ionic",
   "authors": [
     "Max Lynch <max@drifty.com>",
@@ -33,13 +34,13 @@
     "angular-sanitize": "1.5.3",
     "angular-ui-router": "0.2.13"
   },
-  "_release": "3a7dae5ff1",
+  "_release": "1.3.1",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
-    "commit": "3a7dae5ff1ba2aa09f2e4809ecf00d5870db8bbe"
+    "type": "version",
+    "tag": "v1.3.1",
+    "commit": "deade5ac92dc25febaa60b05336decd62f545bb5"
   },
   "_source": "git://github.com/driftyco/ionic-bower.git",
-  "_target": "master",
+  "_target": "1.3.1",
   "_originalSource": "driftyco/ionic-bower"
 }
