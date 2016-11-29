@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "EnactusApp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "EnactusApp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "EnactusApp"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "EnactusApp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "EnactusApp"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "EnactusApp"
+        }
+    },
+    "dependent_plugins": {}
+}
