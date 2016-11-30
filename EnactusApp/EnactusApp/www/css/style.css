@@ -1,1 +1,7 @@
 ﻿/* Empty. Add your own CSS if you like */
+
+.item-image{
+    height: auto !important;
+    width: auto !important;
+    padding: 25px !important;
+}

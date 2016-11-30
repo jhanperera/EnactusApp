@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -6385,7 +6385,7 @@ button.item.item-button-right {
   padding-right: 0; }
 
 .item-image {
-  padding: 0;
+  padding: 0px;
   text-align: center; }
   .item-image img:first-child, .item-image .list-img {
     width: 100%;
