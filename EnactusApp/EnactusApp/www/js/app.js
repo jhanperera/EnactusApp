@@ -30,7 +30,13 @@ angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate'])
         url: '/main',
         templateUrl: 'templates/main.html',
         controller: 'MainCtrl'
-    });
+    })
+    .state('chapter', {
+       url: '/chapter',
+       templateUrl: 'templates/chapter.html',
+       control: 'ChapterCtrl'
+   });
+
 
     $urlRouterProvider.otherwise("/main");
 
