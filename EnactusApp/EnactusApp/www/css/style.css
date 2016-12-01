@@ -4,7 +4,8 @@
 body{
     font-family: 'Open Sans';
 }
-.item-image{
+
+.item-image img:first-child{
     margin: auto !important;   
     height: 200px !important;
     width: 200px !important;
@@ -12,11 +13,12 @@ body{
 }
 
 #wrapper {
-    /* for demo purposes only */
+    /*for demo purposes only */
+    padding: 0px !important;
     background-image:url('../img/animatedCreditCard.gif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 40%
+    height: 40% !important
 }
 
 #chapter1Card {
