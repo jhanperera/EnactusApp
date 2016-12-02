@@ -6,8 +6,8 @@ angular.module('controllers', [])
     console.log('MainCtrl');
 
 })
-.controller('ChapterCtrl', function ($scope) {
+.controller('01SectionCtrl', function ($scope, $state) {
 
-    console.log('ChapterCtrl');
+    console.log('01SectionCtrl');
 
 });
