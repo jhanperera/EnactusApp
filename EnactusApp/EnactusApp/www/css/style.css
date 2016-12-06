@@ -1,9 +1,20 @@
 ﻿/* Empty. Add your own CSS if you like */
 
-/*Apply a font globally*/
-body{
-    font-family: 'Open Sans';
+@font-face{
+    font-family: OpenSans-Semibold;
+    src: url(../lib/ionic/fonts/OpenSans-Semibold.ttf);
 }
+body, span, button{
+    padding: 10px, 10px, 10px, 10px;
+    font-size: 15px !important;
+    font-family: OpenSans-Semibold !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 20px !important;
+    font-family: OpenSans-Semibold !important;
+}
+
 #wrapper h4{
     position:absolute;
     text-align: center;
@@ -21,7 +32,6 @@ body{
 }
 
 #wrapper {
-    /*for demo purposes only */
     position: relative;
     padding: 0px !important;
     background-image: url('../img/animatedCreditCard.gif');

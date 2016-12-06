@@ -1,10 +1,35 @@
 ﻿/* Empty. Add your own CSS if you like */
 
-.item-image{
+/*Apply a font globally*/
+body{
+    font-family: 'Open Sans';
+}
+#wrapper h4{
+    position:absolute;
+    text-align: center;
+    margin:auto;
+    line-height: 250px;
+    vertical-align:middle;
+}
+.item-image {
     margin: auto !important;   
     height: 200px !important;
     width: 200px !important;
     padding: 25px !important;
+    display: block;
+
+}
+
+#wrapper {
+    /*for demo purposes only */
+    position: relative;
+    padding: 0px !important;
+    background-image: url('../img/animatedCreditCard.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px !important;
+    
 }
 
 #chapter1Card {

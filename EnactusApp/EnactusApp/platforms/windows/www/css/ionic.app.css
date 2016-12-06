@@ -6385,7 +6385,7 @@ button.item.item-button-right {
   padding-right: 0; }
 
 .item-image {
-  padding: 0px;
+  padding: 0;
   text-align: center; }
   .item-image img:first-child, .item-image .list-img {
     width: 100%;
