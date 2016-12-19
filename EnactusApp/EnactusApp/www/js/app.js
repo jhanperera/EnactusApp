@@ -33,20 +33,16 @@ angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate'])
     })
     .state('chapter1sections', {
         url: '/chapter1sections',
-        templateUrl: 'templates/chapter1/chapter1sections.html',
-        control: '01SectionCtrl'
+        templateUrl: 'templates/chapter1/chapter1sections.html'
     })
     .state('chapter1sec1', {
         url: '/chapter1sec1',
-        templateUrl: 'templates/chapter1/section1.html',
-        control: '01Sec01Ctrl'
+        templateUrl: 'templates/chapter1/section1.html'
     })
     .state('chapter2sections', {
         url: '/chapter2sections',
-        templateUrl: 'templates/chapter2/chapter2sections.html',
-        control: '02SectionsCtrl'
+        templateUrl: 'templates/chapter2/chapter2sections.html'
     });
 
     $urlRouterProvider.otherwise("/main");
 });
-

@@ -6,14 +6,11 @@ angular.module('controllers', [])
     console.log('MainCtrl');
 
 })
-.controller('01SectionCtrl', function ($scope, $state) {
-
-    console.log('01SectionCtrl');
-
-})
-.controller('01Sec01Ctrl', function ($scope, $state) {
-
-})
-.controller('02SectionsCtrl', function ($scope, $state) {
-
+.controller("BtnClick", function($scope){
+    $scope.part2Cred = false;
+    $scope.part3Cred = false;
+    $scope.part4Cred = false;
+    $scope.part5Cred = false;
+    $scope.part6Cred = false;
+    $scope.part7Cred = false;
 });

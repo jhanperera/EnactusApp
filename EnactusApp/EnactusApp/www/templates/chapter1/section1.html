@@ -1,81 +1,157 @@
 ﻿<ion-view hide-back-button="false" view-title="Section 1: Credit">
-    <ion-content>
+    <ion-content ng-controller="BtnClick">
+      <div id="wrapper" class="credit-section-wrapper">
+      </div>
        <br />
         <!--Title of this chapter-->
         <div id="chapter_elem">
             <center><h3 class="padding">What is credit, and credit rating? Why is it important? </h3></center>
          </div>
         <div>
-            <div class="card animated fadeIn">
+          <!-- First Section -->
+            <div class="card" style="display:block;" ng-hide="part1Cred">
                 <div class="item item-text-wrap">
-                    <p>Have you ever seen the word a dozen times, but never really thought about what exactly credit means?</p>
-                    <p>
-                        In short and sweet sense, Credit, is a simple agreement, where the borrower promises to repay back the borrower
-                        at a later date. As a benefit, the borrower would be able to buy anything they want with the borrowed money,
-                        so as long as they return in the future! This is a serious advantage if you consider this: You don’t need money
-                        now to enjoy that iPhone you’ve been wanting to buy for ages! Sounds simple right?
-                    </p>
+                  <p>Have you ever seen the word a dozen times, but never really thought about what exactly credit means?</p>
+                </div>
+                <button ion-button large full ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
+                  Next
+                  <i class="icon ion-chevron-right"></i>
+                </button>
+            </div>
 
-                    <p>
-                        Well, many times it isn’t just returning the original amount, or the principal say $100. Sometimes the lender
-                        will want interest payments, such as 10% of the original amount, or $10. We will get into details about this later.
-                    </p>
+            <!--Second Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
+              <div class="item item-text-wrap">
+                <p>In short and sweet sense, Credit, is a simple agreement,
+                  where the borrower promises to repay back the borrower at a later date.
+                  As a benefit, the borrower would be able to buy anything they want with the borrowed money,
+                  so as long as they return in the future! This is a serious advantage if you consider this:
+                  You don’t need money now to enjoy that iPhone you’ve been wanting to buy for ages! Sounds simple right? </p>
+              </div>
+              <button ion-button block class="item-button-right" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred">
+                <i class="icon ion-chevron-left"></i>
+                Previous
+              </button>
+              <button ion-button block class="item-button-left" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred">
+                Next
+                <i class="icon ion-chevron-right"></i>
+              </button>
+            </div>
 
-                    <p>
-                        person’s credit rating is basically KING in Canada. Why? A credit rating is a person’s reputation of repaying back
-                        the money owed. Think about it—would you rather lend to a friend you know who will never pay you back, or a family
-                        member that will? Credit rating tells institutions, such as banks, if a person is probable to repay back any money
-                        loaned to them.
-                    </p>
+            <!--Third Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
+              <div class="item item-text-wrap">
+                <p>Well, many times it isn’t just returning the original amount,
+                  or the principal say $100. Sometimes the lender will want interest payments,
+                  such as 10% of the original amount, or $10. We will get into details about this later.</p>
+              </div>
+              <button ion-button block class="item-button-right" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred">
+                <i class="icon ion-chevron-left"></i>
+                Previous
+              </button>
+              <button ion-button block class="item-button-left" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred">
+                Next
+                <i class="icon ion-chevron-right"></i>
+              </button>
+            </div>
 
-                    <p>
-                        Credit ratings, in Canada, range from R1 to R9. The lower the number, the better! The higher the number,
-                        it means the person has a poor rating, and may not be trustworthy to loan money, and expect repayment.
-                        R0 is possible, it just means the person does not have a credit rating.
-                    </p>
+            <!--Fourth Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
+              <div class="item item-text-wrap">
+                <p>A person’s credit rating is basically KING in Canada.
+                  Why? A credit rating is a person’s reputation of repaying back the money owed.
+                  Think about it—would you rather lend to a friend you know who will never pay you back,
+                  or a family member that will? Credit rating tells institutions,
+                  such as banks, if a person is probable to repay back any money loaned to them.</p>
+              </div>
+              <button ion-button block class="item-button-right" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred">
+                <i class="icon ion-chevron-left"></i>
+                Previous
+              </button>
+              <button ion-button block class="item-button-left" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred">
+                Next
+                <i class="icon ion-chevron-right"></i>
+              </button>
+            </div>
 
-                    <p>
-                        Credit bureaus are organizations that gather information on borrowers. Some organizations that gather
-                        them are: Equifax Canada, TransUnion, CollectCents, etc. The history of a person’s credit rating is known
-                        as the credit history.
-                    </p>
+            <!--Fifth Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
+              <div class="item item-text-wrap">
+                <p>Credit ratings, in Canada, range from R1 to R9. The lower the number,
+                  the better! The higher the number, it means the person has a poor rating,
+                  and may not be trustworthy to loan money, and expect repayment. R0 is possible,
+                  it just means the person does not have a credit rating.</p>
+              </div>
+              <button ion-button block class="item-button-right" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred">
+                <i class="icon ion-chevron-left"></i>
+                Previous
+              </button>
+              <button ion-button block class="item-button-left" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred">
+                Next
+                <i class="icon ion-chevron-right"></i>
+              </button>
+            </div>
 
-                    <p>
-                        Got a bruise on your credit history? Fortunately, credit bureaus like Equifax only keep negative credit history
-                        information on the account for 7 years, or 10 years for business bankruptcies. The best part is, you can currently
-                        request your credit report free of charge by mail, or with a small fee online in Canada.
-                    </p>
+            <!--Sixth Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
+              <div class="item item-text-wrap">
+                <p>Credit bureaus are organizations that gather information on borrowers.
+                  Some organizations that gather them are: Equifax Canada, TransUnion, CollectCents,
+                  etc. The history of a person’s credit rating is known as the credit history.</p>
+              </div>
+              <button ion-button block class="item-button-right" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred">
+                <i class="icon ion-chevron-left"></i>
+                Previous
+              </button>
+              <button ion-button block class="item-button-left" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred">
+                Next
+                <i class="icon ion-chevron-right"></i>
+              </button>
+            </div>
 
-                    <p>
-                        Finally, what exactly does the Credit rating include? You can easily remember them as the three C’s, because they
-                        measure three things about a person:
-                    </p>
-                   </div>
+            <!--Seven Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
+              <div class="item item-text-wrap">
+                <p>Got a bruise on your credit history? Fortunately,
+                  credit bureaus like Equifax only keep negative credit history
+                  information on the account for 7 years, or 10 years for business
+                  bankruptcies. The best part is, you can currently request your
+                  credit report free of charge by mail, or with a small fee online in Canada.</p>
+              </div>
+              <button ion-button block class="item-button-right" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred">
+                <i class="icon ion-chevron-left"></i>
+                Previous
+              </button>
+              <button ion-button block class="item-button-left" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred">
+                Next
+                <i class="icon ion-chevron-right"></i>
+              </button>
+            </div>
 
-                    <div class="list list-inset">
-                        <div class="item item-divider">
-                            I'm a Header in a Card!
-                        </div>
-                        <div class="item">
-                            Character: Can you trust the person to be reliable and pay back their loans?
-                         </div>
-                        <div class="item">
-                            Capacity: Does the person have the ability to repay the money owed?
-                        </div>
-                        <div class="item">
-                            Capital: Does the person own things, and how much are they worth?
-                        </div>
-                    </div>
+            <!--Eight Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
+              <div class="item item-text-wrap">
+                <p>Finally, what exactly does the Credit rating include?
+                  You can easily remember them as the three C’s, because they
+                  measure three things about a person:</p>
+                  <ion-list>
+                    <ion-item>Character: Can you trust the person to be reliable and pay back their loans?</ion-item>
+                    <ion-item>Capacity: Does the person have the ability to repay the money owed?</ion-item>
+                    <ion-item>Capital: Does the person own things, and how much are they worth?</ion-item>
+              </div>
+              <a class="item item-left item-icon-right" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
+                Stop
+                <i class="icon item-right ion-chevron-right"></i>
+              <a class="item item-icon-right" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
+                Start Quiz
+                <i class="icon ion-chevron-right"></i>
+              </a>
+              <div id="progress-indicator">
+                  <i class="icon ion-android-checkbox-outline-blank"></i>
+                  <i class="icon ion-android-checkbox-outline"></i>
+              </div>
+            </div>
 
-                <a class="item item-icon-left dark" href="#">
-                    <i class="icon ion-log-in"></i>
-                    Start
-                </a>
-            </div >
-            <div id="progress-indicator">
-                <i class="icon ion-android-checkbox-outline-blank"></i>
-                <i class="icon ion-android-checkbox-outline"></i>
-            </div>        
         </div>
     </ion-content>
 </ion-view>
