@@ -139,13 +139,14 @@
                     <ion-item>Capacity: Does the person have the ability to repay the money owed?</ion-item>
                     <ion-item>Capital: Does the person own things, and how much are they worth?</ion-item>
               </div>
-              <a class="item item-left item-icon-right" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
-                Stop
-                <i class="icon item-right ion-chevron-right"></i>
-              <a class="item item-icon-right" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
-                Start Quiz
+              <button ion-button block class="item-button-right" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
+                <i class="icon ion-chevron-left"></i>
+                Previous
+              </button>
+              <button ion-button block class="item-button-left" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
+                Next
                 <i class="icon ion-chevron-right"></i>
-              </a>
+              </button>
               <div id="progress-indicator">
                   <i class="icon ion-android-checkbox-outline-blank"></i>
                   <i class="icon ion-android-checkbox-outline"></i>
