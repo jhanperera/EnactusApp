@@ -135,10 +135,15 @@
                   You can easily remember them as the three C’s, because they
                   measure three things about a person:</p>
                   <ion-list>
-                    <ion-item>Character: Can you trust the person to be reliable and pay back their loans?</ion-item>
-                    <ion-item>Capacity: Does the person have the ability to repay the money owed?</ion-item>
-                    <ion-item>Capital: Does the person own things, and how much are they worth?</ion-item>
+                    <ion-item ng-click = "wrong()">Character: Can you trust the person to be reliable and pay back their loans?</ion-item>
+                    <ion-item ng-click = "wrong()">Capacity: Does the person have the ability to repay the money owed?</ion-item>
+                    <ion-item ng-click = "right()">Capital: Does the person own things, and how much are they worth?</ion-item>
               </div>
+			  <a class="item item-icon-left dark" href="#/chapter1sections">
+                    <i class="icon ion-log-in"></i>
+                    back
+                </a>
+				<p id="liv">5<p>
               <button ion-button block class="item-button-right" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
                 <i class="icon ion-chevron-left"></i>
                 Previous
@@ -147,6 +152,7 @@
                 Next
                 <i class="icon ion-chevron-right"></i>
               </button>
+			  
               <div id="progress-indicator">
                   <i class="icon ion-android-checkbox-outline-blank"></i>
                   <i class="icon ion-android-checkbox-outline"></i>
