@@ -24,7 +24,14 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        }
+    }
 }

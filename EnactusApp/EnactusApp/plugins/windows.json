@@ -24,7 +24,14 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "EnactusApp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "EnactusApp"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "EnactusApp"
+        }
+    }
 }

@@ -1,9 +1,9 @@
-﻿// Ionic Starter App
+// Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate'])
+angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -32,11 +32,17 @@ angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate'])
         controller: 'MainCtrl'
     })
     .state('chapter1sections', {
-       url: '/chapter1sections',
-       templateUrl: 'templates/chapter1sections.html',
-       control: '01SectionCtrl'
-   });
+        url: '/chapter1sections',
+        templateUrl: 'templates/chapter1/chapter1sections.html'
+    })
+    .state('chapter1sec1', {
+        url: '/chapter1sec1',
+        templateUrl: 'templates/chapter1/section1.html'
+    })
+    .state('chapter2sections', {
+        url: '/chapter2sections',
+        templateUrl: 'templates/chapter2/chapter2sections.html'
+    });
 
     $urlRouterProvider.otherwise("/main");
 });
-
