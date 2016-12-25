@@ -1,17 +1,20 @@
-﻿<ion-view hide-back-button="false" view-title="Section 1: Credit">
+﻿<ion-view hide-back-button="false" view-title="Section 3: Types of Loan and Credit">
     <ion-content ng-controller="BtnClick">
       <div id="wrapper" class="credit-section-wrapper">
       </div>
        <br />
         <!--Title of this chapter-->
         <div id="chapter_elem">
-            <center><h3 class="padding">What is credit, and credit rating? Why is it important? </h3></center>
+            <center><h3 class="padding">Types of Loan/ Credit</h3></center>
          </div>
         <div>
           <!-- First Section -->
             <div class="card" style="display:block;" ng-hide="part1Cred">
                 <div class="item item-text-wrap">
-                  <p>Have you ever seen the word a dozen times, but never really thought about what exactly credit means?</p>
+                  <p>It should come as no surprise that banks have many ways of making money, 
+                    and collecting service charges on accounts is not the only way—in fact, 
+                    it accounts for less than 10% of how banks make money! A significant portion comes from interest on loans, 
+                    deposit boxes, other financial instruments (eg. Mutual funds, GIC), cheques and foreign exchange.</p>
                 </div>
                 <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
                   Next
@@ -21,11 +24,9 @@
             <!--Second Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
               <div class="item item-text-wrap">
-                <p>In short and sweet sense, Credit, is a simple agreement,
-                  where the borrower promises to repay back the borrower at a later date.
-                  As a benefit, the borrower would be able to buy anything they want with the borrowed money,
-                  so as long as they return in the future! This is a serious advantage if you consider this:
-                  You don’t need money now to enjoy that iPhone you’ve been wanting to buy for ages! Sounds simple right? </p>
+                <p>With that being said, just as there are many types of ice-cream flavors to choose from, 
+                  there are types of loans that people can obtain, depending on factors like what exactly is being bought, 
+                  or the duration as well.</p>
               </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred">
@@ -40,9 +41,12 @@
             <!--Third Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
               <div class="item item-text-wrap">
-                <p>Well, many times it isn’t just returning the original amount,
-                  or the principal say $100. Sometimes the lender will want interest payments,
-                  such as 10% of the original amount, or $10. We will get into details about this later.</p>
+                <p>The most common and frequently discussed type of loan is the Credit Card. 
+                  It is 30 days, no interest if the balance is paid off during the first 30 days, 
+                  and then an interest rate that typically is equal to or greater than 20%. 
+                  You may have heard of these companies, such as Visa, MasterCard or AMEX, 
+                  however there are many credit card companies out there, especially ones outside of Canada. 
+                  The best part often involves the rewards and benefits, such as a point system for usage and rewards.</p>
               </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred">
@@ -57,11 +61,10 @@
             <!--Fourth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
               <div class="item item-text-wrap">
-                <p>A person’s credit rating is basically KING in Canada.
-                  Why? A credit rating is a person’s reputation of repaying back the money owed.
-                  Think about it—would you rather lend to a friend you know who will never pay you back,
-                  or a family member that will? Credit rating tells institutions,
-                  such as banks, if a person is probable to repay back any money loaned to them.</p>
+                <p>A bank loan is another type of credit. It often has a term between 3-5 years, 
+                  and depending on the type of bank loan provided by the bank, the interest rate could be different. 
+                  These types of loans are ideal for buying appliances such as nice big mini fridge in your garage, 
+                  electronics or even that purple IKEA sofa you’ve been eyeing for a while. </p>
               </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred">
@@ -76,10 +79,11 @@
             <!--Fifth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
               <div class="item item-text-wrap">
-                <p>Credit ratings, in Canada, range from R1 to R9. The lower the number,
-                  the better! The higher the number, it means the person has a poor rating,
-                  and may not be trustworthy to loan money, and expect repayment. R0 is possible,
-                  it just means the person does not have a credit rating.</p>
+                <p>Mortgages are a type of loan commonly for buildings, such as houses and office buildings. 
+                  They tend to have longer terms than a normal bank loan, of 20-25 years, depending on the bank. 
+                  But there’s more parts to a mortgage than just the principal amount, and the interest—there is 
+                  also home insurance and taxes—even collateral—that is involved with a mortgage. It is often 
+                  considered one of the largest amount of debts a person may take upon.</p>
               </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred">
@@ -94,9 +98,12 @@
             <!--Sixth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
               <div class="item item-text-wrap">
-                <p>Credit bureaus are organizations that gather information on borrowers.
-                  Some organizations that gather them are: Equifax Canada, TransUnion, CollectCents,
-                  etc. The history of a person’s credit rating is known as the credit history.</p>
+                <p>Installment Loans are loans that require a set amount paid per month; 
+                  the loan must be repaid in fixed amounts consistently over a period of time. 
+                  The most common example, especially for future drivers, is a car loan, 
+                  where it is typically giving a person an option to buy the car now or pay a 
+                  certain down payment NOW and then a fixed amount for a period of time 
+                  (eg. $10,000 now, and then $1000 per month for 8 years).</p>
               </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred">
@@ -111,11 +118,11 @@
             <!--Seven Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
               <div class="item item-text-wrap">
-                <p>Got a bruise on your credit history? Fortunately,
-                  credit bureaus like Equifax only keep negative credit history
-                  information on the account for 7 years, or 10 years for business
-                  bankruptcies. The best part is, you can currently request your
-                  credit report free of charge by mail, or with a small fee online in Canada.</p>
+                <p>Another interesting type of loan is a Demand Loan. Though very rare, 
+                  this type of loan essentially involves the lender giving money to a borrower, 
+                  but at any point in time, the lender can ask the borrower back for the money. 
+                  The strangest part? No advance notice is needed; it just demanded by the lender, 
+                  and the borrower MUST repay back then and there. This is extremely short-term.</p>
               </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred">
@@ -130,22 +137,11 @@
             <!--Eight Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
               <div class="item item-text-wrap">
-                <p>Finally, what exactly does the Credit rating include?
-                  You can easily remember them as the three C’s, because they
-                  measure three things about a person:</p>
-                  <ion-list>
-                    <ion-item>Character: Can you trust the person to be reliable and pay back their loans?</ion-item>
-                    <ion-item>Capacity: Does the person have the ability to repay the money owed?</ion-item>
-                    <ion-item>Capital: Does the person own things, and how much are they worth?</ion-item>
-                  </ion-list>
+                <p>There are many different types of loans out there, offered from banks and other 
+                  financial institutions—basically, this list isn’t complete. I encourage you to read 
+                  carefully and find out what creative loans have been created to help facilitate the 
+                  use of credit…after all, there are always new ice-cream flavors coming out.</p>
               </div>
-                <!--
-			  <a class="item item-icon-left dark" href="#/chapter1sections">
-                    <i class="icon ion-log-in"></i>
-                    back
-                </a>
-				<p id="liv">5</p>
-                -->
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
                         Previous

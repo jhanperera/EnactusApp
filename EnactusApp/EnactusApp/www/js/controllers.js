@@ -18,6 +18,8 @@ angular.module('controllers', ['services'])
     $scope.part5Cred = false;
     $scope.part6Cred = false;
     $scope.part7Cred = false;
+    $scope.part8Cred = false;
+    $scope.part9Cred = false;
 	
 	$scope.updatelives = function (){
 		//grabs the element that is called liv then updates it
