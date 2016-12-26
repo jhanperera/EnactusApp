@@ -147,11 +147,100 @@
                         Previous
                     </button>
                     <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part9Cred = !part9Cred">
                         Next
                     </button>
                 </div>
             </div>
+			
+			<!--Introduction to questions section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
+              <div class="item item-text-wrap">
+                <p>Now that you have finished the section on credit here are some questions. 
+				You will have 3 trys for the question.
+				Don't worry if you mess up. You will be brought back to the begining of the section.
+				So you can brush up on what you missed and then you can try again!
+				</p>
+              </div>
+               
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred">
+                        Previous
+                    </button>
+                    <!--first question-->
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; updatelives()">
+                        Next
+                    </button>
+                </div>
+			</div>
+					<!--Questions Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
+              <div class="item item-text-wrap">
+                <p>
+					1.	How exactly do banks make money?
+				</p>
+                  <ion-list>
+                    <ion-item id = "Q1A1" ng-click = "wrong($event)">a.	They make a significant portion from personal banking fees.</ion-item>
+                    <ion-item id = "Q1A2" ng-click = "wrong($event)">b.	They make money by asking other banks for money.</ion-item>
+                    <ion-item id = "Q1A3" ng-click = "right($event)">c.	A significant portion comes from interest on loans, as well as income from having deposit boxes and offering financial instruments such as GICs and mutual funds, bonds, etc. </ion-item>
+					<ion-item id = "Q1A4" ng-click = "wrong($event)">d.	From daily Interac-E transfers and non-machine transfer fees.</ion-item>
+                  </ion-list>
+              </div>
+			
+			  <div class="item item-text-wrap">
+                <p>
+					2.	What happens generally if a person does not pay their credit card balance within a designated period (usually 30 days?)
+				</p>
+                  <ion-list>
+                    <ion-item id = "Q2A1" ng-click = "right($event)">a.	Interest begins to be charged and compounded, usually at a rate equal to or greater than 20%.</ion-item>
+                    <ion-item id = "Q2A2" ng-click = "wrong($event)">b.	Nothing happens.</ion-item>
+                    <ion-item id = "Q2A3" ng-click = "wrong($event)">c.	Consumers feel the intensive urge to Impulse Buy afterwards.</ion-item>
+					<ion-item id = "Q2A4" ng-click = "wrong($event)">d.	The 3 C’s of Credit are satisfied and therefore a person is rewarded with a better credit rating. </ion-item>
+                  </ion-list>
+              </div>
+			  
+			  <div class="item item-text-wrap">
+                <p>
+					3.	Mary has a friend who wants to attend a wedding soon, however currently lacks the money to buy a gift for the event. Mary can provide a loan for her friend, but needs the money paid back very quickly afterwards for personal use. What type of loan should Mary give her friend?
+				</p>
+                  <ion-list>
+                    <ion-item id = "Q3A1" ng-click = "wrong($event)">a.	A credit card</ion-item>
+                    <ion-item id = "Q3A2" ng-click = "wrong($event)">b.	Mortgage</ion-item>
+                    <ion-item id = "Q3A3" ng-click = "wrong($event)">c.	Installment Loan</ion-item>
+					<ion-item id = "Q3A4" ng-click = "right($event)">d.	Demand Loan</ion-item>
+                  </ion-list>
+              </div>
+			  
+			  <div class="item item-text-wrap">
+                <p>
+					4.	A man named Mr. Dougall hosted a sports team that needed money for a trip, $1000. Instead of taking a loan, he used his credit card to pay for the trip, and knew the team would basically fundraise the amount in time to pay for the trip. 
+				</p>
+                  <ion-list>
+                    <ion-item id = "Q4A1" ng-click = "right($event)">a.	None of the duration of the loans fit this scenario.</ion-item>
+                    <ion-item id = "Q4A2" ng-click = "wrong($event)">b.	The interest for an installment loan would’ve been greater than the bank loan.</ion-item>
+                    <ion-item id = "Q4A3" ng-click = "wrong($event)">c.	He wanted to be forced to immediately pay back a Demand Loan.</ion-item>
+					<ion-item id = "Q4A4" ng-click = "wrong($event)">d.	He would be able to gain points towards his Credit Card, and redeeming it later. </ion-item>
+                  </ion-list>
+              </div>
+			  
+			  
+              <div>
+					You have <span id="liv"></span> trys remaining
+			  </div>
+		
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred">
+                        Previous
+                    </button>
+					
+                    <!--first question-->
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred">
+                        Next
+                    </button>
+                </div>
+			
+			</div>
+			
         </div>
     </ion-content>
 </ion-view>
