@@ -12,6 +12,8 @@ angular.module('controllers', ['services'])
 })
 .controller("BtnClick", function($scope,lives){
 	var live = 3;
+	var clickedOn = [];
+	var numQuestions;
     $scope.part2Cred = false;
     $scope.part3Cred = false;
     $scope.part4Cred = false;
@@ -23,6 +25,10 @@ angular.module('controllers', ['services'])
 	$scope.part10Cred = false;
 	$scope.partQCred = false;
 	
+	$scope.setNumQuestions = function(num){
+		numQuestions = num;
+	}
+	
 	$scope.updatelives = function (){
 		//grabs the element that is called liv then updates it
 		var livesOnPage = document.getElementById('liv');
@@ -30,25 +36,45 @@ angular.module('controllers', ['services'])
 	}
 	$scope.wrong = function (event){
 		var selec = document.getElementById(event.target.id);
-		selec.style.color = "grey";
-	
-		live = live - 1;
-		if(live == 0){
-			$scope.gameover();
-		}
+		if(clickedOn.includes(selec)){}
 		else{
-			$scope.updatelives();
+			selec.style.color = "grey";
+			clickedOn.push(selec);
+			live = live - 1;
+			if(live == 0){
+				$scope.gameover();
+			}
+			else{
+				$scope.updatelives();
+			}
 		}
 	}
 	$scope.right = function (event){
 		var selec = document.getElementById(event.target.id);
-		selec.style.color = "green";
+		if(clickedOn.includes(selec)){}
+		else{
+			selec.style.color = "green";
+			clickedOn.push(selec);
+			numQuestions = numQuestions -1;
+			if(numQuestions == 0){
+				alert("Good job");
+				$scope.win();
+			}
+		}
 	}
 	$scope.gameover = function(){
 		alert("game over please try again");
 		live = 3;
 		$scope.partQCred = false;
 		$scope.part1Cred = !$scope.part1Cred;
+		for(i = 0; i< clickedOn.length;i++){
+			clickedOn[i].style.color = "rgb(68,68,68)";
+		}
+		
 	}
+	$scope.win = function(){
+			window.location.href = "#/chapter1sections";
+	}
+	
 });
 
