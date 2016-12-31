@@ -64,6 +64,17 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.budget-section-wrapper{
+    position: relative;
+    padding: 0px !important;
+    background-image: url('../img/budgetSectionBanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 125px !important;
+    width: 100% !important;
+}
+
 #chapter1Card {
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;

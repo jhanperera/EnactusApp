@@ -1,0 +1,189 @@
+﻿<ion-view hide-back-button="false" view-title="Section 1: Steps to Budgeting">
+    <ion-content ng-controller="BtnClick">
+      <div id="wrapper" class="budget-section-wrapper">
+      </div>
+       <br />
+        <!--Title of this chapter-->
+        <div id="chapter_elem">
+            <center><h3 class="padding">Basics about saving money </h3></center>
+         </div>
+        <div>
+          <!-- First Section -->
+            <div class="card" style="display:block;" ng-hide="part1Cred">
+                <div class="item item-text-wrap">
+                  <p>So you’re in high school now. Everyone around you is boasting about the latest clothes,
+                  the coolest tech and the all the concerts and events they plan on going to. All of those
+                  things come with a hefty financial burden and most high school students just like to spend
+                  everything they have now without looking to the future. This section will teach you the basics
+                  about saving money, preparing for unexpected costs and prioritizing where you should be
+                  spending your money (Hint: You shouldn’t be spending it on an overpriced Jacket)</p>
+                </div>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
+                  Next
+                </button>
+            </div>
+
+            <!--Second Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
+              <div class="item item-text-wrap">
+                  <h5>Step 1: Know your Income</h5></br>
+                  <p>
+                      The first step to creating an effective budget is knowing how much money
+                      is going to be coming into your bank account. Most employers give out work schedules in advance so you have an
+                      approximate idea of how much you will be making in a specific time period.
+                  </p>
+              </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred">
+                        Next
+                    </button>
+                </div>
+               </div>
+
+            <!--Third Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
+              <div class="item item-text-wrap">
+                  <h5>Step 2: Figure out your fixed and reoccurring Expenses</h5></br>
+
+                <p>One thing you should keep in mind, going out to grab some pizza for lunch is not a fixed expense. 
+                  A fixed/reoccurring expense is something that is needed for you to function for example your phone bill, 
+                  groceries and even haircuts. If you are fortunate enough to have a car, gas and insurance would also be 
+                  considered a fixed expense. Calculate your total monthly fixed expenses by adding them up and call it 
+                  restricted cash. Subtract your restricted cash from your monthly income because these are the costs that you 
+                  know for sure you will be incurring.</p>
+              </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred">
+                        Next
+                    </button>
+                </div>
+              </div>
+
+            <!--Fourth Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
+              <div class="item item-text-wrap">
+                  <h5>Step 3: Allocating for Unexpected expenses/Emergencies</h5></br>
+
+                  <p>
+                      Since you are still young, you may not have to worry about too many unexpected expenses.
+                       But as you grow older, this will become a very important part of your budget because you will 
+                      own things that have much more value (such as a car) which increases risk of unexpected expenses. 
+                      An unexpected expense is an expense you weren’t expecting on incurring (no way??). Typically, 
+                      you should budget 5-10% of your budget left over after completing step 2 towards these expenses. 
+                  </p>
+              </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred">
+                        Next
+                    </button>
+                </div>
+            </div>
+
+            <!--Fifth Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
+              <div class="item item-text-wrap">
+                  <h5>Step 4: Saving</h5></br>
+
+                  <p>
+                      Saving for the future is essential and you should start now. Once you start, 
+                      you won’t even notice the reduction in spending money because you will eventually 
+                      get used to the reduced budget. Typically, it’s recommended that 30% of your budget 
+                      left after step 3 be allocated towards a savings account you will never touch. 
+                  </p>
+              </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred">
+                        Next
+                    </button>
+                </div>
+            </div>
+
+            <!--Sixth Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
+              <div class="item item-text-wrap">
+                  <h5>Step 5: Entertainment (Are you not entertained?)</h5></br>
+
+                  <p>
+                      Having fun isn’t hard, when you’ve got a library card! Jokes aside, 
+                      entertainment is a crucial part of keeping yourself happy. 
+                      I’m going to show you that you don’t have to break the bank to have fun. 
+                      After step 4, take the budget you have left and multiply by 35%. This will 
+                      give you your entertainment budget. Keep in mind that you will reducing the percentage you 
+                      multiply your leftover budget with as you make more income. If I had $2000 left over from step 4, 
+                      I wouldn’t be allocating $700 to my monthly budget for entertainment as that is excessive.  
+                  </p>
+              </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred">
+                        Next
+                    </button>
+                </div>
+            </div>
+
+            <!--Seven Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
+              <div class="item item-text-wrap">
+                  <h5>Step 6: What to do for the rest?</h5></br>
+
+                  <p>
+                      Now you have some leftover money after all these steps. 
+                      You can put this money towards buying something for yourself such as clothes OR 
+                      you can choose to save it. Remember, just because you have left over money,
+                       doesn’t mean that you have to spend it if you do not need to. 
+                  </p>
+              </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred">
+                        Next
+                    </button>
+                </div>
+            </div>
+
+            <!--Eight Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
+              <div class="item item-text-wrap">
+                  <h5>Step by step walkthrough:</h5></br>
+
+                  <ion-list>
+                      <ion-item>1.	Total Income per month: $500</ion-item>
+                      <ion-item>2.	Total fixed expenses per month (restricted cash): $100</ion-item>
+                      <ion-item>3.	This leaves you with $400 per month to work with. Unexpected expected expenses per month (using 10%): 
+                                    $400 X 0.10 = $40 This means that your restricted cash is now at $140 per month and you have $360 
+                                    left to work with from your original budget of $500</ion-item>
+                      <ion-item>4.	 Monthly Saving (using 30%): $360 X 0.30 = $108 In your savings account, 
+                                     you should be accumulating $108 every month and now your working budget sits at $252.</ion-item>
+                      <ion-item>5.	Monthly Entertainment (using 35%): $252 X 0.35 = $88.20 Your working budget now sits at $163.80</ion-item>
+                      <ion-item>6.	Treat yourself or save (Hint: this is better unless there is something you really need to purchase) </ion-item>
+                  </ion-list>
+               
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
+                        Previous
+                    </button>
+                    <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

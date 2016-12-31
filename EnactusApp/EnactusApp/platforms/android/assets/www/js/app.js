@@ -25,6 +25,7 @@ angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate', 'ng
 
 .config(function ($stateProvider, $urlRouterProvider) {
 
+    //Add all the state providers for changing the the views
     $stateProvider
     .state('main', {
         url: '/main',
@@ -39,9 +40,29 @@ angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate', 'ng
         url: '/chapter1sec1',
         templateUrl: 'templates/chapter1/section1.html'
     })
+    .state('chapter1sec2', {
+        url: '/chapter1sec2',
+        templateUrl: 'templates/chapter1/section2.html'
+    })
+    .state('chapter1sec3', {
+        url: '/chapter1sec3',
+        templateUrl: 'templates/chapter1/section3.html'
+    })
+    .state('chapter1sec4', {
+        url: '/chapter1sec4',
+        templateUrl: 'templates/chapter1/section4.html'
+    })
+    .state('chapter1sec5', {
+        url: '/chapter1sec5',
+        templateUrl: 'templates/chapter1/section5.html'
+    })
     .state('chapter2sections', {
         url: '/chapter2sections',
         templateUrl: 'templates/chapter2/chapter2sections.html'
+    })
+    .state('chapter2sec1', {
+        url: '/chapter2sec1',
+        templateUrl: 'templates/chapter2/section1.html'
     });
 
     $urlRouterProvider.otherwise("/main");

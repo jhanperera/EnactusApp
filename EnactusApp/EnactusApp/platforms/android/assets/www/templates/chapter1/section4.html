@@ -1,0 +1,24 @@
+﻿<ion-view hide-back-button="false" view-title="Section 4: Credit Card Security">
+    <ion-content ng-controller="BtnClick">
+      <div id="wrapper" class="credit-section-wrapper">
+      </div>
+       <br />
+        <!--Title of this chapter-->
+        <div id="chapter_elem">
+            <center><h3 class="padding">Credit Card Security—Don’t get Snaked, my friend.</h3></center>
+        </div>
+
+        <!-- First Section -->
+        <div class="card" style="display:block;" ng-hide="part1Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    Content Coming Soon
+                </p>
+            </div>
+            <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
+                Next
+            </button>
+        </div>
+
+    </ion-content>
+</ion-view>
