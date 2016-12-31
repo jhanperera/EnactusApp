@@ -1,5 +1,5 @@
 ﻿<ion-view hide-back-button="false" view-title="Optional: The Math behind Credit">
-    <ion-content ng-controller="BtnClick">
+    <ion-content ng-controller="BtnClick" ng-init="updatelives();">
       <div id="wrapper" class="credit-section-wrapper">
       </div>
       <br />
@@ -18,7 +18,12 @@
             <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
                 Next
             </button>
-        </div>W
+        </div>
 
     </ion-content>
+    <div class="bar bar-footer bar-balanced">
+        <div class="title">
+            You have <span id="liv"></span> trys remaining
+        </div>
+    </div>
 </ion-view>

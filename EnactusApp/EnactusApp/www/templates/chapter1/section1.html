@@ -1,5 +1,5 @@
 ﻿<ion-view hide-back-button="false" view-title="Section 1: Credit">
-    <ion-content ng-controller="BtnClick">
+    <ion-content ng-controller="BtnClick" ng-init="updatelives();">
       <div id="wrapper" class="credit-section-wrapper">
       </div>
        <br />
@@ -8,6 +8,7 @@
             <center><h3 class="padding">What is credit, and credit rating? Why is it important? </h3></center>
          </div>
         <div>
+          <a id="top"></a>
           <!-- First Section -->
             <div class="card" style="display:block;" ng-hide="part1Cred">
                 <div class="item item-text-wrap">
@@ -234,16 +235,13 @@
                     <ion-item id = "Q5A3" ng-click = "wrong($event)">c.	Compensation</ion-item>
 					<ion-item id = "Q5A4" ng-click = "wrong($event)">d.	Capacity</ion-item>
                   </ion-list>
-              </div>
-			  
-              <div>
-					You have <span id="liv"></span> trys remaining
-			  </div>
-		
-              
-			
+              </div>		
 			</div>
-        </div>
-  
+        </div> 
     </ion-content>
+    <div class="bar bar-footer bar-balanced">
+        <div class="title">
+            You have <span id="liv"></span> trys remaining
+        </div>
+    </div>
 </ion-view>

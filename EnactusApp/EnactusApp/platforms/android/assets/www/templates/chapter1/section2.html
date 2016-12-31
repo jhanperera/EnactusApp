@@ -1,5 +1,5 @@
 ﻿<ion-view hide-back-button="false" view-title="Section 2: Captain Credit">
-    <ion-content ng-controller="BtnClick">
+    <ion-content ng-controller="BtnClick" ng-init="updatelives();">
       <div id="wrapper" class="credit-section-wrapper">
       </div>
        <br />
@@ -196,7 +196,7 @@
 					1.	What’s the most common way to begin establishing a credit rating?
 				</p>
                   <ion-list>
-                    <ion-item id = "Q1A1" ng-click = "right($event, 'one', 2)">a.	By applying for and using a credit card </ion-item>
+                    <ion-item id = "Q1A1" ng-click = "right($event)">a.	By applying for and using a credit card </ion-item>
                     <ion-item id = "Q1A2" ng-click = "wrong($event)">b.	By subscribing to Credit Canada Magazine</ion-item>
                     <ion-item id = "Q1A3" ng-click = "wrong($event)">c.	By maintaining a bank account and ensuring there is enough money in your account</ion-item>
 					<ion-item id = "Q1A4" ng-click = "wrong($event)">d.	By asking the bank for a credit rating</ion-item>
@@ -212,7 +212,7 @@
                     <ion-item id = "Q2A2" ng-click = "wrong($event)">b.	Under-using the credit card has damaging effects on your credit rating, so paying it back on time is imperative. </ion-item>
                     <ion-item id = "Q2A3" ng-click = "wrong($event)">c.	It demonstrates Character and Capacity, which is essential for a good credit rating and potentially getting a loan in the future.</ion-item>
 					<ion-item id = "Q2A4" ng-click = "wrong($event)">d.	 You become prone to scams involving credit cards and viruses if there is insufficient payment of your credit card bill.</ion-item>
-					<ion-item id = "Q2A5" ng-click = "right($event, 'one', 2)">e.	Only A and C</ion-item>
+					<ion-item id = "Q2A5" ng-click = "right($event)">e.	Only A and C</ion-item>
 					<ion-item id = "Q2A6" ng-click = "wrong($event)">f.	All of the above</ion-item>
 					<ion-item id = "Q2A7" ng-click = "wrong($event)">g.	A,B,C but not D </ion-item>
                   </ion-list>
@@ -228,7 +228,7 @@
                     <ion-item id = "Q3A3" ng-click = "wrong($event)">c.	Your parents will be proud of you and your accomplishments in life if you use credit.</ion-item>
 					<ion-item id = "Q3A4" ng-click = "wrong($event)">d.	Credit is the best way to buy ice-cream right now if you don’t have the money to buy it right now.</ion-item>
 					<ion-item id = "Q3A5" ng-click = "wrong($event)">e.	I am less likely to be scammed if I use credit as a means of payment.</ion-item>
-					<ion-item id = "Q3A6" ng-click = "right($event, 'one', 2)">f.	B and F</ion-item>
+					<ion-item id = "Q3A6" ng-click = "right($event)">f.	B and F</ion-item>
 					<ion-item id = "Q3A7" ng-click = "wrong($event)">g.	All of the above</ion-item>
 					<ion-item id = "Q3A8" ng-click = "wrong($event)">h.	A,D,E but not C nor B </ion-item>
 				  </ion-list>
@@ -240,7 +240,7 @@
 				</p>
                   <ion-list>
                     <ion-item id = "Q4A1" ng-click = "wrong($event)">a.	The evil overlord Captain Credit won’t be able to read my mind if I use credit!</ion-item>
-                    <ion-item id = "Q4A2" ng-click = "right($event, 'one', 2)">b.	Some people may not be able to control temptations of buying more things than able to pay, using credit.</ion-item>
+                    <ion-item id = "Q4A2" ng-click = "right($event)">b.	Some people may not be able to control temptations of buying more things than able to pay, using credit.</ion-item>
                     <ion-item id = "Q4A3" ng-click = "wrong($event)">c.	Credit is a commonly accepted form of payment in Canada. </ion-item>
 					<ion-item id = "Q4A4" ng-click = "wrong($event)">d.	There is potential to damage a credit rating with negative information if a person can control their ability to use credit</ion-item>
 					<ion-item id = "Q4A3" ng-click = "wrong($event)">e.	You’ll be able to buy online, which exposes you to more credit card scams.</ion-item>
@@ -252,7 +252,7 @@
 					5.	What’s one way for new-comers to Canada, if they cannot get a credit card here?
 				</p>
                   <ion-list>
-                    <ion-item id = "Q5A1" ng-click = "right($event, 'one', 2)">a.	Get a phone plan; some providers don’t need credit history.</ion-item>
+                    <ion-item id = "Q5A1" ng-click = "right($event)">a.	Get a phone plan; some providers don’t need credit history.</ion-item>
                     <ion-item id = "Q5A2" ng-click = "wrong($event)">b.	Buy foreign-directed investments in Canada.</ion-item>
                     <ion-item id = "Q5A3" ng-click = "wrong($event)">c.	Learn Economics in adult school</ion-item>
 					<ion-item id = "Q5A4" ng-click = "wrong($event)">d.	Buy a gift card from a major retailer.</ion-item>
@@ -267,18 +267,15 @@
                     <ion-item id = "Q6A1" ng-click = "wrong($event)">a.	The moment you turn 30 years of age and are ready to buy your first home.</ion-item>
                     <ion-item id = "Q6A2" ng-click = "wrong($event)">b.	The moment you receive your first salary check so you can buy your first phone.</ion-item>
                     <ion-item id = "Q6A3" ng-click = "wrong($event)">c.	The moment the stock market becomes Bullish, and Apple stocks are appealing.</ion-item>
-					<ion-item id = "Q6A4" ng-click = "right($event, 'one', 2)">d.	The sooner the better, eg. the moment you are of age and can apply for credit cards.</ion-item>
+					<ion-item id = "Q6A4" ng-click = "right($event)">d.	The sooner the better, eg. the moment you are of age and can apply for credit cards.</ion-item>
                   </ion-list>
-              </div>
-			  
-			  
-              <div>
-					You have <span id="liv"></span> trys remaining
-			  </div>
-		
-			
-			</div>
-			
+              </div>		
+			</div>		
         </div>
     </ion-content>
+    <div class="bar bar-footer bar-balanced">
+        <div class="title">
+            You have <span id="liv"></span> trys remaining
+        </div>
+    </div>
 </ion-view>

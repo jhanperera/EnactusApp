@@ -1,5 +1,5 @@
 ﻿<ion-view hide-back-button="false" view-title="Section 3: Types of Loan and Credit">
-    <ion-content ng-controller="BtnClick">
+    <ion-content ng-controller="BtnClick" ng-init="updatelives();">
       <div id="wrapper" class="credit-section-wrapper">
       </div>
        <br />
@@ -221,17 +221,13 @@
                     <ion-item id = "Q4A3" ng-click = "wrong($event)">c.	He wanted to be forced to immediately pay back a Demand Loan.</ion-item>
 					<ion-item id = "Q4A4" ng-click = "wrong($event)">d.	He would be able to gain points towards his Credit Card, and redeeming it later. </ion-item>
                   </ion-list>
-              </div>
-			  
-			  
-              <div>
-					You have <span id="liv"></span> trys remaining
-			  </div>
-		
-                
-			
-			</div>
-			
+              </div>			
+			</div>			
         </div>
     </ion-content>
+    <div class="bar bar-footer bar-balanced">
+        <div class="title">
+            You have <span id="liv"></span> trys remaining
+        </div>
+    </div>
 </ion-view>

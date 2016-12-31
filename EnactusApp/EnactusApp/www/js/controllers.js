@@ -8,10 +8,9 @@ angular.module('controllers', ['services'])
     })
     $scope.chapter = data.chapterProgress();
     console.log('MainCtrl');
-   
 
 })
-.controller("BtnClick", function($scope,lives, data, $cordovaFile){
+.controller("BtnClick", function ($scope, lives, $ionicScrollDelegate) {
 	var live = 3;
 	var clickedOn = [];
 	var numQuestions;
@@ -50,7 +49,7 @@ angular.module('controllers', ['services'])
 			}
 		}
 	}
-	$scope.right = function (event,chapter, section){
+	$scope.right = function (event){
 		var selec = document.getElementById(event.target.id);
 		if(clickedOn.includes(selec)){}
 		else{
@@ -59,13 +58,16 @@ angular.module('controllers', ['services'])
 			numQuestions = numQuestions -1;
 			if(numQuestions == 0){
 				alert("Good job");
-				$scope.win(chapter, section);
+				$scope.win();
 			}
 		}
 	}
 	$scope.gameover = function(){
 		alert("game over please try again");
 		live = 3;
+        //Bring the view to to the top of the page.
+		$ionicScrollDelegate.scrollTop();
+
 		$scope.partQCred = false;
 		$scope.part1Cred = !$scope.part1Cred;
 		for(i = 0; i< clickedOn.length;i++){
@@ -73,34 +75,8 @@ angular.module('controllers', ['services'])
 		}
 		
 	}
-	$scope.win = function (chapter, section) {
-	    
-	    var data = data.chapterProgress();
-	    var sectionsComplete = data[chapter].sectionsCompleted;
-	    var totalsection = data[chapter].totalSections;
-	    if (section === totalSection) {
-	        window.location.href = "#/chapter1sections";
-	        return;
-	    }
-	    if (section > sectionsComplete) {
-	        data[chapter].sectionsCompleted += 1;
-	        var url = "";
-	        if (ionic.Platform.isAndroid()) {
-	            url = "/android_asset/www/";
-	        }
-	        $cordovaFile.writeFile(url + "js/", "chapters.json", data, true)
-      .then(function (success) {
-          // success
-          window.location.href = "#/chapter1sections";
-      }, function (error) {
-          // error
-
-      });
-	    }
-	}
-
-	$scope.add = function (chapter, section) { //Enter chapter as string and section as integer
-	    
+	$scope.win = function(){
+			window.location.href = "#/chapter1sections";
 	}
 	
 });

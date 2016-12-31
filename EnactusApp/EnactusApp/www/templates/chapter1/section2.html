@@ -1,5 +1,5 @@
 ﻿<ion-view hide-back-button="false" view-title="Section 2: Captain Credit">
-    <ion-content ng-controller="BtnClick">
+    <ion-content ng-controller="BtnClick" ng-init="updatelives();">
       <div id="wrapper" class="credit-section-wrapper">
       </div>
        <br />
@@ -269,16 +269,13 @@
                     <ion-item id = "Q6A3" ng-click = "wrong($event)">c.	The moment the stock market becomes Bullish, and Apple stocks are appealing.</ion-item>
 					<ion-item id = "Q6A4" ng-click = "right($event, 'one', 2)">d.	The sooner the better, eg. the moment you are of age and can apply for credit cards.</ion-item>
                   </ion-list>
-              </div>
-			  
-			  
-              <div>
-					You have <span id="liv"></span> trys remaining
-			  </div>
-		
-			
-			</div>
-			
+              </div>		
+			</div>		
         </div>
     </ion-content>
+    <div class="bar bar-footer bar-balanced">
+        <div class="title">
+            You have <span id="liv"></span> trys remaining
+        </div>
+    </div>
 </ion-view>
