@@ -10,7 +10,7 @@ angular.module('controllers', ['services'])
     console.log('MainCtrl');
 
 })
-.controller("BtnClick", function($scope,lives){
+.controller("BtnClick", function ($scope, lives, $ionicScrollDelegate) {
 	var live = 3;
 	var clickedOn = [];
 	var numQuestions;
@@ -65,6 +65,9 @@ angular.module('controllers', ['services'])
 	$scope.gameover = function(){
 		alert("game over please try again");
 		live = 3;
+        //Bring the view to to the top of the page.
+		$ionicScrollDelegate.scrollTop();
+
 		$scope.partQCred = false;
 		$scope.part1Cred = !$scope.part1Cred;
 		for(i = 0; i< clickedOn.length;i++){
