@@ -216,6 +216,81 @@
                 </button>
             </div>
         </div>
+         <!--Introduction to questions section-->
+        <<div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
+                <div class="item item-text-wrap">
+                    <p>
+                        Now that you have finished the section on credit here are some questions.
+                        You will have 3 trys for the question.
+                        Don't worry if you mess up. You will be brought back to the begining of the section.
+                        So you can brush up on what you missed and then you can try again!
+                    </p>
+                </div>
+
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred">
+                        Previous
+                    </button>
+                    <!--first question-->
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; updatelives();setNumQuestions(4)">
+                        Next
+                    </button>
+                </div>
+            </div>
+        <!--Questions Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
+                <div class="item item-text-wrap">
+                    <p>
+                       1.	Jonathan decides to lend to his friend Michael $4000 at 10% for 5 years, but Jonathan is unsure about whether to charge him simple or compound interest. If Jonathan wants the most amount of money back, what would you recommend he do?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q1A1" ng-click="wrong($event)">a.	Use Simple interest because it stacks interest on the principal only, giving him the most amount of money back. </ion-item>
+                        <ion-item id="Q1A2" ng-click="wrong($event)">b.	Use Simple interest because it stacks interest on the principal only, giving him the least amount of money back. </ion-item>
+                        <ion-item id="Q1A3" ng-click="wrong($event)">c.	Use Compound interest because Michael would have to pay back the least amount for Jonathan.</ion-item>
+                        <ion-item id="Q1A4" ng-click="right($event, 'one', 6)">d.	Use Compound Interest because it stacks interest on top of the principle and the interest earned, so Jonathan would get more money back. </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        2.	Michael’s friend Kevin feels bad for him, and promises to lend him $10,000 at an interest rate of 20% for 3 years. Disgusted by Kevin’s interest rate, Michael’s friend Shanu offers a $10,000 loan at an interest rate of 13% for 5 years. Which offer would be best for Michael? (Hint: he wants to pay back the least amount of interest!) Assume Simple Interest! 
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q2A1" ng-click="wrong($event)">a.	Shanu’s offer</ion-item>
+                        <ion-item id="Q2A2" ng-click="right($event, 'one', 6)">b.	Kevin’s offer</ion-item>
+                        <ion-item id="Q2A3" ng-click="wrong($event)">c.	Both offers are ideal for Michael  </ion-item>
+                        <ion-item id="Q2A4" ng-click="wrong($event)">d.	None of the above.</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                       3.	Kevin and Shanu realized they’re being ripped off by using simple interest. Instead, they decide to use compound interest on their offers to Michael. Kevin decides to lend $10,000 at an interest rate of 15% for 3 years, compounded monthly, while Shanu offers a $10,000 loan at a rate of 20% for 5 years, compounded quarterly. Calculate the Future Value for both offers:
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q3A1" ng-click="wrong($event)">a.	Kevin $510,506.62, Shanu $76,675.20</ion-item>
+                        <ion-item id="Q3A2" ng-click="right($event, 'one', 6)">b.	Kevin $57,918.16, Shanu $21,911.23</ion-item>
+                        <ion-item id="Q3A3" ng-click="wrong($event)">c. Kevin $21,911.23, Shanu $57.918.16</ion-item>
+                        <ion-item id="Q3A4" ng-click="wrong($event)">d.	Shanu $510,506.62, Kevin $76,675.20</ion-item>
+                        <ion-item id="Q3A5" ng-click="wrong($event)">e.	Kevin $58,124.56, Shanu $143,312.30</ion-item>
+                        <ion-item id="Q3A6" ng-click="wrong($event)">f.	Both have the same Future Value</ion-item>
+                        <ion-item id="Q3A7" ng-click="wrong($event)">g.	None of the above. </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        4.	Michael decides to buy a new gaming laptop. He can either pay $3000 now or he can pay $500 down and borrow the rest, at a 10% rate for 3 years, compounded quarterly. Assuming Compound Interest, what is the total cost of credit? 
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q4A1" ng-click="wrong($event)">a.	$362.22</ion-item>
+                        <ion-item id="Q4A2" ng-click="wrong($event)">b.	$3362.22</ion-item>
+                        <ion-item id="Q4A3" ng-click="wrong($event)">c.	$3000</ion-item>
+                        <ion-item id="Q4A4" ng-click="wrong($event)">d.	$2500</ion-item>
+                        <ion-item id="Q4A5" ng-click="right($event, 'one', 6)">e.	$862.22</ion-item>
+                    </ion-list>
+                </div>
+            </div>
     </ion-content>
     <ion-footer-bar align-title="center" class="bar-balanced">
         <h1 class="title">

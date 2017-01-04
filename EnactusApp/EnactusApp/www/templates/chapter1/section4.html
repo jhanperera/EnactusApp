@@ -132,24 +132,81 @@
         </div>
 
         <!--Introduction to questions section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
-            <div class="item item-text-wrap">
-                <p>
-                    QUIZ! JK its not implemented yet. :P
-                </p>
-            </div>
+        <<div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
+                <div class="item item-text-wrap">
+                    <p>
+                        Now that you have finished the section on credit here are some questions.
+                        You will have 3 trys for the question.
+                        Don't worry if you mess up. You will be brought back to the begining of the section.
+                        So you can brush up on what you missed and then you can try again!
+                    </p>
+                </div>
 
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred">
-                    Previous
-                </button>
-                <!--first question-->
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; updatelives();setNumQuestions(5)">
-                    Next
-                </button>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred">
+                        Previous
+                    </button>
+                    <!--first question-->
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; updatelives();setNumQuestions(4)">
+                        Next
+                    </button>
+                </div>
             </div>
-        </div>
+            <!--Questions Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
+                <div class="item item-text-wrap">
+                    <p>
+                       1.	What is the main problem with RFID Credit Cards?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q1A1" ng-click="wrong($event)">a.	The credit cards will now be heavier and cost more to manufacture for banks.</ion-item>
+                        <ion-item id="Q1A2" ng-click="wrong($event)">b.	Canadians don’t like RFID Credit Cards, so it would be difficult to appeal to them to try and use these credit cards.</ion-item>
+                        <ion-item id="Q1A3" ng-click="wrong($event)">c.	With a simple bump into a person with the RFID Credit Cards, unless they have a special wallet, a malicious person with a reader can easily steal information.  </ion-item>
+                        <ion-item id="Q1A4" ng-click="right($event, 'one', 4)">d.	There isn’t an issue. This issue is overhyped.</ion-item>
+                    </ion-list>
+                </div>
 
+                <div class="item item-text-wrap">
+                    <p>
+                        2.	What is Phishing? 
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q2A1" ng-click="wrong($event)">a.	A type of Cheese commonly eaten in Eastern Europe.</ion-item>
+                        <ion-item id="Q2A2" ng-click="wrong($event)">b.	The Nigerian Prince scam would be an example of Phishing. </ion-item>
+                        <ion-item id="Q2A3" ng-click="wrong($event)">c.	Phishing is a type of mouth-rinsing technique that your doctor encourages you to try. </ion-item>
+                        <ion-item id="Q2A4" ng-click="right($event, 'one', 4)">d.	The process of trying to obtain sensitive information, such as personal information, by pretending to be a person with legitimate authority or power. </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        3.	Why might it be a good idea, regarding safety and security, to keep large amounts of Cash in your financial institution, like a bank, instead of at home?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q3A1" ng-click="wrong($event)">a.	If you run out of Cash while shopping, you’d have to drive back home and the traffic in the GTA has been getting worse over time.</ion-item>
+                        <ion-item id="Q3A2" ng-click="wrong($event)">b.	It isn’t a good idea to keep large amounts of cash in a bank.</ion-item>
+                        <ion-item id="Q3A3" ng-click="right($event, 'one', 4)">c.	If someone were ever to rob your house, it would increase the risk of your house being harmed.</ion-item>
+                        <ion-item id="Q3A4" ng-click="wrong($event)">d.	Credit cards and debit cards are easily accessible, so there is no longer a reason to keep large amounts of Cash at home.</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        4.	You are travelling overseas to a wonderful tourist designation (eg. Somewhere NOT COLD like Canada in the winter). Suddenly, you notice that your credit card has been compromised—it’s been stolen and someone is spending it right now. What are some measures, both preventative and treatment measures, that could be done?.
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q4A1" ng-click="wrong($event)">a.	Have more than one source of money available, in case one source has been compromised. For example, if one account has been compromised, you still have multiple to use.</ion-item>
+                        <ion-item id="Q4A2" ng-click="wrong($event)">b.	Have a mental breakdown.</ion-item>
+                        <ion-item id="Q4A3" ng-click="wrong($event)">c.	Contact your bank as soon as possible.</ion-item>
+                        <ion-item id="Q4A4" ng-click="wrong($event)">d.	Before travelling, let your bank know you are travelling and keep them updated. </ion-item>
+                        <ion-item id="Q4A5" ng-click="wrong($event)">e.	Refrain from travelling with credit cards to begin with, and just use Cash. </ion-item>
+                        <ion-item id="Q4A6" ng-click="wrong($event)">f.	Both A and B </ion-item>
+                        <ion-item id="Q4A7" ng-click="wrong($event)">g.	B and E </ion-item>
+                        <ion-item id="Q4A8" ng-click="right($event, 'one', 4)">h.	A, C and D </ion-item>
+                        <ion-item id="Q4A9" ng-click="wrong($event)">i.	All of the above  </ion-item>
+                    </ion-list>
+                </div>
+            </div>
     </ion-content>
     <ion-footer-bar align-title="center" class="bar-balanced">
         <h1 class="title">
