@@ -1,18 +1,25 @@
-﻿<ion-view hide-back-button="false" view-title="Optional: The Math behind Credit">
+﻿<ion-view hide-back-button="false" view-title="Section 5: Debit Cards and Prepaid Cards">
     <ion-content ng-controller="BtnClick" ng-init="updatelives();">
-      <div id="wrapper" class="credit-section-wrapper">
-      </div>
-      <br />
+        <div id="wrapper" class="credit-section-wrapper">
+        </div>
+        <br />
         <!--Title of this chapter-->
         <div id="chapter_elem">
-            <center><h3 class="padding">The Math behind Credit—The Cost of Credit</h3></center>
-         </div>
+            <center><h3 class="padding">Debit Cards and Prepaid Cards</h3></center>
+        </div>
 
         <!-- First Section -->
         <div class="card" style="display:block;" ng-hide="part1Cred">
             <div class="item item-text-wrap">
                 <p>
-                    Content Coming Soon
+                    For most secondary students reading this, most banks in Canada do not allow high school
+                    students to acquire their own Credit Cards to begin with—so a debit card would be the best
+                    option to begin. But what exactly is a debit card?
+                    <br /><br />
+                    Let’s begin with the obvious—a Credit Card looks awfully like a Debit Card,
+                    but do not WORK the same way. Before we have the discussion, there are different
+                    types of accounts a person may have with a bank / financial institution,
+                    however I still stick to the most basic 2 right now:
                 </p>
             </div>
             <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
@@ -20,11 +27,164 @@
             </button>
         </div>
 
-
-    </ion-content>
-    <div class="bar bar-footer bar-balanced">
-        <div class="title">
-            You have <span id="liv"></span> trys remaining
+        <!--Second Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
+            <div class="item item-text-wrap">
+                <h3>1.	Checking account</h3> <br />
+                <p>
+                    This account is for day to day access to your money, however the interest rates
+                    (how much money you would get from storing money in your account) is low, if any.
+                    In addition, there may be fees for possessing such an account, depending on the
+                    type of accounts you have. For instance, most Canadian banks such as CIBC have
+                    student accounts that waive the monthly fee, so eligible students can have a
+                    checking account to access money for free. (written as of December 2016)
+                    You can access a checking account using a debit card, writing a cheque, or even
+                    setting up automatic transfers.
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred">
+                    Next
+                </button>
+            </div>
         </div>
-    </div>
+
+        <!--Third Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
+            <div class="item item-text-wrap">
+                <h3>2.	Savings Account</h3><br />
+                <p>
+                    This account is for money that you won’t be needing, or touching, for a while.
+                    Why?  A savings account gives you interest, which is basically money for putting your
+                    money with your bank. Because of this, there may be limits to the amount a person may
+                    withdrawal from the account. In addition, the savings account might even charge fees
+                    if you do not maintain a certain amount of money in the account. Once again, this account
+                    would be a great idea if you have money you won’t be needing for a while.
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Fourth Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    In short, debit cards allow access to either accounts, checking and saving,
+                    to literally take money to pay for purchases. This is great, because a person
+                    does not have to carry the exact amount required for purchases
+                    (Can you imagine how dangerous that could become?)
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Fifth Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
+            <div class="item item-text-wrap">
+                <h3>The FEES! OH GOSH, THE FEES!</h3><br />
+                <p>
+                    While certain accounts have benefits and perks, such as some Student accounts with no monthly fee,
+                    this DOES NOT mean a debit card is without its fees. There are fees for Out of Network ATM fees,
+                    for using a bank machine (ATM) that is not in your bank’s network (if you used a TD machine and you’re with CIBC),
+                    debit card replacement fees, or Foreign Transactions/ ATM fees, if you make purchases outside the country or
+                    use an ATM outside of the country Canada. There are many different fees, don’t get caught surprised—read ‘em up!
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Sixth Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    While we learned previously that credit cards are spending other people’s money to finance a purchase,
+                    a debit card will use your money, in an account. This means if your account does not have enough money,
+                    you’re out of luck bud (unless you put enough in the account!) In fact, some banks charge Overdraft Fees
+                    for not having enough money in your account when using your debit card…ouch, watch out. <br /><br />
+
+                    I will stress this again: a debit card is NOT THE SAME as a credit card. Know the difference, and make good decisions!
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Seven Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    Finally, a prepaid card is like the cousin of Credit Cards and Debit cards,
+                    but not really. Unlike a credit card and a debit card, prepaid cards are not linked to any bank account.
+                    Instead, you are using money that has already been put into the card. The money doesn’t even have to
+                    do with the bank—there are prepaid cards with many popular stores, such a Starbucks, Walmart,
+                    EB Games…the list goes on. Once they’re empty, you can throw them out or reload, if it’s an option.
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Eight Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
+            <div class="item item-text-wrap">
+                <h3>A +1 TIP</h3><br />
+                <p>
+                    Some prepaid cards, such as Visa Prepaid Gift Cards, have fees upon activation,
+                    and THEN you load up the card with your desired amount. For instance,
+                    a $50 gift card with Visa would cost more than $50.
+                </p>
+            </div>
+
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
+                    Previous
+                </button>
+                <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part9Cred = !part9Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="center" class="bar-balanced">
+    <h1 class="title">
+        You have <span id="liv"></span> trys remaining
+    </h1>
+</ion-footer-bar>
 </ion-view>

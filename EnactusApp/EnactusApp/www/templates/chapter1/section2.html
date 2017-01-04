@@ -1,34 +1,38 @@
 ﻿<ion-view hide-back-button="false" view-title="Section 2: Captain Credit">
     <ion-content ng-controller="BtnClick" ng-init="updatelives();">
-      <div id="wrapper" class="credit-section-wrapper">
-      </div>
-       <br />
+        <div id="wrapper" class="credit-section-wrapper">
+        </div>
+        <br />
         <!--Title of this chapter-->
         <div id="chapter_elem">
             <center><h3 class="padding">Becoming Friends with Captain Credit—The Good and the Bad</h3></center>
-         </div>
+        </div>
         <div>
-          <!-- First Section -->
+            <!-- First Section -->
             <div class="card" style="display:block;" ng-hide="part1Cred">
                 <div class="item item-text-wrap">
-                  <p>Now that you know what exactly Credit is, how does a person even establish a credit rating? 
-                    Think about it—in the future, if you ever want a loan to buy a car, a house, or even a refrigerator, 
-                    the bank will essentially want to see what your credit rating is before deciding. But how exactly do you begin?</p>
+                    <p>
+                        Now that you know what exactly Credit is, how does a person even establish a credit rating?
+                        Think about it—in the future, if you ever want a loan to buy a car, a house, or even a refrigerator,
+                        the bank will essentially want to see what your credit rating is before deciding. But how exactly do you begin?
+                    </p>
                 </div>
                 <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
-                  Next
+                    Next
                 </button>
             </div>
 
             <!--Second Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
-              <div class="item item-text-wrap">
-                <p>The best and most obvious approach is through a credit card. By maintaining the balance of a credit card, 
-                  paying off the bill on time, using the credit wisely and staying within the limit, this information is 
-                  useful and contributes to your credit history! There are many types of Credit Cards with unique features for a 
-                  Canadian Credit Card. Some credit cards are specifically designed to store credit history information to allow for
-                   mortgages, for example. </p>
-              </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        The best and most obvious approach is through a credit card. By maintaining the balance of a credit card,
+                        paying off the bill on time, using the credit wisely and staying within the limit, this information is
+                        useful and contributes to your credit history! There are many types of Credit Cards with unique features for a
+                        Canadian Credit Card. Some credit cards are specifically designed to store credit history information to allow for
+                        mortgages, for example.
+                    </p>
+                </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred">
                         Previous
@@ -37,14 +41,16 @@
                         Next
                     </button>
                 </div>
-               </div>
+            </div>
 
             <!--Third Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
-              <div class="item item-text-wrap">
-                <p>Another way most people don’t consider—your phone plan. Some companies like Telus don’t require credit history for a plan, 
-                  but with each successful bill payment, will send information to credit bureaus. </p>
-              </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        Another way most people don’t consider—your phone plan. Some companies like Telus don’t require credit history for a plan,
+                        but with each successful bill payment, will send information to credit bureaus.
+                    </p>
+                </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred">
                         Previous
@@ -53,17 +59,19 @@
                         Next
                     </button>
                 </div>
-              </div>
+            </div>
 
             <!--Fourth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
-              <div class="item item-text-wrap">
-                <p>It’s often hard for newcomers in Canada to start off, especially when it comes to Credit ratings. 
-                  There are certain countries, such as China, that only consider your capacity of paying off loans, 
-                  but never consider the payment history. This is why, when starting off, the earlier you start the credit rating, 
-                  the better. In Canada but depending on the province, a person must be the age of majority 
-                  (eg. 18 in Ontario, 19 in British Columbia) in order to apply for a credit card. </p>
-              </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        It’s often hard for newcomers in Canada to start off, especially when it comes to Credit ratings.
+                        There are certain countries, such as China, that only consider your capacity of paying off loans,
+                        but never consider the payment history. This is why, when starting off, the earlier you start the credit rating,
+                        the better. In Canada but depending on the province, a person must be the age of majority
+                        (eg. 18 in Ontario, 19 in British Columbia) in order to apply for a credit card.
+                    </p>
+                </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred">
                         Previous
@@ -76,12 +84,14 @@
 
             <!--Fifth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
-              <div class="item item-text-wrap">
-                <p>Credit ratings, in Canada, range from R1 to R9. The lower the number,
-                  the better! The higher the number, it means the person has a poor rating,
-                  and may not be trustworthy to loan money, and expect repayment. R0 is possible,
-                  it just means the person does not have a credit rating.</p>
-              </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        Credit ratings, in Canada, range from R1 to R9. The lower the number,
+                        the better! The higher the number, it means the person has a poor rating,
+                        and may not be trustworthy to loan money, and expect repayment. R0 is possible,
+                        it just means the person does not have a credit rating.
+                    </p>
+                </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred">
                         Previous
@@ -94,11 +104,13 @@
 
             <!--Sixth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
-              <div class="item item-text-wrap">
-                <p>Like with many things in life, there are advantages and disadvantages of Mr. Good Ol’ Captain Credit. 
-                  It can be a great ally, or an enemy if you do not understand the importance of credit.
-                  But let’s focus on the positives first.</p>
-              </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        Like with many things in life, there are advantages and disadvantages of Mr. Good Ol’ Captain Credit.
+                        It can be a great ally, or an enemy if you do not understand the importance of credit.
+                        But let’s focus on the positives first.
+                    </p>
+                </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred">
                         Previous
@@ -111,13 +123,15 @@
 
             <!--Seven Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
-              <div class="item item-text-wrap">
-                <p>Credit is a good friend. Credit is very convenient and a commonly accepted form of payment at many major stores in Canada, 
-                  plus you are using other people’s money when buying—you don’t have to worry about paying off immediately, 
-                  just when the bill arrives and the date is there.  You don’t need money immediately to buy that sweet new iPhone 7; 
-                  you can buy it now, and immediately enjoy it—plus, you can buy it online too. And finally, you begin establishing a 
-                  credit rating once you start using credit, which is useful if you want to get a loan for something in the future as well!</p>
-              </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        Credit is a good friend. Credit is very convenient and a commonly accepted form of payment at many major stores in Canada,
+                        plus you are using other people’s money when buying—you don’t have to worry about paying off immediately,
+                        just when the bill arrives and the date is there.  You don’t need money immediately to buy that sweet new iPhone 7;
+                        you can buy it now, and immediately enjoy it—plus, you can buy it online too. And finally, you begin establishing a
+                        credit rating once you start using credit, which is useful if you want to get a loan for something in the future as well!
+                    </p>
+                </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred">
                         Previous
@@ -130,14 +144,16 @@
 
             <!--Eight Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
-              <div class="item item-text-wrap">
-                <p>…But can you trust Captain Credit? There is obviously temptation and lots of control needed! 
-                  There are people who develop addictions with online shopping and going over the limit of their credit card, 
-                  buying many things without considering the ability to pay back—and these habits are simply deadly. 
-                  Overuse of credit card, such as going over the limit and not paying back, can create negative credit history information. 
-                  Since Credit Rating is King in Canada, a damaged credit history will only negatively impact your ability to get a 
-                  loan for serious things in the future! </p>
-              </div>
+                <div class="item item-text-wrap">
+                    <p>
+                        …But can you trust Captain Credit? There is obviously temptation and lots of control needed!
+                        There are people who develop addictions with online shopping and going over the limit of their credit card,
+                        buying many things without considering the ability to pay back—and these habits are simply deadly.
+                        Overuse of credit card, such as going over the limit and not paying back, can create negative credit history information.
+                        Since Credit Rating is King in Canada, a damaged credit history will only negatively impact your ability to get a
+                        loan for serious things in the future!
+                    </p>
+                </div>
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
                         Previous
@@ -151,11 +167,12 @@
             <!--Nine Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
                 <div class="item item-text-wrap">
-                    <p>The ability to budget is key (which is covered in another topic) to make sure you won’t misuse credit. 
-                       Always read the fine print, and pay attention to any interest that might need to be paid back! Usually 
-                       after a period of time, such as noted on a credit card bill, a bank will charge interest for late payments. 
-                       Paying extra is a bummer, but also one of the benefits of being a lender—you receive more than simply the 
-                       original amount.
+                    <p>
+                        The ability to budget is key (which is covered in another topic) to make sure you won’t misuse credit.
+                        Always read the fine print, and pay attention to any interest that might need to be paid back! Usually
+                        after a period of time, such as noted on a credit card bill, a bank will charge interest for late payments.
+                        Paying extra is a bummer, but also one of the benefits of being a lender—you receive more than simply the
+                        original amount.
                     </p>
                 </div>
                 <div class="button-bar">
@@ -168,17 +185,18 @@
                     </button>
                 </div>
             </div>
-			
-			<!--Introduction to questions section-->
+
+            <!--Introduction to questions section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part10Cred">
-              <div class="item item-text-wrap">
-                <p>Now that you have finished the section on credit here are some questions. 
-				You will have 3 trys for the question.
-				Don't worry if you mess up. You will be brought back to the begining of the section.
-				So you can brush up on what you missed and then you can try again!
-				</p>
-              </div>
-               
+                <div class="item item-text-wrap">
+                    <p>
+                        Now that you have finished the section on credit here are some questions.
+                        You will have 3 trys for the question.
+                        Don't worry if you mess up. You will be brought back to the begining of the section.
+                        So you can brush up on what you missed and then you can try again!
+                    </p>
+                </div>
+
                 <div class="button-bar">
                     <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred">
                         Previous
@@ -188,94 +206,94 @@
                         Next
                     </button>
                 </div>
-			</div>
-					<!--Questions Section-->
+            </div>
+            <!--Questions Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
-              <div class="item item-text-wrap">
-                <p>
-					1.	What’s the most common way to begin establishing a credit rating?
-				</p>
-                  <ion-list>
-                    <ion-item id = "Q1A1" ng-click = "right($event, 'one', 2)">a.	By applying for and using a credit card </ion-item>
-                    <ion-item id = "Q1A2" ng-click = "wrong($event)">b.	By subscribing to Credit Canada Magazine</ion-item>
-                    <ion-item id = "Q1A3" ng-click = "wrong($event)">c.	By maintaining a bank account and ensuring there is enough money in your account</ion-item>
-					<ion-item id = "Q1A4" ng-click = "wrong($event)">d.	By asking the bank for a credit rating</ion-item>
-                  </ion-list>
-              </div>
-			
-			  <div class="item item-text-wrap">
-                <p>
-					2.	Why is it important to pay your credit card bill on time?
-				</p>
-                  <ion-list>
-                    <ion-item id = "Q2A1" ng-click = "wrong($event)">a.	There are often interest payments, so you will be paying for more than just the original amount and owing more than desired.</ion-item>
-                    <ion-item id = "Q2A2" ng-click = "wrong($event)">b.	Under-using the credit card has damaging effects on your credit rating, so paying it back on time is imperative. </ion-item>
-                    <ion-item id = "Q2A3" ng-click = "wrong($event)">c.	It demonstrates Character and Capacity, which is essential for a good credit rating and potentially getting a loan in the future.</ion-item>
-					<ion-item id = "Q2A4" ng-click = "wrong($event)">d.	 You become prone to scams involving credit cards and viruses if there is insufficient payment of your credit card bill.</ion-item>
-					<ion-item id = "Q2A5" ng-click = "right($event, 'one', 2)">e.	Only A and C</ion-item>
-					<ion-item id = "Q2A6" ng-click = "wrong($event)">f.	All of the above</ion-item>
-					<ion-item id = "Q2A7" ng-click = "wrong($event)">g.	A,B,C but not D </ion-item>
-                  </ion-list>
-              </div>
-			  
-			  <div class="item item-text-wrap">
-                <p>	
-					3.	Which of the following are some advantages of using credit?
-				</p>
-                  <ion-list>
-                    <ion-item id = "Q3A1" ng-click = "wrong($event)">a.	You develop a habit of buying more than able to buy, known as “impulse buying”</ion-item>
-                    <ion-item id = "Q3A2" ng-click = "wrong($event)">b.	You begin to develop a credit rating, which is useful if you want to get a loan in the future for other components such as a house.</ion-item>
-                    <ion-item id = "Q3A3" ng-click = "wrong($event)">c.	Your parents will be proud of you and your accomplishments in life if you use credit.</ion-item>
-					<ion-item id = "Q3A4" ng-click = "wrong($event)">d.	Credit is the best way to buy ice-cream right now if you don’t have the money to buy it right now.</ion-item>
-					<ion-item id = "Q3A5" ng-click = "wrong($event)">e.	I am less likely to be scammed if I use credit as a means of payment.</ion-item>
-					<ion-item id = "Q3A6" ng-click = "right($event, 'one', 2)">f.	B and F</ion-item>
-					<ion-item id = "Q3A7" ng-click = "wrong($event)">g.	All of the above</ion-item>
-					<ion-item id = "Q3A8" ng-click = "wrong($event)">h.	A,D,E but not C nor B </ion-item>
-				  </ion-list>
-              </div>
-			  
-			  <div class="item item-text-wrap">
-                <p>
-					4.	Which of the following are some disadvantages of using credit?  
-				</p>
-                  <ion-list>
-                    <ion-item id = "Q4A1" ng-click = "wrong($event)">a.	The evil overlord Captain Credit won’t be able to read my mind if I use credit!</ion-item>
-                    <ion-item id = "Q4A2" ng-click = "right($event, 'one', 2)">b.	Some people may not be able to control temptations of buying more things than able to pay, using credit.</ion-item>
-                    <ion-item id = "Q4A3" ng-click = "wrong($event)">c.	Credit is a commonly accepted form of payment in Canada. </ion-item>
-					<ion-item id = "Q4A4" ng-click = "wrong($event)">d.	There is potential to damage a credit rating with negative information if a person can control their ability to use credit</ion-item>
-					<ion-item id = "Q4A3" ng-click = "wrong($event)">e.	You’ll be able to buy online, which exposes you to more credit card scams.</ion-item>
-				 </ion-list>
-              </div>
-			  
-			  <div class="item item-text-wrap">
-                <p>
-					5.	What’s one way for new-comers to Canada, if they cannot get a credit card here?
-				</p>
-                  <ion-list>
-                    <ion-item id = "Q5A1" ng-click = "right($event, 'one', 2)">a.	Get a phone plan; some providers don’t need credit history.</ion-item>
-                    <ion-item id = "Q5A2" ng-click = "wrong($event)">b.	Buy foreign-directed investments in Canada.</ion-item>
-                    <ion-item id = "Q5A3" ng-click = "wrong($event)">c.	Learn Economics in adult school</ion-item>
-					<ion-item id = "Q5A4" ng-click = "wrong($event)">d.	Buy a gift card from a major retailer.</ion-item>
-                  </ion-list>
-              </div>
-			  
-			   <div class="item item-text-wrap">
-                <p>
-					6.	When is the best time to start getting a credit rating?
-				</p>
-                  <ion-list>
-                    <ion-item id = "Q6A1" ng-click = "wrong($event)">a.	The moment you turn 30 years of age and are ready to buy your first home.</ion-item>
-                    <ion-item id = "Q6A2" ng-click = "wrong($event)">b.	The moment you receive your first salary check so you can buy your first phone.</ion-item>
-                    <ion-item id = "Q6A3" ng-click = "wrong($event)">c.	The moment the stock market becomes Bullish, and Apple stocks are appealing.</ion-item>
-					<ion-item id = "Q6A4" ng-click = "right($event, 'one', 2)">d.	The sooner the better, eg. the moment you are of age and can apply for credit cards.</ion-item>
-                  </ion-list>
-              </div>		
-			</div>		
+                <div class="item item-text-wrap">
+                    <p>
+                        1.	What’s the most common way to begin establishing a credit rating?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q1A1" ng-click="right($event, 'one', 2)">a.	By applying for and using a credit card </ion-item>
+                        <ion-item id="Q1A2" ng-click="wrong($event)">b.	By subscribing to Credit Canada Magazine</ion-item>
+                        <ion-item id="Q1A3" ng-click="wrong($event)">c.	By maintaining a bank account and ensuring there is enough money in your account</ion-item>
+                        <ion-item id="Q1A4" ng-click="wrong($event)">d.	By asking the bank for a credit rating</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        2.	Why is it important to pay your credit card bill on time?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q2A1" ng-click="wrong($event)">a.	There are often interest payments, so you will be paying for more than just the original amount and owing more than desired.</ion-item>
+                        <ion-item id="Q2A2" ng-click="wrong($event)">b.	Under-using the credit card has damaging effects on your credit rating, so paying it back on time is imperative. </ion-item>
+                        <ion-item id="Q2A3" ng-click="wrong($event)">c.	It demonstrates Character and Capacity, which is essential for a good credit rating and potentially getting a loan in the future.</ion-item>
+                        <ion-item id="Q2A4" ng-click="wrong($event)">d.	 You become prone to scams involving credit cards and viruses if there is insufficient payment of your credit card bill.</ion-item>
+                        <ion-item id="Q2A5" ng-click="right($event, 'one', 2)">e.	Only A and C</ion-item>
+                        <ion-item id="Q2A6" ng-click="wrong($event)">f.	All of the above</ion-item>
+                        <ion-item id="Q2A7" ng-click="wrong($event)">g.	A,B,C but not D </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        3.	Which of the following are some advantages of using credit?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q3A1" ng-click="wrong($event)">a.	You develop a habit of buying more than able to buy, known as “impulse buying”</ion-item>
+                        <ion-item id="Q3A2" ng-click="wrong($event)">b.	You begin to develop a credit rating, which is useful if you want to get a loan in the future for other components such as a house.</ion-item>
+                        <ion-item id="Q3A3" ng-click="wrong($event)">c.	Your parents will be proud of you and your accomplishments in life if you use credit.</ion-item>
+                        <ion-item id="Q3A4" ng-click="wrong($event)">d.	Credit is the best way to buy ice-cream right now if you don’t have the money to buy it right now.</ion-item>
+                        <ion-item id="Q3A5" ng-click="wrong($event)">e.	I am less likely to be scammed if I use credit as a means of payment.</ion-item>
+                        <ion-item id="Q3A6" ng-click="right($event, 'one', 2)">f.	B and F</ion-item>
+                        <ion-item id="Q3A7" ng-click="wrong($event)">g.	All of the above</ion-item>
+                        <ion-item id="Q3A8" ng-click="wrong($event)">h.	A,D,E but not C nor B </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        4.	Which of the following are some disadvantages of using credit?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q4A1" ng-click="wrong($event)">a.	The evil overlord Captain Credit won’t be able to read my mind if I use credit!</ion-item>
+                        <ion-item id="Q4A2" ng-click="right($event, 'one', 2)">b.	Some people may not be able to control temptations of buying more things than able to pay, using credit.</ion-item>
+                        <ion-item id="Q4A3" ng-click="wrong($event)">c.	Credit is a commonly accepted form of payment in Canada. </ion-item>
+                        <ion-item id="Q4A4" ng-click="wrong($event)">d.	There is potential to damage a credit rating with negative information if a person can control their ability to use credit</ion-item>
+                        <ion-item id="Q4A3" ng-click="wrong($event)">e.	You’ll be able to buy online, which exposes you to more credit card scams.</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        5.	What’s one way for new-comers to Canada, if they cannot get a credit card here?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q5A1" ng-click="right($event, 'one', 2)">a.	Get a phone plan; some providers don’t need credit history.</ion-item>
+                        <ion-item id="Q5A2" ng-click="wrong($event)">b.	Buy foreign-directed investments in Canada.</ion-item>
+                        <ion-item id="Q5A3" ng-click="wrong($event)">c.	Learn Economics in adult school</ion-item>
+                        <ion-item id="Q5A4" ng-click="wrong($event)">d.	Buy a gift card from a major retailer.</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        6.	When is the best time to start getting a credit rating?
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q6A1" ng-click="wrong($event)">a.	The moment you turn 30 years of age and are ready to buy your first home.</ion-item>
+                        <ion-item id="Q6A2" ng-click="wrong($event)">b.	The moment you receive your first salary check so you can buy your first phone.</ion-item>
+                        <ion-item id="Q6A3" ng-click="wrong($event)">c.	The moment the stock market becomes Bullish, and Apple stocks are appealing.</ion-item>
+                        <ion-item id="Q6A4" ng-click="right($event, 'one', 2)">d.	The sooner the better, eg. the moment you are of age and can apply for credit cards.</ion-item>
+                    </ion-list>
+                </div>
+            </div>
         </div>
     </ion-content>
-    <div class="bar bar-footer bar-balanced">
-        <div class="title">
+    <ion-footer-bar align-title="center" class="bar-balanced">
+        <h1 class="title">
             You have <span id="liv"></span> trys remaining
-        </div>
-    </div>
+        </h1>
+    </ion-footer-bar>
 </ion-view>

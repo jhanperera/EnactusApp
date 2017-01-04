@@ -1,0 +1,225 @@
+﻿<ion-view hide-back-button="false" view-title="Optional: The Math behind Credit">
+    <ion-content ng-controller="BtnClick" ng-init="updatelives();">
+        <div id="wrapper" class="credit-section-wrapper">
+        </div>
+        <br />
+        <!--Title of this chapter-->
+        <div id="chapter_elem">
+            <center><h3 class="padding">The Math behind Credit—The Cost of Credit</h3></center>
+        </div>
+
+        <!-- First Section -->
+        <div class="card" style="display:block;" ng-hide="part1Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    To understand essentially HOW the numbers came to be, especially when it comes to paying and receiving interest,
+                    one must understand the math behind it.
+                    <br /><br />
+                    Now I am aware math is not everyone’s strength, so this section will be a simple overview and some basic practice.
+                    Practice makes perfect, so please bear with me.
+                    <br /><br />
+                    For our purposes, let’s focus on the two most common types of interest—simple and compound interest.
+                    Interest is the money paid or received at a rate and duration because of money borrowed/ borrowing.
+                </p>
+            </div>
+            <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
+                Next
+            </button>
+        </div>
+
+        <!--Second Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
+            <div class="item item-text-wrap">
+                <h3>Why is there interest on loans?</h3> <br />
+                <p>
+                    Money that is lent can be used for other purposes,
+                    such as being spent now, instead of being lent out. Because of this, most people
+                    who lend money request extra money, to compensate for this opportunity that is lost.
+                    Think of it as: “If I lend to you now, I could spend it instead—why should I lend to you?”
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Third Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    Simple Interest is the interest based on the principal amount (the original amount of the loan) only.
+                    The formula for Simple Interest is Principal x Annual Rate x Time in Years*.
+                    The time in years is important—if the duration is in months, you will need to divide the number
+                    of months by 12 to determine the fraction of the year. For example,
+                    6 months would represent half a year (6 months / 12 months = 50% or half).
+                    Similarly, 10 months would be 10/12 = roughly 0.833 of a year.
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Fourth Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
+            <div class="item item-text-wrap">
+                <h3>Let’s try a basic example</h3><br />
+                <p>
+                    Let’s assume Mary lends her friend Warren $1000, at an annual interest rate of 10% for 7 years.
+                    This is under simple interest. Using the formula:<br /><br />
+
+                    Simple Interest= Principal x Annual Rate x Time in Years
+                    10% = 0.10, time in years= 7 and principal is 1000
+                    SI= 1000 x 0.10 x 7
+                    SI = $700<br /><br />
+
+                    We see that Warren must pay back $700 in interest, IN ADDITION to the $1000 that Mary let her friend.
+                    (Do not forget to add back the principal amount to figure out how much is owed in total—the formula
+                    only gives you the “Extra stuff” of compensation, the interest, but not the total)
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Fifth Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
+            <div class="item item-text-wrap">
+                <h3>Let’s try another example</h3><br />
+                <p>
+                    Mr. Lemon’s Bank charges 15% interest per year on overdue accounts.  <br /><br />
+                    Mr. Orange has a bill of $94.00 that went overdue by one month. Under simple interest,
+                    how much does Mr. Orange owe the Bank of Mr. Lemon?
+                    Again, refer to the formula: Simple Interest= Principal x Annual Rate x Time in Years
+                    N= 1 month (again, please remember to convert: 1/ 12 = roughly 0.083)
+                    <br /><br />
+                    Interest rate of 15%= 0.15 (15/100)
+                    Principal = $94
+                    SI= 94 x 0.15 x 0.083
+                    SI = $1.175
+                    <br /><br />
+                    Rounded would be roughly $1.18. Would this be the final answer?
+                    Do you notice the problem here? The question is asking for how much is owed in total. We must add $1.18 with the principal= 1.18+94 = $95.18
+                    <br /><br />
+                    We see that Mr. Orange owes $95.18 to Mr. Lemon’s Bank.
+
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Sixth Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    Compound Interest is the most common form of interest you will find. Why is that?
+                    Because any person that uses compound interest will get more interest back…
+                    or pay more interest if they loaned any money! Compound interest calculates the
+                    interest based on the principal AND the interest earned.<br /><br />
+
+                    In simple interest, the interest rate would only be applied to the original amount.
+                    This means now, under compound interest, there will be MORE because it is applying
+                    the rate to an amount GREATER than the original.<br /><br />
+
+                    Think of it this way: Let’s say you accidentally ruined your favorite shirt with a big ketchup stain.
+                    Being lazy, you decide to not clean it up and leave it on in a closet. By not cleaning it sooner,
+                    the shirt gets worse significantly over time—it begins to smell, and bugs infest your closet.
+                    This is compound interest—over time, you end up owing more money/ earning more money because
+                    the interest stacks on top of the original amount AND the interest over time.
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Seven Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
+            <div class="item item-text-wrap">
+                <h3></h3>
+                <p>
+                    The formula for Compound Interest is slightly more complicated. Just breeze, okay?<br /><br />
+                    I’m gonna show it right now… 1…2..3….<br /><br />
+                    FV=PV [(1+r/n)^(n x t)]<br /><br />
+                    OKAY CALM DOWN. Let’s look into it. <br /><br />
+                    FV refers to the future value, that is, how much this loan would be worth in the future.
+                    R refers to the annual interest rate, while n means the number of years the loan lasts.
+                    Finally, t is term your money is “tied” up in—basically how many times the interest will be
+                    “Stacked” upon.  Naturally, PV means present value, how much the loan is worth now.
+                    In most cases PV would equal the principal.<br /><br />
+                </p>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred">
+                    Previous
+                </button>
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <!--Eight Section-->
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
+            <div class="item item-text-wrap">
+                <p>
+                    Let’s get a basic example. You invest $12,000 at 4% compounded yearly for 5 years.
+                    How much will you get back after 5 years? Using the not-so-scary formula…
+                    <br /><br />
+                    FV=PV [(1+r/n)^(n x t)]<br /><br />
+                    We know for sure the PV, which is $12,000. The interest rate, r, is 0.04.
+                    The n, number of years, is 5. And finally, compounded yearly means it is compounded once a year, which means t=1.
+                    <br /><br />
+                    FV=12000 [(1+0.04/5)^(5 x 1)] **remember to watch for order of operations<br />
+                    FV= 12000[ (1+0.008)^5]<br />
+                    FV= 12000(1.040645)<br />
+                    FV= roughly $12487.74<br /><br />
+                    We see that with this investment, one could receive $12,487.74
+                </p>
+            </div>
+
+            <div class="button-bar">
+                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
+                    Previous
+                </button>
+                <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part9Cred = !part9Cred">
+                    Next
+                </button>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="center" class="bar-balanced">
+        <h1 class="title">
+            You have <span id="liv"></span> trys remaining
+        </h1>
+    </ion-footer-bar>
+</ion-view>
