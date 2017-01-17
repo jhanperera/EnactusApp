@@ -1,4 +1,4 @@
-// install   :      cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
+﻿// install   :      cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
 // link      :      https://github.com/dpa99c/phonegap-launch-navigator
 
 /* globals launchnavigator: true */

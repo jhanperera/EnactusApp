@@ -56,6 +56,10 @@ angular.module('iFinance', ['ionic', 'controllers', 'services', 'ngAnimate', 'ng
         url: '/chapter1sec5',
         templateUrl: 'templates/chapter1/section5.html'
     })
+    .state('chapter1sec6', {
+        url: '/chapter1sec6',
+        templateUrl: 'templates/chapter1/section6.html'
+    })
     .state('chapter2sections', {
         url: '/chapter2sections',
         templateUrl: 'templates/chapter2/chapter2sections.html'

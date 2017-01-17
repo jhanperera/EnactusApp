@@ -1,4 +1,4 @@
-angular.module('demo.camera.ctrl', [])
+﻿angular.module('demo.camera.ctrl', [])
 
   .controller('CameraCtrl', function ($scope, $cordovaCamera) {
     $scope.takePicture = function () {

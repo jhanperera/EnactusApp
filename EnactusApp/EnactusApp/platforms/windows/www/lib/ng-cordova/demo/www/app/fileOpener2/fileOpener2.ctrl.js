@@ -1,4 +1,4 @@
-angular.module('demo.fileOpener2.ctrl', [])
+﻿angular.module('demo.fileOpener2.ctrl', [])
 
   .controller('FileOpener2Ctrl', function ($scope, $log, $cordovaFileOpener2) {
 

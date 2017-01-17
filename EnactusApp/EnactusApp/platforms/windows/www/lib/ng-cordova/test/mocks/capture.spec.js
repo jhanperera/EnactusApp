@@ -1,4 +1,4 @@
-describe('ngCordovaMocks', function() {
+﻿describe('ngCordovaMocks', function() {
 	beforeEach(function() {
 		module('ngCordovaMocks');
 	});

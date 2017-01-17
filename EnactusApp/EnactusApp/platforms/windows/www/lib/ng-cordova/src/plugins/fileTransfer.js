@@ -1,4 +1,4 @@
-// install   :     cordova plugin add cordova-plugin-file-transfer
+﻿// install   :     cordova plugin add cordova-plugin-file-transfer
 // link      :     https://github.com/apache/cordova-plugin-file-transfer
 
 /* globals FileTransfer: true */

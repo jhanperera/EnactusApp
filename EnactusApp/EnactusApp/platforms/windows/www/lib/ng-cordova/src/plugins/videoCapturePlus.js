@@ -1,4 +1,4 @@
-// install   :    cordova plugin add https://github.com/EddyVerbruggen/VideoCapturePlus-PhoneGap-Plugin.git
+﻿// install   :    cordova plugin add https://github.com/EddyVerbruggen/VideoCapturePlus-PhoneGap-Plugin.git
 // link      :    https://github.com/EddyVerbruggen/VideoCapturePlus-PhoneGap-Plugin
 
 angular.module('ngCordova.plugins.videoCapturePlus', [])

@@ -1,4 +1,4 @@
-// install   :     cordova plugin add cordova-plugin-file
+﻿// install   :     cordova plugin add cordova-plugin-file
 // link      :     https://github.com/apache/cordova-plugin-file
 
 angular.module('ngCordova.plugins.file', [])

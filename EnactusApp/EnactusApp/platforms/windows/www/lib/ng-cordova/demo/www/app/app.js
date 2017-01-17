@@ -1,4 +1,4 @@
-angular.module('demo', [
+﻿angular.module('demo', [
   'ionic',
   'ngCordova',
 

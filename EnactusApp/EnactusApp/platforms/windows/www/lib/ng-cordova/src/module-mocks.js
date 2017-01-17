@@ -1,1 +1,1 @@
-var ngCordovaMocks = angular.module('ngCordovaMocks', []);
+﻿var ngCordovaMocks = angular.module('ngCordovaMocks', []);

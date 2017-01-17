@@ -1,4 +1,4 @@
-// install  :    cordova plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+﻿// install  :    cordova plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
 // link     :    https://github.com/phonegap/phonegap-plugin-barcodescanner
 
 angular.module('ngCordova.plugins.barcodeScanner', [])

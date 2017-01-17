@@ -1,4 +1,4 @@
-// install   :     cordova plugin add cordova-plugin-device
+﻿// install   :     cordova plugin add cordova-plugin-device
 // link      :     https://github.com/apache/cordova-plugin-device
 
 /* globals device: true */

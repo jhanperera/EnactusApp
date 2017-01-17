@@ -1,4 +1,4 @@
-describe('Service: $cordovaVibration', function() {
+﻿describe('Service: $cordovaVibration', function() {
 
   var $cordovaVibration;
 

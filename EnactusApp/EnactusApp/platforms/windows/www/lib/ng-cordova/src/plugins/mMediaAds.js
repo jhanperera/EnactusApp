@@ -1,4 +1,4 @@
-// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-mmedia.git
+﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-mmedia.git
 // link     :     https://github.com/floatinghotpot/cordova-plugin-mmedia
 
 angular.module('ngCordova.plugins.mMediaAds', [])

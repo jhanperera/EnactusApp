@@ -1,4 +1,4 @@
-// install   :      cordova plugin add https://github.com/phonegap-build/PushPlugin.git
+﻿// install   :      cordova plugin add https://github.com/phonegap-build/PushPlugin.git
 // link      :      https://github.com/phonegap-build/PushPlugin
 
 angular.module('ngCordova.plugins.push', [])

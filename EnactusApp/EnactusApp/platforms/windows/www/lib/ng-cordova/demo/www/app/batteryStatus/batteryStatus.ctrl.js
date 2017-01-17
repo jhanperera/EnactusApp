@@ -1,4 +1,4 @@
-angular.module('demo.batteryStatus.ctrl', [])
+﻿angular.module('demo.batteryStatus.ctrl', [])
 
   .controller('BatteryStatusCtrl', function ($scope, $timeout, $cordovaBatteryStatus) {
 

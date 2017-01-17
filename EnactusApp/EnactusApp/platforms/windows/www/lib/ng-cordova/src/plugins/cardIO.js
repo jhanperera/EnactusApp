@@ -1,4 +1,4 @@
-// install : cordova plugin add https://github.com/vkeepe/card.io.git
+﻿// install : cordova plugin add https://github.com/vkeepe/card.io.git
 // link    : https://github.com/vkeepe/card.io.git
 
 /* globals CardIO: true */

@@ -1,4 +1,4 @@
-angular.module('demo.beacon.ctrl', [])
+﻿angular.module('demo.beacon.ctrl', [])
 
   .controller('BeaconCtrl', function($window, $scope, $rootScope, $timeout, $cordovaBeacon) {
     var brIdentifier = 'estimote';

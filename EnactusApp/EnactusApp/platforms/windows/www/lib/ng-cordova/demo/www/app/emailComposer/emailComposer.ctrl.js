@@ -1,4 +1,4 @@
-angular.module('demo.emailComposer.ctrl', [])
+﻿angular.module('demo.emailComposer.ctrl', [])
 
   .controller('EmailComposerCtrl', function ($scope, $cordovaEmailComposer) {
 

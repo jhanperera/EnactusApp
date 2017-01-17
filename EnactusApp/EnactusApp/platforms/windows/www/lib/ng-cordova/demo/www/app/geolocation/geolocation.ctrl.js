@@ -1,4 +1,4 @@
-angular.module('demo.geolocation.ctrl', [])
+﻿angular.module('demo.geolocation.ctrl', [])
 
   .controller('GeolocationCtrl', function ($scope, $cordovaGeolocation) {
 

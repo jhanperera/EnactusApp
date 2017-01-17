@@ -1,4 +1,4 @@
-// install  :    cordova plugin add https://github.com/fiscal-cliff/phonegap-plugin-brightness.git
+﻿// install  :    cordova plugin add https://github.com/fiscal-cliff/phonegap-plugin-brightness.git
 // link     :    https://github.com/fiscal-cliff/phonegap-plugin-brightness
 
 angular.module('ngCordova.plugins.brightness', [])

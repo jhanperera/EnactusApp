@@ -1,4 +1,4 @@
-angular.module('demo.media.ctrl', [])
+﻿angular.module('demo.media.ctrl', [])
 
   .controller('MediaCtrl', function ($scope, $ionicPlatform, $cordovaMedia) {
     var thisMedia;

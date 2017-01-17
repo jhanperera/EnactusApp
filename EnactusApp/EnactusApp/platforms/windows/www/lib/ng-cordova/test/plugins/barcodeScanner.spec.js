@@ -1,4 +1,4 @@
-describe('Service: $cordovaBarcodeScanner', function () {
+﻿describe('Service: $cordovaBarcodeScanner', function () {
 
   var $cordovaBarcodeScanner, $rootScope;
   window.cordova = {

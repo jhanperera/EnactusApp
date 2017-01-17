@@ -1,4 +1,4 @@
-describe('Service: $cordovaSerial', function() {
+﻿describe('Service: $cordovaSerial', function() {
 
   var $cordovaSerial, $rootScope;
 

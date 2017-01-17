@@ -1,4 +1,4 @@
-// install   :      cordova plugin add cordova-plugin-splashscreen
+﻿// install   :      cordova plugin add cordova-plugin-splashscreen
 // link      :      https://github.com/apache/cordova-plugin-splashscreen
 
 angular.module('ngCordova.plugins.splashscreen', [])

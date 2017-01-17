@@ -1,4 +1,4 @@
-angular.module('demo.globalization.ctrl', [])
+﻿angular.module('demo.globalization.ctrl', [])
 
   .controller('GlobalizationCtrl', function ($scope, $cordovaGlobalization) {
 
