@@ -7,6 +7,7 @@
         <div id="chapter_elem">
             <center><h3 class="padding">Basics about saving money </h3></center>
          </div>
+        <div>
           <!-- First Section -->
             <div class="card" style="display:block;" ng-hide="part1Cred">
                 <div class="item item-text-wrap">
@@ -178,11 +179,115 @@
                         Previous
                     </button>
                     <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part9Cred = !part9Cred">
+                        Next
+                    </button>
+                </div>
+                  </div>
+                </div>
+                   <!--Introduction to questions section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
+                <div class="item item-text-wrap">
+                    <p>
+                        Now that you have finished the section on credit here are some questions.
+                        You will have 3 trys for the question.
+                        Don't worry if you mess up. You will be brought back to the begining of the section.
+                        So you can brush up on what you missed and then you can try again!
+                    </p>
+                </div>
+
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred">
+                        Previous
+                    </button>
+                    <!--first question-->
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; updatelives();setNumQuestions(6)">
                         Next
                     </button>
                 </div>
             </div>
+                
+            <!--Questions Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
+                <div class="item item-text-wrap">
+                    <p>
+                        1.  Most individuals have daily, weekly, and monthly expenses. What should you do once you figure out how much these expenses are
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q1A1" ng-click="wrong($event)">a. Add to your income </ion-item>
+                        <ion-item id="Q1A2" ng-click="right($event, 'one', 1)">b.	Subtract from your income </ion-item>
+                        <ion-item id="Q1A3" ng-click="wrong($event)">c.	Add to your allowance </ion-item>
+                        <ion-item id="Q1A4" ng-click="wrong($event)">d. Subtract from your allowance </ion-item>
+                        <ion-item id="Q1A5" ng-click="wrong($event)">e.	you don’t need to calculate your expenses </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        2. Allocating for unexpected expenses and emergencies is a key financial aspect that is often forgotten. Approximately what percentage of your budget should be allocated should allocated to this category? 
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q2A1" ng-click="wrong($event)">a. 5-10% before figuring out fixed/reoccurring expenses</ion-item>
+                        <ion-item id="Q2A2" ng-click="right($event, 'one', 1)">b.	5-10% after figuring out fixed/reoccurring expenses </ion-item>
+                        <ion-item id="Q2A3" ng-click="wrong($event)">c.	10-15% before figuring out fixed/reoccurring expenses </ion-item>
+                        <ion-item id="Q2A4" ng-click="wrong($event)">d. 10-15% after figuring out fixed/reoccurring expenses</ion-item>
+                        <ion-item id="Q2A5" ng-click="wrong($event)">e.	don’t allocate and live life on the edge </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        3. David is trying to figure out how much he should allocate for emergencies. After deducting fixed expenses, he has $100 to work with. How much should he allocate for emergencies  
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q3A1" ng-click="wrong($event)">a. $24</ion-item>
+                        <ion-item id="Q3A2" ng-click="wrong($event)">b. $16 - $20</ion-item>
+                        <ion-item id="Q3A3" ng-click="right($event, 'one', 1)">c. $5 - $10</ion-item>
+                        <ion-item id="Q3A4" ng-click="wrong($event)">d. $30</ion-item>
+                        <ion-item id="Q3A5" ng-click="wrong($event)">e.	$28</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        4. Saving for the future is crucial for financial stability. What percent of your budget should be allocated to your savings account after steps 1-3?   
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q4A1" ng-click="right($event, 'one', 1)">a. 30% </ion-item>
+                        <ion-item id="Q4A2" ng-click="wrong($event)">b. 25%</ion-item>
+                        <ion-item id="Q4A3" ng-click="wrong($event)">c.  35% </ion-item>
+                        <ion-item id="Q4A4" ng-click="wrong($event)">d. 40% </ion-item>
+                        <ion-item id="Q4A5" ng-click="wrong($event)">e.	$100</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        5. David just got his first job and decides to use the budgeting tips outlined in this app. After steps 1-3 he has $350 left from his initial monthly income. How much should he allocate to go into his savings account?    
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q5A1" ng-click="wrong($event)">a. $100</ion-item>
+                        <ion-item id="Q5A2" ng-click="wrong($event)">b. $150</ion-item>
+                        <ion-item id="Q5A3" ng-click="right($event, 'one', 1)">c. $105</ion-item>
+                        <ion-item id="Q5A4" ng-click="wrong($event)">d. $115</ion-item>
+                        <ion-item id="Q5A5" ng-click="wrong($event)">e.	$140</ion-item>
+                    </ion-list>
+                </div>
+                
+                  <div class="item item-text-wrap">
+                    <p>
+                        6. Having fun is a critical component of human happiness, but it doesn’t have to break the bank. How much of your income left over from steps 1-5 should be allocated towards entertainment?     
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q6A1" ng-click="wrong($event)">a. 15%</ion-item>
+                        <ion-item id="Q6A2" ng-click="right($event, 'one', 1)">b. 35%</ion-item>
+                        <ion-item id="Q6A3" ng-click="wrong($event)">c. 40%</ion-item>
+                        <ion-item id="Q6A4" ng-click="wrong($event)">d. 45%</ion-item>
+                        <ion-item id="Q6A5" ng-click="wrong($event)">e.	10% </ion-item>
+                    </ion-list>
+                </div>
+             </div>
+         
         </div>
     </ion-content>
     <ion-footer-bar align-title="center" class="bar-balanced">
