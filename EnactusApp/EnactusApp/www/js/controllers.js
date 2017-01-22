@@ -8,13 +8,26 @@ angular.module('controllers', ['services'])
     })
     $scope.chapter = data.chapterProgress();
     console.log('MainCtrl');
-   
+    if (window.localStorage.getItem("prog1") == undefined) {
+        document.getElementById("chap1").value = 0;
+    } else {
+        document.getElementById("chap1").value = window.localStorage.getItem("prog1");
+    }
+    
+    if (window.localStorage.getItem("prog2") == undefined) {
+        document.getElementById("chap2").value = 0;
+    } else {
+        document.getElementById("chap2").value = window.localStorage.getItem("prog2");
+    }
+    
+
 
 })
 .controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate) {
 	var live = 3;
 	var clickedOn = [];
 	var numQuestions;
+
     $scope.part2Cred = false;
     $scope.part3Cred = false;
     $scope.part4Cred = false;
@@ -74,9 +87,35 @@ angular.module('controllers', ['services'])
 		}
 		
 	}
+
+	$scope.save = function (chapter) {
+	    if (chapter == 1) {
+	        var temp;
+	        if (window.localStorage.getItem("prog1") == undefined) {
+	            temp = 0;
+	        } else {
+	            temp = window.localStorage.getItem("prog1");
+	        }
+	        temp++;
+	        window.localStorage.setItem("prog1", temp);
+	    } else if (chapter == 2) {
+	        if (window.localStorage.getItem("prog2") == undefined) {
+	            temp = 0;
+	        } else {
+	            temp = window.localStorage.getItem("prog2");
+	        }
+	        temp++;
+	        window.localStorage.setItem("prog2", temp);
+	    }
+	}
+	$scope.load = function () {
+	    console.log(window.localStorage.getItem("prog1"));
+	}
+
+
 	$scope.win = function (chapter, section) {
 	    
-	    var data = data.chapterProgress();
+	   /* var data = data.chapterProgress();
 	    var sectionsComplete = data[chapter].sectionsCompleted;
 	    var totalsection = data[chapter].totalSections;
 	    if (section === totalSection) {
@@ -91,13 +130,14 @@ angular.module('controllers', ['services'])
 	        }
 	        $cordovaFile.writeFile(url + "js/", "chapters.json", data, true)
       .then(function (success) {
-          // success
-          window.location.href = "#/chapter1sections";
-      }, function (error) {
+          // success*/
+	    $scope.save(section);
+        window.location.href = "#/chapter1sections";
+    /*  }, function (error) {
           // error
 
       });
-	    }
+	    }*/
 	}
 
 	
