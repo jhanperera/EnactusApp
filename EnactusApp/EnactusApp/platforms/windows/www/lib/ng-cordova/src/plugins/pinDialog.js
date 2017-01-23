@@ -1,4 +1,4 @@
-// install   :      cordova plugin add https://github.com/Paldom/PinDialog.git
+﻿// install   :      cordova plugin add https://github.com/Paldom/PinDialog.git
 // link      :      https://github.com/Paldom/PinDialog
 
 angular.module('ngCordova.plugins.pinDialog', [])

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
     <Identity Name="io.cordova.myappf492f5" Publisher="CN=$username$" Version="0.0.1.0" />
-    <mp:PhoneIdentity PhoneProductId="4ef89720-b667-11e6-adf8-8533c108d7bf" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <mp:PhoneIdentity PhoneProductId="503770e0-e176-11e6-954d-ddcfa87a5e2a" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
         <DisplayName>EnactusApp</DisplayName>
         <PublisherDisplayName>Visual Studio JS Mobile Tooling</PublisherDisplayName>

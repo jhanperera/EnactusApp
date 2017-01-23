@@ -1,4 +1,4 @@
-angular.module('demo.preferences.ctrl', [])
+﻿angular.module('demo.preferences.ctrl', [])
 
   .controller('PreferencesCtrl', function ($scope, $log, $cordovaPreferences) {
 

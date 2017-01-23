@@ -28,8 +28,13 @@ EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CordovaApp.Windows", "CordovaApp.Windows.jsproj", "{58950FB6-2F93-4963-B9CD-637F83F3EFBF}"
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CordovaApp.Phone", "CordovaApp.Phone.jsproj", "{31B67A35-9503-4213-857E-F44EB42AE549}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D4F9F695-ECD5-49FC-B58A-B1E0E754E159}={D4F9F695-ECD5-49FC-B58A-B1E0E754E159}
+	EndProjectSection
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CordovaApp.Windows10", "CordovaApp.Windows10.jsproj", "{F9B0AE20-C91C-42B9-9C6E-D3BC28B4509E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vibration", "..\..\plugins\cordova-plugin-vibration\src\windows\Vibration\Vibration.csproj", "{D4F9F695-ECD5-49FC-B58A-B1E0E754E159}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

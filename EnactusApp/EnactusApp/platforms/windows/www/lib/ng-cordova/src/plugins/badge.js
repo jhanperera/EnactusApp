@@ -1,4 +1,4 @@
-// install  :     cordova plugin add https://github.com/katzer/cordova-plugin-badge.git
+﻿// install  :     cordova plugin add https://github.com/katzer/cordova-plugin-badge.git
 // link     :     https://github.com/katzer/cordova-plugin-badge
 
 angular.module('ngCordova.plugins.badge', [])

@@ -1,4 +1,4 @@
-// install   :     cordova plugin add https://github.com/christocracy/cordova-plugin-background-geolocation.git
+﻿// install   :     cordova plugin add https://github.com/christocracy/cordova-plugin-background-geolocation.git
 // link      :     https://github.com/christocracy/cordova-plugin-background-geolocation
 
 angular.module('ngCordova.plugins.backgroundGeolocation', [])

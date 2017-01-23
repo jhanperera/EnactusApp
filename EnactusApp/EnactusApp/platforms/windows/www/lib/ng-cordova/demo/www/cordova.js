@@ -1,4 +1,4 @@
-// Platform: ios
+﻿// Platform: ios
 // 3.6.3
 /*
  Licensed to the Apache Software Foundation (ASF) under one

@@ -1,4 +1,4 @@
-// install   :    cordova plugin add cordova-plugin-media-capture
+﻿// install   :    cordova plugin add cordova-plugin-media-capture
 // link      :    https://github.com/apache/cordova-plugin-media-capture
 
 angular.module('ngCordova.plugins.capture', [])

@@ -1,4 +1,4 @@
-angular.module('demo.fileTransfer.ctrl', [])
+﻿angular.module('demo.fileTransfer.ctrl', [])
 
   .controller('FileTransferCtrl', function ($scope, $rootScope, $cordovaFileTransfer, $timeout) {
 

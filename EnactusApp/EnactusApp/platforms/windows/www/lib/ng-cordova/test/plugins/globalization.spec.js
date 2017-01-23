@@ -1,4 +1,4 @@
-describe('Service: $cordovaGlobalization', function() {
+﻿describe('Service: $cordovaGlobalization', function() {
 
   var $cordovaGlobalization, $rootScope;
 

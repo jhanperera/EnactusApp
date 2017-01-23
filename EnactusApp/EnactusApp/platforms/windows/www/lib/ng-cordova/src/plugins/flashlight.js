@@ -1,4 +1,4 @@
-// install   :     cordova plugin add https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git
+﻿// install   :     cordova plugin add https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git
 // link      :     https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin
 
 angular.module('ngCordova.plugins.flashlight', [])

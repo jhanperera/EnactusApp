@@ -1,4 +1,4 @@
-
+﻿
 // install   :      cordova plugin add phonegap-plugin-push
 // link      :      https://github.com/phonegap/phonegap-plugin-push
 

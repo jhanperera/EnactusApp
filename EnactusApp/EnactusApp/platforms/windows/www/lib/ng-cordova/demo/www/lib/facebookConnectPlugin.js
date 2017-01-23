@@ -1,4 +1,4 @@
-/* global FB */
+﻿/* global FB */
 "use strict";
 
 /*

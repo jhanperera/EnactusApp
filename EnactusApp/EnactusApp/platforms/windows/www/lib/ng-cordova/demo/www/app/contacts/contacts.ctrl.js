@@ -1,4 +1,4 @@
-angular.module('demo.contacts.ctrl', [])
+﻿angular.module('demo.contacts.ctrl', [])
 
   .controller('ContactsCtrl', function ($scope, $log, $cordovaContacts) {
 

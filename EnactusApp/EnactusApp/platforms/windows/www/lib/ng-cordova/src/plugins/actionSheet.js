@@ -1,4 +1,4 @@
-// install  :     cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git
+﻿// install  :     cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-actionsheet.git
 // link     :     https://github.com/EddyVerbruggen/cordova-plugin-actionsheet
 
 angular.module('ngCordova.plugins.actionSheet', [])

@@ -1,4 +1,4 @@
-// install   :  cordova plugin add https://github.com/petermetz/cordova-plugin-ibeacon.git
+﻿// install   :  cordova plugin add https://github.com/petermetz/cordova-plugin-ibeacon.git
 // link      :  https://github.com/petermetz/cordova-plugin-ibeacon
 
 angular.module('ngCordova.plugins.beacon', [])

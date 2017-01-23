@@ -1,4 +1,4 @@
-describe('Service: $cordovaKeyboard', function() {
+﻿describe('Service: $cordovaKeyboard', function() {
 
   var $cordovaKeyboard;
 

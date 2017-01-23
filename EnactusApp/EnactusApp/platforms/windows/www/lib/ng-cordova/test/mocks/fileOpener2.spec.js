@@ -1,4 +1,4 @@
-describe('Service: $cordovaFileOpener2', function(){
+﻿describe('Service: $cordovaFileOpener2', function(){
 
   var $cordovaFileOpener2, $rootScope, $window;
 

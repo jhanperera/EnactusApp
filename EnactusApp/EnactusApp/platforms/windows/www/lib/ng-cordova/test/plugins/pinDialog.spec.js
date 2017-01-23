@@ -1,4 +1,4 @@
-describe('Service: $cordovaPinDialog', function() {
+﻿describe('Service: $cordovaPinDialog', function() {
 
   var $cordovaPinDialog, $rootScope;
 

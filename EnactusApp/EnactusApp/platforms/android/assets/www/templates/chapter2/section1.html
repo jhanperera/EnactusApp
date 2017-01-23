@@ -7,6 +7,7 @@
         <div id="chapter_elem">
             <center><h3 class="padding">Basics about saving money </h3></center>
          </div>
+        <div>
           <!-- First Section -->
             <div class="card" style="display:block;" ng-hide="part1Cred">
                 <div class="item item-text-wrap">
@@ -17,7 +18,7 @@
                   about saving money, preparing for unexpected costs and prioritizing where you should be
                   spending your money (Hint: You shouldn’t be spending it on an overpriced Jacket)</p>
                 </div>
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred">
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred; scrollToTop()">
                   Next
                 </button>
             </div>
@@ -25,7 +26,7 @@
             <!--Second Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
               <div class="item item-text-wrap">
-                  <h5>Step 1: Know your Income</h5></br>
+                  <h5>Step 1: Know your Income</h5><br />
                   <p>
                       The first step to creating an effective budget is knowing how much money
                       is going to be coming into your bank account. Most employers give out work schedules in advance so you have an
@@ -33,19 +34,19 @@
                   </p>
               </div>
                 <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred; scrollToTop()">
                         Previous
                     </button>
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred; scrollToTop()">
                         Next
                     </button>
                 </div>
                </div>
 
             <!--Third Section-->
-            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred" >
               <div class="item item-text-wrap">
-                  <h5>Step 2: Figure out your fixed and reoccurring Expenses</h5></br>
+                  <h5>Step 2: Figure out your fixed and reoccurring Expenses</h5><br />
 
                 <p>One thing you should keep in mind, going out to grab some pizza for lunch is not a fixed expense. 
                   A fixed/reoccurring expense is something that is needed for you to function for example your phone bill, 
@@ -55,10 +56,10 @@
                   know for sure you will be incurring.</p>
               </div>
                 <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred; scrollToTop()">
                         Previous
                     </button>
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred; scrollToTop()">
                         Next
                     </button>
                 </div>
@@ -67,7 +68,7 @@
             <!--Fourth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
               <div class="item item-text-wrap">
-                  <h5>Step 3: Allocating for Unexpected expenses/Emergencies</h5></br>
+                  <h5>Step 3: Allocating for Unexpected expenses/Emergencies</h5><br />
 
                   <p>
                       Since you are still young, you may not have to worry about too many unexpected expenses.
@@ -78,10 +79,10 @@
                   </p>
               </div>
                 <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred; scrollToTop()">
                         Previous
                     </button>
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred; scrollToTop()">
                         Next
                     </button>
                 </div>
@@ -90,7 +91,7 @@
             <!--Fifth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
               <div class="item item-text-wrap">
-                  <h5>Step 4: Saving</h5></br>
+                  <h5>Step 4: Saving</h5><br />
 
                   <p>
                       Saving for the future is essential and you should start now. Once you start, 
@@ -100,10 +101,10 @@
                   </p>
               </div>
                 <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred; scrollToTop()">
                         Previous
                     </button>
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred; scrollToTop()">
                         Next
                     </button>
                 </div>
@@ -112,7 +113,7 @@
             <!--Sixth Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
               <div class="item item-text-wrap">
-                  <h5>Step 5: Entertainment (Are you not entertained?)</h5></br>
+                  <h5>Step 5: Entertainment (Are you not entertained?)</h5><br />
 
                   <p>
                       Having fun isn’t hard, when you’ve got a library card! Jokes aside, 
@@ -125,10 +126,10 @@
                   </p>
               </div>
                 <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred; scrollToTop()">
                         Previous
                     </button>
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred; scrollToTop()">
                         Next
                     </button>
                 </div>
@@ -137,7 +138,7 @@
             <!--Seven Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
               <div class="item item-text-wrap">
-                  <h5>Step 6: What to do for the rest?</h5></br>
+                  <h5>Step 6: What to do for the rest?</h5><br />
 
                   <p>
                       Now you have some leftover money after all these steps. 
@@ -147,10 +148,10 @@
                   </p>
               </div>
                 <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred; scrollToTop()">
                         Previous
                     </button>
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred; scrollToTop()">
                         Next
                     </button>
                 </div>
@@ -159,7 +160,7 @@
             <!--Eight Section-->
             <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
               <div class="item item-text-wrap">
-                  <h5>Step by step walkthrough:</h5></br>
+                  <h5>Step by step walkthrough:</h5><br />
 
                   <ion-list>
                       <ion-item>1.	Total Income per month: $500</ion-item>
@@ -174,15 +175,119 @@
                   </ion-list>
                
                 <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred; scrollToTop()">
                         Previous
                     </button>
                     <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part1Cred = !part1Cred">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part9Cred = !part9Cred; scrollToTop()">
+                        Next
+                    </button>
+                </div>
+                  </div>
+                </div>
+                   <!--Introduction to questions section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred" ng->
+                <div class="item item-text-wrap">
+                    <p>
+                        Now that you have finished the section on credit here are some questions.
+                        You will have 3 trys for the question.
+                        Don't worry if you mess up. You will be brought back to the begining of the section.
+                        So you can brush up on what you missed and then you can try again!
+                    </p>
+                </div>
+
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred; scrollToTop()">
+                        Previous
+                    </button>
+                    <!--first question-->
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; scrollToTop(); updatelives();setNumQuestions(6)">
                         Next
                     </button>
                 </div>
             </div>
+                
+            <!--Questions Section-->
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
+                <div class="item item-text-wrap">
+                    <p>
+                        1.  Most individuals have daily, weekly, and monthly expenses. What should you do once you figure out how much these expenses are
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q1A1" ng-click="wrong($event)">a. Add to your income </ion-item>
+                        <ion-item id="Q1A2" ng-click="right($event, 'two', 1)">b.	Subtract from your income </ion-item>
+                        <ion-item id="Q1A3" ng-click="wrong($event)">c.	Add to your allowance </ion-item>
+                        <ion-item id="Q1A4" ng-click="wrong($event)">d. Subtract from your allowance </ion-item>
+                        <ion-item id="Q1A5" ng-click="wrong($event)">e.	you don’t need to calculate your expenses </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        2. Allocating for unexpected expenses and emergencies is a key financial aspect that is often forgotten. Approximately what percentage of your budget should be allocated should allocated to this category? 
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q2A1" ng-click="wrong($event)">a. 5-10% before figuring out fixed/reoccurring expenses</ion-item>
+                        <ion-item id="Q2A2" ng-click="right($event, 'two', 1)">b.	5-10% after figuring out fixed/reoccurring expenses </ion-item>
+                        <ion-item id="Q2A3" ng-click="wrong($event)">c.	10-15% before figuring out fixed/reoccurring expenses </ion-item>
+                        <ion-item id="Q2A4" ng-click="wrong($event)">d. 10-15% after figuring out fixed/reoccurring expenses</ion-item>
+                        <ion-item id="Q2A5" ng-click="wrong($event)">e.	don’t allocate and live life on the edge </ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        3. David is trying to figure out how much he should allocate for emergencies. After deducting fixed expenses, he has $100 to work with. How much should he allocate for emergencies  
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q3A1" ng-click="wrong($event)">a. $24</ion-item>
+                        <ion-item id="Q3A2" ng-click="wrong($event)">b. $16 - $20</ion-item>
+                        <ion-item id="Q3A3" ng-click="right($event, 'two', 1)">c. $5 - $10</ion-item>
+                        <ion-item id="Q3A4" ng-click="wrong($event)">d. $30</ion-item>
+                        <ion-item id="Q3A5" ng-click="wrong($event)">e.	$28</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        4. Saving for the future is crucial for financial stability. What percent of your budget should be allocated to your savings account after steps 1-3?   
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q4A1" ng-click="right($event, 'two', 1)">a. 30% </ion-item>
+                        <ion-item id="Q4A2" ng-click="wrong($event)">b. 25%</ion-item>
+                        <ion-item id="Q4A3" ng-click="wrong($event)">c.  35% </ion-item>
+                        <ion-item id="Q4A4" ng-click="wrong($event)">d. 40% </ion-item>
+                        <ion-item id="Q4A5" ng-click="wrong($event)">e.	$100</ion-item>
+                    </ion-list>
+                </div>
+
+                <div class="item item-text-wrap">
+                    <p>
+                        5. David just got his first job and decides to use the budgeting tips outlined in this app. After steps 1-3 he has $350 left from his initial monthly income. How much should he allocate to go into his savings account?    
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q5A1" ng-click="wrong($event)">a. $100</ion-item>
+                        <ion-item id="Q5A2" ng-click="wrong($event)">b. $150</ion-item>
+                        <ion-item id="Q5A3" ng-click="right($event, 'two', 1)">c. $105</ion-item>
+                        <ion-item id="Q5A4" ng-click="wrong($event)">d. $115</ion-item>
+                        <ion-item id="Q5A5" ng-click="wrong($event)">e.	$140</ion-item>
+                    </ion-list>
+                </div>
+                
+                  <div class="item item-text-wrap">
+                    <p>
+                        6. Having fun is a critical component of human happiness, but it doesn’t have to break the bank. How much of your income left over from steps 1-5 should be allocated towards entertainment?     
+                    </p>
+                    <ion-list>
+                        <ion-item id="Q6A1" ng-click="wrong($event)">a. 15%</ion-item>
+                        <ion-item id="Q6A2" ng-click="right($event, 'two', 1)">b. 35%</ion-item>
+                        <ion-item id="Q6A3" ng-click="wrong($event)">c. 40%</ion-item>
+                        <ion-item id="Q6A4" ng-click="wrong($event)">d. 45%</ion-item>
+                        <ion-item id="Q6A5" ng-click="wrong($event)">e.	10% </ion-item>
+                    </ion-list>
+                </div>
+             </div>
+         
         </div>
     </ion-content>
     <ion-footer-bar align-title="center" class="bar-balanced">

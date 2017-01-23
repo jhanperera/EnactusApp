@@ -1,4 +1,4 @@
-angular.module('demo.sqlite.ctrl', [])
+﻿angular.module('demo.sqlite.ctrl', [])
 
   .controller('SqliteCtrl', function ($scope, $log, $cordovaPreferences) {
 

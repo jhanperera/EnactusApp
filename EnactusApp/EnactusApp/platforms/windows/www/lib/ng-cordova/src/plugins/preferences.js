@@ -1,4 +1,4 @@
-// install   :      cordova plugin add cordova-plugin-app-preferences
+﻿// install   :      cordova plugin add cordova-plugin-app-preferences
 // link      :      https://github.com/apla/me.apla.cordova.app-preferences
 
 angular.module('ngCordova.plugins.preferences', [])

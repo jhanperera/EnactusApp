@@ -1,4 +1,4 @@
-// install   :     cordova plugin add https://github.com/phonegap-build/GAPlugin.git
+﻿// install   :     cordova plugin add https://github.com/phonegap-build/GAPlugin.git
 // link      :     https://github.com/phonegap-build/GAPlugin
 
 angular.module('ngCordova.plugins.ga', [])

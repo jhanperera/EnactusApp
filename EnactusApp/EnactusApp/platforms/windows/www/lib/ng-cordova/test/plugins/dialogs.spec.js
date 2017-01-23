@@ -1,4 +1,4 @@
-describe('Service: $cordovaDialogs', function () {
+﻿describe('Service: $cordovaDialogs', function () {
 
   var $cordovaDialogs, $rootScope, $window;
 

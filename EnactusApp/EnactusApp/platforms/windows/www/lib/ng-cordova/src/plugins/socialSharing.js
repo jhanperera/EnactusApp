@@ -1,4 +1,4 @@
-// install   :      cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
+﻿// install   :      cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
 // link      :      https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin
 
 // NOTE: shareViaEmail -> if user cancels sharing email, success is still called

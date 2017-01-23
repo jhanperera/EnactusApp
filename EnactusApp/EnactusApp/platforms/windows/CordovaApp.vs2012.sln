@@ -21,6 +21,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 #
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "CordovaApp.Windows8.0", "CordovaApp.Windows80.jsproj", "{EFFFAB2F-BFC5-4EDA-B545-45EF4995F55A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vibration", "..\..\plugins\cordova-plugin-vibration\src\windows\Vibration\Vibration.csproj", "{D4F9F695-ECD5-49FC-B58A-B1E0E754E159}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AnyCPU = Debug|AnyCPU

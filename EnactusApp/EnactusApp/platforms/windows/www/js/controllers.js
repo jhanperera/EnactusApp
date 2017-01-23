@@ -3,8 +3,7 @@ angular.module('controllers', ['services'])
 
 .controller('MainCtrl', function ($scope, $state, data) {
     $scope.$on('$ionicView.enter', function () {
-        data.create();
-        
+        data.create();     
     })
     $scope.chapter = data.chapterProgress();
     console.log('MainCtrl');
@@ -19,9 +18,6 @@ angular.module('controllers', ['services'])
     } else {
         document.getElementById("chap2").value = window.localStorage.getItem("prog2");
     }
-    
-
-
 })
 .controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate) {
 	var live = 3;
@@ -39,20 +35,27 @@ angular.module('controllers', ['services'])
 	$scope.part10Cred = false;
 	$scope.partQCred = false;
 	
+    //Set the number of questions for the calling section
 	$scope.setNumQuestions = function(num){
 		numQuestions = num;
 	}
-	
+    //Scroll to the top of the page
+	$scope.scrollToTop = function(){
+	    $ionicScrollDelegate.scrollTop();
+	}
+    //update the number of lives to 3.
 	$scope.updatelives = function (){
 		//grabs the element that is called liv then updates it
 		var livesOnPage = document.getElementById('liv');
 		livesOnPage.innerHTML = live;
 	}
+    //Wrong answer. (Color the answer gray, Vibrate and then update lives)
 	$scope.wrong = function (event){
 		var selec = document.getElementById(event.target.id);
 		if(clickedOn.includes(selec)){}
 		else{
-			selec.style.color = "grey";
+		    selec.style.color = "grey";
+            if(platform.isAndroid())
 			clickedOn.push(selec);
 			live = live - 1;
 			if(live == 0){
@@ -63,6 +66,7 @@ angular.module('controllers', ['services'])
 			}
 		}
 	}
+    //Correct answer. (COlor the answer to green,, and update the number of questions left)
 	$scope.right = function (event,chapter, section){
 		var selec = document.getElementById(event.target.id);
 		if(clickedOn.includes(selec)){}
@@ -76,20 +80,21 @@ angular.module('controllers', ['services'])
 			}
 		}
 	}
+    //Game over. (Too many incorrect answers so we restart.)
 	$scope.gameover = function(){
 		alert("game over please try again");
 		live = 3;
 		$ionicScrollDelegate.scrollTop();
 		$scope.partQCred = false;
+		window.location.reload();
 		$scope.part1Cred = !$scope.part1Cred;
 		for(i = 0; i< clickedOn.length;i++){
 			clickedOn[i].style.color = "rgb(68,68,68)";
-		}
-		
+		}		
 	}
-
+    //Save the progress to the corresponding chapter. 
 	$scope.save = function (chapter) {
-	    if (chapter == 1) {
+	    if (chapter == "one") {
 	        var temp;
 	        if (window.localStorage.getItem("prog1") == undefined) {
 	            temp = 0;
@@ -98,7 +103,7 @@ angular.module('controllers', ['services'])
 	        }
 	        temp++;
 	        window.localStorage.setItem("prog1", temp);
-	    } else if (chapter == 2) {
+	    } else if (chapter == "two") {
 	        if (window.localStorage.getItem("prog2") == undefined) {
 	            temp = 0;
 	        } else {
@@ -108,38 +113,34 @@ angular.module('controllers', ['services'])
 	        window.localStorage.setItem("prog2", temp);
 	    }
 	}
+    //Load the progress? (Not sure what this does but log the getItem value)
 	$scope.load = function () {
 	    console.log(window.localStorage.getItem("prog1"));
 	}
+    /*
+        Winner winner chicken dinner. Sent the user back to the main screen and show 
+        the progress. 
 
-
+        SideNote: It prompts a reload() which looks ugly and slow but its the only way I was able to 
+        force refresh on the items prog1 and prog2.
+    */
 	$scope.win = function (chapter, section) {
-	    
-	   /* var data = data.chapterProgress();
-	    var sectionsComplete = data[chapter].sectionsCompleted;
-	    var totalsection = data[chapter].totalSections;
-	    if (section === totalSection) {
-	        window.location.href = "#/chapter1sections";
-	        return;
+	    $scope.save(chapter);
+	    window.location.href = "#/main";
+
+	    console.log('MainCtrl');
+	    if (window.localStorage.getItem("prog1") == undefined) {
+	        document.getElementById("chap1").value = 0;
+	    } else {
+	        document.getElementById("chap1").value = window.localStorage.getItem("prog1");
 	    }
-	    if (section > sectionsComplete) {
-	        data[chapter].sectionsCompleted += 1;
-	        var url = "";
-	        if (ionic.Platform.isAndroid()) {
-	            url = "/android_asset/www/";
-	        }
-	        $cordovaFile.writeFile(url + "js/", "chapters.json", data, true)
-      .then(function (success) {
-          // success*/
-	    $scope.save(section);
-        window.location.href = "#/chapter1sections";
-    /*  }, function (error) {
-          // error
 
-      });
-	    }*/
+	    if (window.localStorage.getItem("prog2") == undefined) {
+	        document.getElementById("chap2").value = 0;
+	    } else {
+	        document.getElementById("chap2").value = window.localStorage.getItem("prog2");
+	    }
+	    //window.location.reload();
 	}
-
-	
 });
 

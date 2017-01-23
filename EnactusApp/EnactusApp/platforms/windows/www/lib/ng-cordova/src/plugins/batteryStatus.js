@@ -1,4 +1,4 @@
-//  install   :   cordova plugin add cordova-plugin-battery-status
+﻿//  install   :   cordova plugin add cordova-plugin-battery-status
 //  link      :   https://github.com/apache/cordova-plugin-battery-status
 
 angular.module('ngCordova.plugins.batteryStatus', [])

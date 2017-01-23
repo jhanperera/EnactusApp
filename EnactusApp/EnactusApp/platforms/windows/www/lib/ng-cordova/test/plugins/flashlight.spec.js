@@ -1,4 +1,4 @@
-describe('Service: $cordovaFlashlight', function() {
+﻿describe('Service: $cordovaFlashlight', function() {
 
   var $cordovaFlashlight, $rootScope;
 

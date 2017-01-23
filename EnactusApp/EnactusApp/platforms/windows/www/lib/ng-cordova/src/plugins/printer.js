@@ -1,4 +1,4 @@
-// install   : cordova plugin add https://github.com/katzer/cordova-plugin-printer.git
+﻿// install   : cordova plugin add https://github.com/katzer/cordova-plugin-printer.git
 // link      : https://github.com/katzer/cordova-plugin-printer
 
 angular.module('ngCordova.plugins.printer', [])

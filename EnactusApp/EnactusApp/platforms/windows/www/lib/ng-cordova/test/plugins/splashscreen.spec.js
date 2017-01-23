@@ -1,4 +1,4 @@
-describe('Service: $cordovaSplashscreen', function() {
+﻿describe('Service: $cordovaSplashscreen', function() {
 
   var $cordovaSplashscreen;
 

@@ -1,4 +1,4 @@
-// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-mobfox-pro.git
+﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-mobfox-pro.git
 // link     :     https://github.com/floatinghotpot/cordova-mobfox-pro
 
 angular.module('ngCordova.plugins.mobfoxAds', [])

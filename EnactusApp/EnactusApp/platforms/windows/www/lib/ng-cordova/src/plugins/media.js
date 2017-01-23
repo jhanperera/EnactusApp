@@ -1,4 +1,4 @@
-// install   :      cordova plugin add cordova-plugin-media
+﻿// install   :      cordova plugin add cordova-plugin-media
 // link      :      https://github.com/apache/cordova-plugin-media
 
 /* globals Media: true */

@@ -1,4 +1,4 @@
-// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-iad.git
+﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-iad.git
 // link     :     https://github.com/floatinghotpot/cordova-plugin-iad
 
 angular.module('ngCordova.plugins.iAd', [])
