@@ -1,4 +1,4 @@
-﻿// install   :     cordova plugin add https://github.com/don/BluetoothSerial.git
+// install   :     cordova plugin add https://github.com/don/BluetoothSerial.git
 // link      :     https://github.com/don/BluetoothSerial
 
 angular.module('ngCordova.plugins.bluetoothSerial', [])

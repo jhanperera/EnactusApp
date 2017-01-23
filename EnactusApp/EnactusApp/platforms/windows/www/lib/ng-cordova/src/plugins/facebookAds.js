@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-facebookads.git
+// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-facebookads.git
 // link     :     https://github.com/floatinghotpot/cordova-plugin-facebookads
 
 angular.module('ngCordova.plugins.facebookAds', [])

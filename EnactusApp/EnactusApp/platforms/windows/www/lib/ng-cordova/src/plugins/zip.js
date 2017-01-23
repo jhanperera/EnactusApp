@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/MobileChromeApps/zip.git
+// install  :     cordova plugin add https://github.com/MobileChromeApps/zip.git
 // link     :     https://github.com/MobileChromeApps/zip
 
 angular.module('ngCordova.plugins.zip', [])

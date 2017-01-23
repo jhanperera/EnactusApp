@@ -1,4 +1,4 @@
-﻿angular.module('demo.facebook.ctrl', [])
+angular.module('demo.facebook.ctrl', [])
 
   .controller('FacebookCtrl', function ($scope, $log, $cordovaFacebook) {
 

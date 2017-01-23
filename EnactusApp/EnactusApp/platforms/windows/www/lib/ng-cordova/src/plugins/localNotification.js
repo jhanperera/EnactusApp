@@ -1,4 +1,4 @@
-﻿// install   :  cordova plugin add https://github.com/katzer/cordova-plugin-local-notifications.git
+// install   :  cordova plugin add https://github.com/katzer/cordova-plugin-local-notifications.git
 // link      :  https://github.com/katzer/cordova-plugin-local-notifications
 
 angular.module('ngCordova.plugins.localNotification', [])

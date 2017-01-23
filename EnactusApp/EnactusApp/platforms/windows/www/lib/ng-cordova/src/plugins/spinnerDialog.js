@@ -1,4 +1,4 @@
-﻿// install   :       cordova plugin add https://github.com/Paldom/SpinnerDialog.git
+// install   :       cordova plugin add https://github.com/Paldom/SpinnerDialog.git
 // link      :       https://github.com/Paldom/SpinnerDialog
 
 angular.module('ngCordova.plugins.spinnerDialog', [])

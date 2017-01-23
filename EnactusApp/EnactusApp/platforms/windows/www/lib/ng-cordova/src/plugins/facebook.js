@@ -1,4 +1,4 @@
-﻿// install   :   cordova -d plugin add https://github.com/Wizcorp/phonegap-facebook-plugin.git --variable APP_ID="123456789" --variable APP_NAME="myApplication"
+// install   :   cordova -d plugin add https://github.com/Wizcorp/phonegap-facebook-plugin.git --variable APP_ID="123456789" --variable APP_NAME="myApplication"
 // link      :   https://github.com/Wizcorp/phonegap-facebook-plugin
 
 /* globals facebookConnectPlugin: true */

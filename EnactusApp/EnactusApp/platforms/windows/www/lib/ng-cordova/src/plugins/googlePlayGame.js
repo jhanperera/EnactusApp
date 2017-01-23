@@ -1,4 +1,4 @@
-﻿// install   :   cordova plugin add https://github.com/ptgamr/cordova-google-play-game.git --variable APP_ID=123456789
+// install   :   cordova plugin add https://github.com/ptgamr/cordova-google-play-game.git --variable APP_ID=123456789
 // link      :   https://github.com/ptgamr/cordova-google-play-game
 
 /* globals googleplaygame: true */

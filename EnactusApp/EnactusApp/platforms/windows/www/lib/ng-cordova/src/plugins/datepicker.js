@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/VitaliiBlagodir/cordova-plugin-datepicker.git
+// install   :      cordova plugin add https://github.com/VitaliiBlagodir/cordova-plugin-datepicker.git
 // link      :      https://github.com/VitaliiBlagodir/cordova-plugin-datepicker
 
 angular.module('ngCordova.plugins.datePicker', [])

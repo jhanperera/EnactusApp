@@ -1,4 +1,4 @@
-﻿angular.module('demo.localNotification.ctrl', [])
+angular.module('demo.localNotification.ctrl', [])
 
   .controller('LocalNotificationCtrl', function ($scope, $rootScope, $cordovaLocalNotification) {
 

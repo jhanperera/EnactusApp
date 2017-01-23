@@ -1,4 +1,4 @@
-﻿describe('Service: $cordovaAppAvailability', function() {
+describe('Service: $cordovaAppAvailability', function() {
 
   var $cordovaAppAvailability, $rootScope;
 

@@ -1,4 +1,4 @@
-﻿describe('Service: $cordovaZip', function () {
+describe('Service: $cordovaZip', function () {
 
   var $cordovaZip, $rootScope, $window, $timeout;
 

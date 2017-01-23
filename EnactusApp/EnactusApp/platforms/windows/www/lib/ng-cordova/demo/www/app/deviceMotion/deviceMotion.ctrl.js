@@ -1,4 +1,4 @@
-﻿angular.module('demo.deviceMotion.ctrl', [])
+angular.module('demo.deviceMotion.ctrl', [])
 
   .controller('DeviceMotionCtrl', function ($scope, $cordovaDeviceMotion) {
     var watchID;

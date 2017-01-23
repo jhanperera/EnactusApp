@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/ohh2ahh/AppAvailability.git
+// install  :     cordova plugin add https://github.com/ohh2ahh/AppAvailability.git
 // link     :     https://github.com/ohh2ahh/AppAvailability
 
 /* globals appAvailability: true */

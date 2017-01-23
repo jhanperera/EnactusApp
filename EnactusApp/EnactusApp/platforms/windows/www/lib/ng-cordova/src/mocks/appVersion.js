@@ -1,4 +1,4 @@
-﻿ngCordovaMocks.factory('$cordovaAppVersion', ['$q', function ($q) {
+ngCordovaMocks.factory('$cordovaAppVersion', ['$q', function ($q) {
   var throwsError = false;
   return {
     throwsError: throwsError,

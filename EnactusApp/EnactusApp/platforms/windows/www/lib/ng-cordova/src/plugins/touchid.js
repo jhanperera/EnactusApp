@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/leecrossley/cordova-plugin-touchid.git
+// install   :      cordova plugin add https://github.com/leecrossley/cordova-plugin-touchid.git
 // link      :      https://github.com/leecrossley/cordova-plugin-touchid
 
 /* globals touchid: true */

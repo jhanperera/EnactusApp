@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/driftyco/ionic-plugins-keyboard.git
+// install   :      cordova plugin add https://github.com/driftyco/ionic-plugins-keyboard.git
 // link      :      https://github.com/driftyco/ionic-plugins-keyboard
 
 angular.module('ngCordova.plugins.keyboard', [])

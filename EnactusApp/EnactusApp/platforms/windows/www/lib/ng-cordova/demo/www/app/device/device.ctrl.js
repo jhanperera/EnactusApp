@@ -1,4 +1,4 @@
-﻿angular.module('demo.device.ctrl', [])
+angular.module('demo.device.ctrl', [])
 
   .controller('DeviceCtrl', function ($scope, $state, $cordovaDevice) {
 

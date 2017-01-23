@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add cordova-plugin-tts
+// install   :      cordova plugin add cordova-plugin-tts
 // link      :      https://github.com/smcpjames/cordova-plugin-tts
 
 /* globals TTS: true */

@@ -1,4 +1,4 @@
-﻿module.controller('MyCtrl', function($cordovaInsomnia) {
+module.controller('MyCtrl', function($cordovaInsomnia) {
 
   //Keep Screen on | prevent  screen sleep
   $cordovaInsomnia.keepAwake();

@@ -1,4 +1,4 @@
-﻿angular.module('demo.file.ctrl', [])
+angular.module('demo.file.ctrl', [])
 
   .controller('FileCtrl', function ($scope, $log, $cordovaFile, $window, $q, $cordovaFileError) {
 

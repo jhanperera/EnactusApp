@@ -1,4 +1,4 @@
-﻿var gulp = require('gulp'),
+var gulp = require('gulp'),
   buildConfig = require('./config/build.config'),
   concat = require('gulp-concat'),
   argv = require('minimist')(process.argv.slice(2)),

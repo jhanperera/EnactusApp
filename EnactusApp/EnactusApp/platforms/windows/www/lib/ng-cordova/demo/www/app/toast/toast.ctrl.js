@@ -1,4 +1,4 @@
-﻿angular.module('demo.toast.ctrl', [])
+angular.module('demo.toast.ctrl', [])
 
 
   .controller('ToastCtrl', function ($scope, $cordovaToast) {

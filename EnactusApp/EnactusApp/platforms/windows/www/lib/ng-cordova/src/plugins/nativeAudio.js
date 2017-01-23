@@ -1,4 +1,4 @@
-﻿// install   : cordova plugin add https://github.com/sidneys/cordova-plugin-nativeaudio.git
+// install   : cordova plugin add https://github.com/sidneys/cordova-plugin-nativeaudio.git
 // link      : https://github.com/sidneys/cordova-plugin-nativeaudio
 
 angular.module('ngCordova.plugins.nativeAudio', [])

@@ -19,9 +19,6 @@ angular.module('controllers', ['services'])
     } else {
         document.getElementById("chap2").value = window.localStorage.getItem("prog2");
     }
-    
-
-
 })
 .controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate) {
 	var live = 3;
@@ -42,6 +39,11 @@ angular.module('controllers', ['services'])
 	$scope.setNumQuestions = function(num){
 		numQuestions = num;
 	}
+
+	$scope.scrollToTop = function(){
+	    $ionicScrollDelegate.scrollTop();
+	}
+
 	
 	$scope.updatelives = function (){
 		//grabs the element that is called liv then updates it
@@ -81,6 +83,7 @@ angular.module('controllers', ['services'])
 		live = 3;
 		$ionicScrollDelegate.scrollTop();
 		$scope.partQCred = false;
+		window.location.reload();
 		$scope.part1Cred = !$scope.part1Cred;
 		for(i = 0; i< clickedOn.length;i++){
 			clickedOn[i].style.color = "rgb(68,68,68)";
@@ -89,7 +92,7 @@ angular.module('controllers', ['services'])
 	}
 
 	$scope.save = function (chapter) {
-	    if (chapter == 1) {
+	    if (chapter == "one") {
 	        var temp;
 	        if (window.localStorage.getItem("prog1") == undefined) {
 	            temp = 0;
@@ -98,7 +101,7 @@ angular.module('controllers', ['services'])
 	        }
 	        temp++;
 	        window.localStorage.setItem("prog1", temp);
-	    } else if (chapter == 2) {
+	    } else if (chapter == "two") {
 	        if (window.localStorage.getItem("prog2") == undefined) {
 	            temp = 0;
 	        } else {
@@ -114,32 +117,9 @@ angular.module('controllers', ['services'])
 
 
 	$scope.win = function (chapter, section) {
-	    
-	   /* var data = data.chapterProgress();
-	    var sectionsComplete = data[chapter].sectionsCompleted;
-	    var totalsection = data[chapter].totalSections;
-	    if (section === totalSection) {
-	        window.location.href = "#/chapter1sections";
-	        return;
-	    }
-	    if (section > sectionsComplete) {
-	        data[chapter].sectionsCompleted += 1;
-	        var url = "";
-	        if (ionic.Platform.isAndroid()) {
-	            url = "/android_asset/www/";
-	        }
-	        $cordovaFile.writeFile(url + "js/", "chapters.json", data, true)
-      .then(function (success) {
-          // success*/
-	    $scope.save(section);
-        window.location.href = "#/chapter1sections";
-    /*  }, function (error) {
-          // error
-
-      });
-	    }*/
+	    $scope.save(chapter);
+	    window.location.href = "#/main";
+	    window.location.reload();
 	}
-
-	
 });
 

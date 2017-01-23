@@ -1,4 +1,4 @@
-﻿angular.module('demo.inAppBrowser.ctrl', [])
+angular.module('demo.inAppBrowser.ctrl', [])
 
   .controller('InAppBrowserCtrl', function ($scope, $rootScope, $cordovaInAppBrowser) {
     $scope.openBrowser = function () {

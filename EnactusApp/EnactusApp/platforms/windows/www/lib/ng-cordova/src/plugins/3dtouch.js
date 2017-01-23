@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-3dtouch.git
+// install   :      cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-3dtouch.git
 // link      :      https://github.com/EddyVerbruggen/cordova-plugin-3dtouch
 
 angular.module('ngCordova.plugins.3dtouch', [])

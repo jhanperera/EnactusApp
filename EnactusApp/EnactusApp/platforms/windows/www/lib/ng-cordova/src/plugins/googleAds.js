@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-admob-pro.git
+// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-admob-pro.git
 // link     :     https://github.com/floatinghotpot/cordova-admob-pro
 
 angular.module('ngCordova.plugins.googleAds', [])

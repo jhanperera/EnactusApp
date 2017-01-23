@@ -1,4 +1,4 @@
-﻿// install   :     cordova plugin add https://github.com/gitawego/cordova-screenshot.git
+// install   :     cordova plugin add https://github.com/gitawego/cordova-screenshot.git
 // link      :     https://github.com/gitawego/cordova-screenshot
 
 angular.module('ngCordova.plugins.screenshot', [])

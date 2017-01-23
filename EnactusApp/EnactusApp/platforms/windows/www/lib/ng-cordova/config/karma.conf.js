@@ -1,4 +1,4 @@
-﻿var buildConfig = require('./build.config.js');
+var buildConfig = require('./build.config.js');
 
 module.exports = {
   files: [

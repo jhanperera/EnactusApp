@@ -1,4 +1,4 @@
-﻿angular.module('demo.network.ctrl', [])
+angular.module('demo.network.ctrl', [])
 
   .controller('NetworkCtrl', function ($scope, $cordovaNetwork) {
     $scope.networkType = null;

@@ -1,4 +1,4 @@
-﻿describe('Service: $cordovaGoogleAnalytics', function() {
+describe('Service: $cordovaGoogleAnalytics', function() {
 
   var $cordovaGoogleAnalytics, $rootScope, $window;
 

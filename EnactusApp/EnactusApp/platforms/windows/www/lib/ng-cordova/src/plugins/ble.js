@@ -1,4 +1,4 @@
-﻿//  install   :   cordova plugin add https://github.com/don/cordova-plugin-ble-central.git
+//  install   :   cordova plugin add https://github.com/don/cordova-plugin-ble-central.git
 //  link      :   https://github.com/don/cordova-plugin-ble-central
 
 /* globals ble: true */

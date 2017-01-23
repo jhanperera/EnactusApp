@@ -1,4 +1,4 @@
-﻿ngCordovaMocks.factory('$cordovaBrightness', ['$q', function ($q) {
+ngCordovaMocks.factory('$cordovaBrightness', ['$q', function ($q) {
 	var currentBrightness = 100;
 
 	return {

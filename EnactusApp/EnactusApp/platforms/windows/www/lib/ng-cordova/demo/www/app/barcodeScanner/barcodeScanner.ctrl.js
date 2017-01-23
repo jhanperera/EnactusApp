@@ -1,4 +1,4 @@
-﻿angular.module('demo.barcodeScanner.ctrl', [])
+angular.module('demo.barcodeScanner.ctrl', [])
 
   .controller('BarcodeScannerCtrl', function ($scope, $cordovaBarcodeScanner) {
 

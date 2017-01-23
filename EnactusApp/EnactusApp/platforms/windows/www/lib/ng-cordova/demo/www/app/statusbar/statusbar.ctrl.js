@@ -1,4 +1,4 @@
-﻿angular.module('demo.statusbar.ctrl', [])
+angular.module('demo.statusbar.ctrl', [])
 
 
   .controller('StatusbarCtrl', function ($scope, $cordovaStatusbar) {

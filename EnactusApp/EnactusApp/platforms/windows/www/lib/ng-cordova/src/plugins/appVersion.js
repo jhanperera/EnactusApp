@@ -1,4 +1,4 @@
-﻿// install   :     cordova plugin add https://github.com/whiteoctober/cordova-plugin-app-version.git
+// install   :     cordova plugin add https://github.com/whiteoctober/cordova-plugin-app-version.git
 // link      :     https://github.com/whiteoctober/cordova-plugin-app-version
 
 angular.module('ngCordova.plugins.appVersion', [])

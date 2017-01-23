@@ -1,4 +1,4 @@
-﻿angular.module('demo.healthkit.ctrl', [])
+angular.module('demo.healthkit.ctrl', [])
 
   .controller('HealthKitCtrl', function($scope, $cordovaHealthKit) {
 

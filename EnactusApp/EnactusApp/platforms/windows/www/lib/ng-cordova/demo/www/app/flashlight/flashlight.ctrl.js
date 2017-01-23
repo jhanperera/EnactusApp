@@ -1,4 +1,4 @@
-﻿angular.module('demo.flashlight.ctrl', [])
+angular.module('demo.flashlight.ctrl', [])
 
   .controller('FlashlightCtrl', function ($scope, $cordovaFlashlight) {
     $scope.on = function () {

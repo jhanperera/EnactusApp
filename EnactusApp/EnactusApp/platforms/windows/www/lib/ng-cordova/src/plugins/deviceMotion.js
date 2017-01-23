@@ -1,4 +1,4 @@
-﻿// install   :     cordova plugin add cordova-plugin-device-motion
+// install   :     cordova plugin add cordova-plugin-device-motion
 // link      :     https://github.com/apache/cordova-plugin-device-motion
 
 angular.module('ngCordova.plugins.deviceMotion', [])

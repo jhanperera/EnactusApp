@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-httpd.git
+// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-httpd.git
 // link     :     https://github.com/floatinghotpot/cordova-httpd
 
 angular.module('ngCordova.plugins.httpd', [])

@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git
+// install   :      cordova plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git
 // link      :      https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin
 
 angular.module('ngCordova.plugins.toast', [])

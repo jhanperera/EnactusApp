@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env node
+#!/usr/bin/env node
 
 /**
  * After prepare, files are copied to the platforms/ios and platforms/android folders.

@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add cordova-plugin-recentscontrol
+// install   :      cordova plugin add cordova-plugin-recentscontrol
 // link      :      https://github.com/smcpjames/cordova-plugin-recentscontrol
 
 /* globals RecentsControl: true */

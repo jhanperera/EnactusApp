@@ -1,4 +1,4 @@
-﻿// install   :     cordova plugin add cordova-plugin-contacts
+// install   :     cordova plugin add cordova-plugin-contacts
 // link      :     https://github.com/apache/cordova-plugin-contacts
 
 angular.module('ngCordova.plugins.contacts', [])

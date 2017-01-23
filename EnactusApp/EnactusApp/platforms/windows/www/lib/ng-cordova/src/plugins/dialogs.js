@@ -1,4 +1,4 @@
-﻿// install   :     cordova plugin add cordova-plugin-dialogs
+// install   :     cordova plugin add cordova-plugin-dialogs
 // link      :     https://github.com/apache/cordova-plugin-dialogs
 
 angular.module('ngCordova.plugins.dialogs', [])

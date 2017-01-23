@@ -1,4 +1,4 @@
-﻿angular.module('demo.upsPushNotifications.ctrl', [])
+angular.module('demo.upsPushNotifications.ctrl', [])
 
   .controller('UpsPushNotificationsCtrl', function ($scope, $rootScope, $cordovaUpsPush) {
     $scope.config = {};

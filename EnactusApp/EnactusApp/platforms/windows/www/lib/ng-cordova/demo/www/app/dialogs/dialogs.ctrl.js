@@ -1,4 +1,4 @@
-﻿angular.module('demo.dialogs.ctrl', [])
+angular.module('demo.dialogs.ctrl', [])
 
   .controller('DialogsCtrl', function ($scope, $cordovaDialogs) {
 

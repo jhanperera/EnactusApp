@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+// install  :     cordova plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
 // link     :     https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin
 
 angular.module('ngCordova.plugins.calendar', [])

@@ -1,4 +1,4 @@
-﻿describe('Service: $cordovaSpinnerDialog', function() {
+describe('Service: $cordovaSpinnerDialog', function() {
 
   var $cordovaSpinnerDialog;
 

@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/shazron/KeychainPlugin.git
+// install   :      cordova plugin add https://github.com/shazron/KeychainPlugin.git
 // link      :      https://github.com/shazron/KeychainPlugin
 
 /* globals Keychain: true */

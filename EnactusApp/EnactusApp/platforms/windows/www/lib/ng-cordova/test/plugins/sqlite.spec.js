@@ -1,4 +1,4 @@
-﻿describe('Service: $cordovaSQLite', function() {
+describe('Service: $cordovaSQLite', function() {
 
   var $cordovaSQLite, $rootScope, dbMock;
 

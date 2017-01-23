@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add cordova-plugin-network-information
+// install   :      cordova plugin add cordova-plugin-network-information
 // link      :      https://github.com/apache/cordova-plugin-network-information
 
 /* globals Connection: true */

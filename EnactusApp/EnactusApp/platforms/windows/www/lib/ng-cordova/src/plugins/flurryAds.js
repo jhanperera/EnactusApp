@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-flurry.git
+// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-flurry.git
 // link     :     https://github.com/floatinghotpot/cordova-plugin-flurry
 
 angular.module('ngCordova.plugins.flurryAds', [])

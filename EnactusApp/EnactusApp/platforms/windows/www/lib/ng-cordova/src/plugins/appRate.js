@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/pushandplay/cordova-plugin-apprate.git
+// install  :     cordova plugin add https://github.com/pushandplay/cordova-plugin-apprate.git
 // link     :     https://github.com/pushandplay/cordova-plugin-apprate
 
 /* globals AppRate: true */

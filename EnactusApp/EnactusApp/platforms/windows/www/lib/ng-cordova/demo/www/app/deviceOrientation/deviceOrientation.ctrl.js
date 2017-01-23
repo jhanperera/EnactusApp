@@ -1,4 +1,4 @@
-﻿angular.module('demo.deviceOrientation.ctrl', [])
+angular.module('demo.deviceOrientation.ctrl', [])
 
   .controller('DeviceOrientationCtrl', function ($scope, $timeout, $cordovaDeviceOrientation) {
 

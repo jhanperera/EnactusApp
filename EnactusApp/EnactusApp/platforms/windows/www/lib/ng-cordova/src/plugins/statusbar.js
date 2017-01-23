@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add cordova-plugin-statusbar
+// install   :      cordova plugin add cordova-plugin-statusbar
 // link      :      https://github.com/apache/cordova-plugin-statusbar
 
 /* globals StatusBar: true */

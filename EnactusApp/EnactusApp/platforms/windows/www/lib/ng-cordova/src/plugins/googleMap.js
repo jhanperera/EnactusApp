@@ -1,4 +1,4 @@
-﻿// install   :
+// install   :
 // link      :
 
 // Google Maps needs ALOT of work!

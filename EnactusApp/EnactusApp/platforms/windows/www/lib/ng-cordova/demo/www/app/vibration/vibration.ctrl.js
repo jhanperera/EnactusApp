@@ -1,4 +1,4 @@
-﻿angular.module('demo.vibration.ctrl', [])
+angular.module('demo.vibration.ctrl', [])
 
   .controller('VibrationCtrl', function($scope, $cordovaVibration) {
 

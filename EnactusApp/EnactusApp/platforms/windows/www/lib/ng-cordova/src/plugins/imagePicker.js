@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/wymsee/cordova-imagePicker.git
+// install  :     cordova plugin add https://github.com/wymsee/cordova-imagePicker.git
 // link     :     https://github.com/wymsee/cordova-imagePicker
 
 angular.module('ngCordova.plugins.imagePicker', [])

@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/litehelpers/Cordova-sqlite-storage.git
+// install   :      cordova plugin add https://github.com/litehelpers/Cordova-sqlite-storage.git
 // link      :      https://github.com/litehelpers/Cordova-sqlite-storage
 
 angular.module('ngCordova.plugins.sqlite', [])

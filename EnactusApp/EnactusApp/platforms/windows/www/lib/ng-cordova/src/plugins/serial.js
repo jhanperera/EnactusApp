@@ -1,4 +1,4 @@
-﻿// install   :  cordova plugin add https://github.com/xseignard/cordovarduino.git
+// install   :  cordova plugin add https://github.com/xseignard/cordovarduino.git
 // link      :  https://github.com/xseignard/cordovarduino
 
 /* globals serial: true */

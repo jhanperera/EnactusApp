@@ -1,4 +1,4 @@
-﻿angular.module('ngCordova.plugins', [
+angular.module('ngCordova.plugins', [
   'ngCordova.plugins.3dtouch',
   'ngCordova.plugins.actionSheet',
   'ngCordova.plugins.adMob',

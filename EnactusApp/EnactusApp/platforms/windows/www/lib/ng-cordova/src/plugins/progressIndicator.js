@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/pbernasconi/cordova-progressIndicator.git
+// install   :      cordova plugin add https://github.com/pbernasconi/cordova-progressIndicator.git
 // link      :      http://pbernasconi.github.io/cordova-progressIndicator/
 
 /* globals ProgressIndicator: true */

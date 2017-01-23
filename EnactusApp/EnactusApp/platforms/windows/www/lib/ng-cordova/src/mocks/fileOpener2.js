@@ -1,4 +1,4 @@
-﻿/**
+/**
  * @ngdoc service
  * @name ngCordovaMocks.cordovaFileOpener2
  *

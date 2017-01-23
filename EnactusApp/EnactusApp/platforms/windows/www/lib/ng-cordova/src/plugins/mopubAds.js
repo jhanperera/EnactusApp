@@ -1,4 +1,4 @@
-﻿// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-mopub.git
+// install  :     cordova plugin add https://github.com/floatinghotpot/cordova-plugin-mopub.git
 // link     :     https://github.com/floatinghotpot/cordova-plugin-mopub
 
 angular.module('ngCordova.plugins.mopubAds', [])

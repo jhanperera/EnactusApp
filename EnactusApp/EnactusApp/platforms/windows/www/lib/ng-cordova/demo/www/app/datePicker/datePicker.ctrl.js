@@ -1,4 +1,4 @@
-﻿angular.module('demo.datePicker.ctrl', [])
+angular.module('demo.datePicker.ctrl', [])
 
   .controller('DatePickerCtrl', function ($scope, $cordovaDatePicker) {
 

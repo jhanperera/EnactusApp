@@ -1,4 +1,4 @@
-﻿// install   :      cordova plugin add https://github.com/aerogear/aerogear-cordova-push.git
+// install   :      cordova plugin add https://github.com/aerogear/aerogear-cordova-push.git
 // link      :      https://github.com/aerogear/aerogear-cordova-push
 
 angular.module('ngCordova.plugins.upsPush', [])

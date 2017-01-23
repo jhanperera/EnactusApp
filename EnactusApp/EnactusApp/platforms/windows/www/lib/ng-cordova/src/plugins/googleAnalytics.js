@@ -1,4 +1,4 @@
-﻿// install   :     cordova plugin add https://github.com/danwilson/google-analytics-plugin.git
+// install   :     cordova plugin add https://github.com/danwilson/google-analytics-plugin.git
 // link      :     https://github.com/danwilson/google-analytics-plugin
 
 angular.module('ngCordova.plugins.googleAnalytics', [])
