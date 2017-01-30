@@ -36,6 +36,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
         }
     },
     "dependent_plugins": {}
