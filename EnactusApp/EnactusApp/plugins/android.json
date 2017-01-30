@@ -7,7 +7,34 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
         "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.cordova.myappf492f5"
+        },
+        "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "io.cordova.myappf492f5"
         }
     },
