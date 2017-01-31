@@ -219,7 +219,14 @@
                         <ion-item id="Q1A8" ng-click="right($event, 'one', 5)">h. C and D, but not A and B </ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ2">
                 <div class="item item-text-wrap">
                     <p>
                         2.	What is a Savings account? 
@@ -236,7 +243,14 @@
                         <ion-item id="Q2A9" ng-click="right($event , 'one' , 5)">i.	D and E but not A, B, C</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ3">
                 <div class="item item-text-wrap">
                     <p>
                         3.	What is a Chequing Account?
@@ -248,33 +262,54 @@
                         <ion-item id="Q3A4" ng-click="wrong($event)">d.	An account that </ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3;">
+                        Next
+                    </button>
+                </div>
+              </div>
 
-                <div class="item item-text-wrap">
-                    <p>
-                        4.	Why would it be a bad idea to use a debit card when your account has insufficient funds?
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q4A1" ng-click="wrong($event)">a.	A person has a higher chance of committing debit card fraud if they do so.</ion-item>
-                        <ion-item id="Q4A2" ng-click="right($event, 'one', 5)">b. Most banks have fees that penalize a person for not having sufficient money in the account when using the debit card.</ion-item>
-                        <ion-item id="Q4A3" ng-click="wrong($event)">c.	A debit card is a complex form of payment; you should be using a credit card.</ion-item>
-                        <ion-item id="Q4A4" ng-click="wrong($event)">d.	It is not a bad idea at all, you would recommend it. </ion-item>
-                        <ion-item id="Q4A5" ng-click="wrong($event)">e.	A person has a lower chance of committing debit card fraud, so you would encourage this action. </ion-item>
-                    </ion-list>
+        <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ4">
+            <div class="item item-text-wrap">
+                <p>
+                    4.	Why would it be a bad idea to use a debit card when your account has insufficient funds?
+                </p>
+                <ion-list>
+                    <ion-item id="Q4A1" ng-click="wrong($event)">a.	A person has a higher chance of committing debit card fraud if they do so.</ion-item>
+                    <ion-item id="Q4A2" ng-click="right($event, 'one', 5)">b. Most banks have fees that penalize a person for not having sufficient money in the account when using the debit card.</ion-item>
+                    <ion-item id="Q4A3" ng-click="wrong($event)">c.	A debit card is a complex form of payment; you should be using a credit card.</ion-item>
+                    <ion-item id="Q4A4" ng-click="wrong($event)">d.	It is not a bad idea at all, you would recommend it. </ion-item>
+                    <ion-item id="Q4A5" ng-click="wrong($event)">e.	A person has a lower chance of committing debit card fraud, so you would encourage this action. </ion-item>
+                </ion-list>
+            </div>
+            <div class="button-bar">
+                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ5 = !partQ5; partQ4 = !partQ4;">
+                    Next
+                </button>
+            </div>
+        </div>
+
+                <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ5">
+                    <div class="item item-text-wrap">
+                        <p>
+                            5.	A girl named Cindy was invited to a party and wants to give her friend a gift card. She asks you for advice about getting a Prepaid card, since she has never gotten one before. What is one important thing, involving the concept of Prepaid Cards, you should tell her?
+                        </p>
+                        <ion-list>
+                            <ion-item id="Q4A1" ng-click="wrong($event)">a.	You would recommend a better gift, since prepaid cards show a lack of thought and consideration.</ion-item>
+                            <ion-item id="Q4A2" ng-click="wrong($event)">b.	You would recommend your friend buy a prepaid card of a company that her friend enjoys.</ion-item>
+                            <ion-item id="Q4A3" ng-click="right($event, 'one', 5)">c. You would tell your friend that some gift cards, such as Visa Prepaid, have activation fees, to watch out for. </ion-item>
+                            <ion-item id="Q4A4" ng-click="wrong($event)">d.	You would tell her to watch out for Prepaid Card contests on Facebook.</ion-item>
+                            <ion-item id="Q4A5" ng-click="wrong($event)">e.	You would recommend a company you think is worth getting a Prepaid card for.</ion-item>
+                        </ion-list>
+                    </div>
+                    <div class="button-bar">
+                        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ6 = !partQ6; partQ5 = !partQ5;">
+                            Next
+                        </button>
+                    </div>
                 </div>
 
-                <div class="item item-text-wrap">
-                    <p>
-                        5.	A girl named Cindy was invited to a party and wants to give her friend a gift card. She asks you for advice about getting a Prepaid card, since she has never gotten one before. What is one important thing, involving the concept of Prepaid Cards, you should tell her?
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q4A1" ng-click="wrong($event)">a.	You would recommend a better gift, since prepaid cards show a lack of thought and consideration.</ion-item>
-                        <ion-item id="Q4A2" ng-click="wrong($event)">b.	You would recommend your friend buy a prepaid card of a company that her friend enjoys.</ion-item>
-                        <ion-item id="Q4A3" ng-click="right($event, 'one', 5)">c. You would tell your friend that some gift cards, such as Visa Prepaid, have activation fees, to watch out for. </ion-item>
-                        <ion-item id="Q4A4" ng-click="wrong($event)">d.	You would tell her to watch out for Prepaid Card contests on Facebook.</ion-item>
-                        <ion-item id="Q4A5" ng-click="wrong($event)">e.	You would recommend a company you think is worth getting a Prepaid card for.</ion-item>
-                    </ion-list>
-                </div>
-
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ6">
                 <div class="item item-text-wrap">
                     <p>
                         6.	Your friend Alfred decided to use a debit card with insufficient funds, drew out money from an ATM not in his bank’s network (eg. Use a TD machine when in CIBC), and decides to carelessly use his debit card to pay for purchases overseas, even though he had the right amount of cash on him. Why would it be a good idea to tell Alfred to refrain from these actions?

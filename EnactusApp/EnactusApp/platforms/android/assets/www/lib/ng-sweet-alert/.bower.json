@@ -1,0 +1,38 @@
+{
+  "name": "ng-sweet-alert",
+  "description": "Sweet Alert Directive",
+  "version": "1.0.11",
+  "authors": [
+    "Tushar Borole <tushariscoolster@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tushariscoolster/ng-sweet-alert"
+  },
+  "homepage": "http://tushariscoolster.github.io/ng-sweet-alert/",
+  "license": "LGPL-2.1",
+  "main": "ng-sweet-alert.js",
+  "keywords": [
+    "sweetalert",
+    "angular",
+    "alert"
+  ],
+  "ignore": [
+    "gh-pages",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "sweetalert": "*"
+  },
+  "_release": "1.0.11",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.11",
+    "commit": "dddf04ee7750f53b2f86945e06326a7a8eddf56d"
+  },
+  "_source": "https://github.com/tushariscoolster/ng-sweet-alert.git",
+  "_target": "^1.0.11",
+  "_originalSource": "ng-sweet-alert",
+  "_direct": true
+}

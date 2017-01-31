@@ -20,7 +20,7 @@ angular.module('controllers', ['services'])
         document.getElementById("chap2").value = window.localStorage.getItem("prog2");
     }
 })
-.controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate, $cordovaVibration, $state, $ionicPopup, $ionicModal) {
+.controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate, $cordovaVibration, $state, $ionicPopup, $ionicModal, $window, $timeout) {
    	var live = 3;
 	var clickedOn = [];
 	var numQuestions;
@@ -35,6 +35,12 @@ angular.module('controllers', ['services'])
     $scope.part9Cred = false;
 	$scope.part10Cred = false;
 	$scope.partQCred = false;
+	$scope.partQ2 = false;
+	$scope.partQ3 = false;
+	$scope.partQ4 = false;
+	$scope.partQ5 = false;
+	$scope.partQ6 = false;
+	$scope.partQ7 = false;
 
     //Get all the platforms
 	var deviceInformation = ionic.Platform.device();
@@ -111,25 +117,32 @@ angular.module('controllers', ['services'])
     //Game over. (Too many incorrect answers so we restart.)
 	$scope.gameover = function(){
 	    $scope.gameOver();
-		live = 3;
+	    live = 3;
+
 		$ionicScrollDelegate.scrollTop();
 		$scope.partQCred = false;
+		$scope.partQ2 = false;
+		$scope.partQ3 = false;
+		$scope.partQ4 = false;
+		$scope.partQ5 = false;
+		$scope.partQ6 = false;
+		$scope.partQ7 = false;
 		
         //Does a reload on the page so its not a complete refresh
 		$scope.reloader = function reload() {
 		    var current = $state.current;
 		    var params = angular.copy($stateParams);
 		    $state.transitionTo(current, params, { reload: true, inherit: true, notify: true });
+
 		}   
 
         //clear the clickedOn array
 		$scope.part1Cred = !$scope.part1Cred;
 		for(i = 0; i< clickedOn.length;i++){
 		    clickedOn[i].style.color = "rgb(68,68,68)";
-		    clickedOn.pop;
 		}
 
-        //Reset the lives and the clickOn array. Update lives
+        //Reset the lives again and the clickOn array. Update lives
 		lives = 3;
 		clickedOn = [];
 		$scope.updatelives();	
@@ -178,8 +191,21 @@ angular.module('controllers', ['services'])
     */
 	$scope.win = function (chapter, section) {
 	    $scope.save(chapter);
-	    window.location.reload();
-	    window.location.href = "#/main";
+
+        //Check if we are on mobile then run a splash screen to do a smooth refresh
+	    if (isAndroid || isIOS){
+	        navigator.splashscreen.show();
+	        $window.location.href = "#/main";
+	        $window.location.reload();
+	        $timeout(function () {
+	            navigator.splashscreen.hide();
+	        }, 500);
+	    }
+	    else {
+            //Just do a standard refresh
+	        $window.location.href = "#/main";
+	        $window.location.reload();    
+	    }
 	}
 });
 

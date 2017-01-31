@@ -194,10 +194,17 @@
                         <ion-item id="Q1A1" ng-click="wrong($event)">a.	An instrument used to facilitate loans and flow of capital. </ion-item>
                         <ion-item id="Q1A2" ng-click="wrong($event)">b.	A type of pizza sauce that is sold on Tuesdays at Pizza Hut.</ion-item>
                         <ion-item id="Q1A3" ng-click="wrong($event)">c.	c.	An accounting practice that involves IFRS and ASPE that involves equity-based accounting and one-line consolidations.  </ion-item>
-                        <ion-item id="Q1A4" ng-click="right($event, 'one', 1)">d.	An arrangement for a person to pay back any money, sometimes with an interest payment and duration.</ion-item>
+                        <ion-item id="Q1A4" ng-click="right($event, 'one', 1); ">d.	An arrangement for a person to pay back any money, sometimes with an interest payment and duration.</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ2">
                 <div class="item item-text-wrap">
                     <p>
                         2.	Why is Credit even important?
@@ -209,7 +216,17 @@
                         <ion-item id="Q2A4" ng-click="wrong($event)">d.	The government of Canada and the Credit Bureau just want to know this information.</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred; scrollToTop()">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ3">
                 <div class="item item-text-wrap">
                     <p>
                         3.	There are two credit ratings, R2 for Person A, and R6 for Person B. Which person would you be willing to make a loan to?
@@ -221,7 +238,17 @@
                         <ion-item id="Q3A4" ng-click="wrong($event)">d.	Trick question, Credit Ratings only go up to R5!</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2; scrollToTop()">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ4">
                 <div class="item item-text-wrap">
                     <p>
                         4.	There are two credit ratings, R2 for Person A, and R9 for Person B. Which person would you not be willing to give a loan to?
@@ -233,7 +260,17 @@
                         <ion-item id="Q4A4" ng-click="wrong($event)">d.	Trick question, Credit Ratings only go up to R10!</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3; scrollToTop()">
+                        Previous
+                    </button>
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ5 = !partQ5; partQ4 = !partQ4;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ5">
                 <div class="item item-text-wrap">
                     <p>
                         5.	Your grandmother gives you her valuable,
@@ -248,6 +285,11 @@
                         <ion-item id="Q5A3" ng-click="wrong($event)">c.	Compensation</ion-item>
                         <ion-item id="Q5A4" ng-click="wrong($event)">d.	Capacity</ion-item>
                     </ion-list>
+                </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ5 = !partQ5; partQ4 = !partQ4; scrollToTop()">
+                        Previous
+                    </button>
                 </div>
             </div>
         </div>

@@ -220,7 +220,14 @@
                         <ion-item id="Q1A4" ng-click="wrong($event)">d.	By asking the bank for a credit rating</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ2">
                 <div class="item item-text-wrap">
                     <p>
                         2.	Why is it important to pay your credit card bill on time?
@@ -235,7 +242,14 @@
                         <ion-item id="Q2A7" ng-click="wrong($event)">g.	A,B,C but not D </ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ3">
                 <div class="item item-text-wrap">
                     <p>
                         3.	Which of the following are some advantages of using credit?
@@ -251,7 +265,14 @@
                         <ion-item id="Q3A8" ng-click="wrong($event)">h.	A,D,E but not C nor B </ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ4">
                 <div class="item item-text-wrap">
                     <p>
                         4.	Which of the following are some disadvantages of using credit?
@@ -264,7 +285,14 @@
                         <ion-item id="Q4A3" ng-click="wrong($event)">e.	You’ll be able to buy online, which exposes you to more credit card scams.</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ5 = !partQ5; partQ4 = !partQ4;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ5">
                 <div class="item item-text-wrap">
                     <p>
                         5.	What’s one way for new-comers to Canada, if they cannot get a credit card here?
@@ -276,7 +304,14 @@
                         <ion-item id="Q5A4" ng-click="wrong($event)">d.	Buy a gift card from a major retailer.</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ6 = !partQ6; partQ5 = !partQ5;">
+                        Next
+                    </button>
+                </div>
+            </div>
 
+            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ6">
                 <div class="item item-text-wrap">
                     <p>
                         6.	When is the best time to start getting a credit rating?

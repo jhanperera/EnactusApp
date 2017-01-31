@@ -203,43 +203,64 @@
                         <ion-item id="Q1A4" ng-click="wrong($event)">d.	From daily Interac-E transfers and non-machine transfer fees.</ion-item>
                     </ion-list>
                 </div>
+                <div class="button-bar">
+                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred;">
+                        Next
+                    </button>
+                </div>
+              </div>
 
-                <div class="item item-text-wrap">
-                    <p>
-                        2.	What happens generally if a person does not pay their credit card balance within a designated period (usually 30 days?)
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q2A1" ng-click="right($event, 'one', 3)">a.	Interest begins to be charged and compounded, usually at a rate equal to or greater than 20%.</ion-item>
-                        <ion-item id="Q2A2" ng-click="wrong($event)">b.	Nothing happens.</ion-item>
-                        <ion-item id="Q2A3" ng-click="wrong($event)">c.	Consumers feel the intensive urge to Impulse Buy afterwards.</ion-item>
-                        <ion-item id="Q2A4" ng-click="wrong($event)">d.	The 3 C’s of Credit are satisfied and therefore a person is rewarded with a better credit rating. </ion-item>
-                    </ion-list>
+                <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ2">
+                    <div class="item item-text-wrap">
+                        <p>
+                            2.	What happens generally if a person does not pay their credit card balance within a designated period (usually 30 days?)
+                        </p>
+                        <ion-list>
+                            <ion-item id="Q2A1" ng-click="right($event, 'one', 3)">a.	Interest begins to be charged and compounded, usually at a rate equal to or greater than 20%.</ion-item>
+                            <ion-item id="Q2A2" ng-click="wrong($event)">b.	Nothing happens.</ion-item>
+                            <ion-item id="Q2A3" ng-click="wrong($event)">c.	Consumers feel the intensive urge to Impulse Buy afterwards.</ion-item>
+                            <ion-item id="Q2A4" ng-click="wrong($event)">d.	The 3 C’s of Credit are satisfied and therefore a person is rewarded with a better credit rating. </ion-item>
+                        </ion-list>
+                    </div>
+                    <div class="button-bar">
+                        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2;">
+                            Next
+                        </button>
+                    </div>
                 </div>
 
-                <div class="item item-text-wrap">
-                    <p>
-                        3.	Mary has a friend who wants to attend a wedding soon, however currently lacks the money to buy a gift for the event. Mary can provide a loan for her friend, but needs the money paid back very quickly afterwards for personal use. What type of loan should Mary give her friend?
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q3A1" ng-click="wrong($event)">a.	A credit card.</ion-item>
-                        <ion-item id="Q3A2" ng-click="wrong($event)">b.	Mortgage.</ion-item>
-                        <ion-item id="Q3A3" ng-click="wrong($event)">c.	Installment Loan.</ion-item>
-                        <ion-item id="Q3A4" ng-click="right($event, 'one', 3)">d.	Demand Loan.</ion-item>
-                    </ion-list>
+                <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ3">
+                    <div class="item item-text-wrap">
+                        <p>
+                            3.	Mary has a friend who wants to attend a wedding soon, however currently lacks the money to buy a gift for the event. Mary can provide a loan for her friend, but needs the money paid back very quickly afterwards for personal use. What type of loan should Mary give her friend?
+                        </p>
+                        <ion-list>
+                            <ion-item id="Q3A1" ng-click="wrong($event)">a.	A credit card.</ion-item>
+                            <ion-item id="Q3A2" ng-click="wrong($event)">b.	Mortgage.</ion-item>
+                            <ion-item id="Q3A3" ng-click="wrong($event)">c.	Installment Loan.</ion-item>
+                            <ion-item id="Q3A4" ng-click="right($event, 'one', 3)">d.	Demand Loan.</ion-item>
+                        </ion-list>
+                    </div>
+                    <div class="button-bar">
+                        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3;">
+                            Next
+                        </button>
+                    </div>
                 </div>
 
-                <div class="item item-text-wrap">
-                    <p>
-                        4.	A man named Mr. Dougall hosted a sports team that needed money for a trip, $1000. Instead of taking a loan, he used his credit card to pay for the trip, and knew the team would basically fund raise the amount in time to pay for the trip.
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q4A1" ng-click="wrong($event)">a.	None of the duration of the loans fit this scenario.</ion-item>
-                        <ion-item id="Q4A2" ng-click="wrong($event)">b.	The interest for an installment loan would’ve been greater than the bank loan.</ion-item>
-                        <ion-item id="Q4A3" ng-click="wrong($event)">c.	He wanted to be forced to immediately pay back a Demand Loan.</ion-item>
-                        <ion-item id="Q4A4" ng-click="right($event, 'one', 3)">d.	He would be able to gain points towards his Credit Card, and redeeming it later. </ion-item>
-                    </ion-list>
+                <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ4">
+                    <div class="item item-text-wrap">
+                        <p>
+                            4.	A man named Mr. Dougall hosted a sports team that needed money for a trip, $1000. Instead of taking a loan, he used his credit card to pay for the trip, and knew the team would basically fund raise the amount in time to pay for the trip.
+                        </p>
+                        <ion-list>
+                            <ion-item id="Q4A1" ng-click="wrong($event)">a.	None of the duration of the loans fit this scenario.</ion-item>
+                            <ion-item id="Q4A2" ng-click="wrong($event)">b.	The interest for an installment loan would’ve been greater than the bank loan.</ion-item>
+                            <ion-item id="Q4A3" ng-click="wrong($event)">c.	He wanted to be forced to immediately pay back a Demand Loan.</ion-item>
+                            <ion-item id="Q4A4" ng-click="right($event, 'one', 3)">d.	He would be able to gain points towards his Credit Card, and redeeming it later. </ion-item>
+                        </ion-list>
+                    </div>
                 </div>
-            </div>
         </div>
     </ion-content>
     <ion-footer-bar align-title="center" class="bar-balanced">
