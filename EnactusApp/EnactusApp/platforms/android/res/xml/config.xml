@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget defaultLocale="en-US" id="io.cordova.myappf492f5" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <preference name="loglevel" value="DEBUG" />
+<widget defaultLocale="en-US" id="com.enactus.ifinance" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
     <feature name="File">
         <param name="android-package" value="org.apache.cordova.file.FileUtils" />
@@ -28,9 +30,12 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Notification">
-        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-    </feature>
+    <name>iFinance</name>
+    <description>A financial literacy app targeted towards high school students. </description>
+    <author email="jhanperera@gmail.com" href="https://github.com/jhanperera/EnactusApp">Richmond Truong, Shai Preter, Jhan Perera</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
     <icon density="ldpi" src="resources\android\icon\drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources\android\icon\drawable-mdpi-icon.png" />
     <icon density="hdpi" src="resources\android\icon\drawable-hdpi-icon.png" />
@@ -49,23 +54,24 @@
     <splash density="port-xhdpi" src="resources\android\splash\drawable-port-xhdpi-screen.png" />
     <splash density="port-xxhdpi" src="resources\android\splash\drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="resources\android\splash\drawable-port-xxxhdpi-screen.png" />
-    <name>iFinance</name>
-    <description>A financial literacy app targeted towards high school students. </description>
-    <author email="jhanperera@gmail.com" href="https://github.com/jhanperera/EnactusApp">Richmond Truong, Shai Preter, Jhan Perera</author>
-    <content src="index.html" />
-    <access origin="*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
+    <preference name="xwalkVersion" value="23+" />
+    <preference name="xwalkLiteVersion" value="xwalk_core_library_canary:17+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="SplashScreenDelay" value="2000" />
     <preference name="FadeSplashScreenDuration" value="2000" />
-    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="local" />
     <preference name="windows-target-version" value="8.1" />
     <preference name="Fullscreen" value="True" />
     <preference name="KeepRunning" value="True" />
     <preference name="target-device" value="universal" />
-    <preference name="SplashScreen" value="screen" />
-    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
+    <preference name="SplashScreen" value="splash" />
     <preference name="android-targetSdkVersion" value="19" />
 </widget>
