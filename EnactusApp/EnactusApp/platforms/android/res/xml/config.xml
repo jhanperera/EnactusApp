@@ -30,6 +30,10 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="NativePageTransitions">
+        <param name="android-package" value="com.telerik.plugins.nativepagetransitions.NativePageTransitions" />
+        <param name="onload" value="true" />
+    </feature>
     <name>iFinance</name>
     <description>A financial literacy app targeted towards high school students. </description>
     <author email="jhanperera@gmail.com" href="https://github.com/jhanperera/EnactusApp">Richmond Truong, Shai Preter, Jhan Perera</author>
@@ -74,4 +78,5 @@
     <preference name="target-device" value="universal" />
     <preference name="SplashScreen" value="splash" />
     <preference name="android-targetSdkVersion" value="19" />
+    <preference name="CrosswalkAnimatable" value="true" />
 </widget>

@@ -41,6 +41,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.enactus.ifinance"
+        },
+        "com.telerik.plugins.nativepagetransitions": {
+            "PACKAGE_NAME": "com.enactus.ifinance"
         }
     },
     "dependent_plugins": {
