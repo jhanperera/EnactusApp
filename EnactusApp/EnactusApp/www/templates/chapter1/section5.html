@@ -1,336 +1,329 @@
-﻿<ion-view hide-back-button="false" view-title="Section 5: Debit Cards and Prepaid Cards">
-    <ion-content ng-controller="BtnClick" ng-init="updatelives();">
-        <div id="wrapper" class="credit-section-wrapper">
-        </div>
-        <br />
-        <!--Title of this chapter-->
-        <div id="chapter_elem">
-            <center><h3 class="padding">Debit Cards and Prepaid Cards</h3></center>
-        </div>
 
-        <!-- First Section -->
-        <div class="card" style="display:block;" ng-hide="part1Cred">
-            <div class="item item-text-wrap">
-                <p>
-                    For most secondary students reading this, most banks in Canada do not allow high school
-                    students to acquire their own Credit Cards to begin with—so a debit card would be the best
-                    option to begin. But what exactly is a debit card?
-                    <br /><br />
-                    Let’s begin with the obvious—a Credit Card looks awfully like a Debit Card,
-                    but do not WORK the same way. Before we have the discussion, there are different
-                    types of accounts a person may have with a bank / financial institution,
-                    however I still stick to the most basic 2 right now:
-                </p>
-            </div>
-            <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred; scrollToTop()">
+<ion-view hide-back-button="false" view-title="Section 5: Debit Cards and Prepaid Cards">
+  <ion-content ng-controller="BtnClick" ng-init="updatelives();">
+    <div id="wrapper" class="credit-section-wrapper">
+    </div>
+    <br />
+    <!--Title of this chapter-->
+    <div id="chapter_elem">
+      <center>
+        <h3 class="padding">Debit Cards and Prepaid Cards</h3></center>
+    </div>
+
+    <!-- First Section -->
+    <div class="card" style="display:block;" ng-hide="part1Cred">
+      <div class="item item-text-wrap">
+        <p>
+          For most secondary students reading this, most banks in Canada do not allow high school students to acquire their own Credit Cards to begin with—so a debit card would be the best option to begin. But what exactly is a debit card?
+          <br /><br /> Let’s begin with the obvious—a Credit Card looks awfully like a Debit Card, but do not WORK the same way. Before we have the discussion, there are different types of accounts a person may have with a bank / financial institution,
+          however I still stick to the most basic 2 right now:
+        </p>
+      </div>
+      <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part1Cred = !part1Cred; part2Cred = !part2Cred; scrollToTop()">
                 Next
             </button>
-        </div>
+    </div>
 
-        <!--Second Section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
-            <div class="item item-text-wrap">
-                <h3>1.	Checking account</h3> <br />
-                <p>
-                    This account is for day to day access to your money, however the interest rates
-                    (how much money you would get from storing money in your account) is low, if any.
-                    In addition, there may be fees for possessing such an account, depending on the
-                    type of accounts you have. For instance, most Canadian banks such as CIBC have
-                    student accounts that waive the monthly fee, so eligible students can have a
-                    checking account to access money for free. (written as of December 2016)
-                    You can access a checking account using a debit card, writing a cheque, or even
-                    setting up automatic transfers.
-                </p>
-            </div>
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred; scrollToTop()">
+    <!--Second Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part2Cred">
+      <div class="item item-text-wrap">
+        <h3>1.	Checking account</h3> <br />
+        <p>
+          This account is for day to day access to your money, however the interest rates (how much money you would get from storing money in your account) is low, if any. In addition, there may be fees for possessing such an account, depending on the type of accounts
+          you have. For instance, most Canadian banks such as CIBC have student accounts that waive the monthly fee, so eligible students can have a checking account to access money for free. (written as of December 2016) You can access a checking account
+          using a debit card, writing a cheque, or even setting up automatic transfers.
+        </p>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part2Cred = !part2Cred; part1Cred = !part1Cred; scrollToTop()">
                     Previous
                 </button>
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred; scrollToTop()">
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part2Cred = !part2Cred; part3Cred = !part3Cred; scrollToTop()">
                     Next
                 </button>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!--Third Section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
-            <div class="item item-text-wrap">
-                <h3>2.	Savings Account</h3><br />
-                <p>
-                    This account is for money that you won’t be needing, or touching, for a while.
-                    Why?  A savings account gives you interest, which is basically money for putting your
-                    money with your bank. Because of this, there may be limits to the amount a person may
-                    withdrawal from the account. In addition, the savings account might even charge fees
-                    if you do not maintain a certain amount of money in the account. Once again, this account
-                    would be a great idea if you have money you won’t be needing for a while.
-                </p>
-            </div>
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred; scrollToTop()">
+    <!--Third Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part3Cred">
+      <div class="item item-text-wrap">
+        <h3>2.	Savings Account</h3><br />
+        <p>
+          This account is for money that you won’t be needing, or touching, for a while. Why? A savings account gives you interest, which is basically money for putting your money with your bank. Because of this, there may be limits to the amount a person may withdrawal
+          from the account. In addition, the savings account might even charge fees if you do not maintain a certain amount of money in the account. Once again, this account would be a great idea if you have money you won’t be needing for a while.
+        </p>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part3Cred = !part3Cred; part2Cred = !part2Cred; scrollToTop()">
                     Previous
                 </button>
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred; scrollToTop()">
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part3Cred = !part3Cred; part4Cred = !part4Cred; scrollToTop()">
                     Next
                 </button>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!--Fourth Section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
-            <div class="item item-text-wrap">
-                <p>
-                    In short, debit cards allow access to either accounts, checking and saving,
-                    to literally take money to pay for purchases. This is great, because a person
-                    does not have to carry the exact amount required for purchases
-                    (Can you imagine how dangerous that could become?)
-                </p>
-            </div>
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred; scrollToTop()">
+    <!--Fourth Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part4Cred">
+      <div class="item item-text-wrap">
+        <p>
+          In short, debit cards allow access to either accounts, checking and saving, to literally take money to pay for purchases. This is great, because a person does not have to carry the exact amount required for purchases (Can you imagine how dangerous that
+          could become?)
+        </p>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part4Cred = !part4Cred; part3Cred = !part3Cred; scrollToTop()">
                     Previous
                 </button>
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred; scrollToTop()">
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part4Cred = !part4Cred; part5Cred = !part5Cred; scrollToTop()">
                     Next
                 </button>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!--Fifth Section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
-            <div class="item item-text-wrap">
-                <h3>The FEES! OH GOSH, THE FEES!</h3><br />
-                <p>
-                    While certain accounts have benefits and perks, such as some Student accounts with no monthly fee,
-                    this DOES NOT mean a debit card is without its fees. There are fees for Out of Network ATM fees,
-                    for using a bank machine (ATM) that is not in your bank’s network (if you used a TD machine and you’re with CIBC),
-                    debit card replacement fees, or Foreign Transactions/ ATM fees, if you make purchases outside the country or
-                    use an ATM outside of the country Canada. There are many different fees, don’t get caught surprised—read ‘em up!
-                </p>
-            </div>
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred; scrollToTop()">
+    <!--Fifth Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part5Cred">
+      <div class="item item-text-wrap">
+        <h3>The FEES! OH GOSH, THE FEES!</h3><br />
+        <p>
+          While certain accounts have benefits and perks, such as some Student accounts with no monthly fee, this DOES NOT mean a debit card is without its fees. There are fees for Out of Network ATM fees, for using a bank machine (ATM) that is not in your bank’s
+          network (if you used a TD machine and you’re with CIBC), debit card replacement fees, or Foreign Transactions/ ATM fees, if you make purchases outside the country or use an ATM outside of the country Canada. There are many different fees, don’t
+          get caught surprised—read ‘em up!
+        </p>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part5Cred = !part5Cred; part4Cred = !part4Cred; scrollToTop()">
                     Previous
                 </button>
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred; scrollToTop()">
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part5Cred = !part5Cred; part6Cred = !part6Cred; scrollToTop()">
                     Next
                 </button>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!--Sixth Section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
-            <div class="item item-text-wrap">
-                <p>
-                    While we learned previously that credit cards are spending other people’s money to finance a purchase,
-                    a debit card will use your money, in an account. This means if your account does not have enough money,
-                    you’re out of luck bud (unless you put enough in the account!) In fact, some banks charge Overdraft Fees
-                    for not having enough money in your account when using your debit card…ouch, watch out. <br /><br />
-
-                    I will stress this again: a debit card is NOT THE SAME as a credit card. Know the difference, and make good decisions!
-                </p>
-            </div>
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred; scrollToTop()">
+    <!--Sixth Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part6Cred">
+      <div class="item item-text-wrap">
+        <p>
+          While we learned previously that credit cards are spending other people’s money to finance a purchase, a debit card will use your money, in an account. This means if your account does not have enough money, you’re out of luck bud (unless you put enough
+          in the account!) In fact, some banks charge Overdraft Fees for not having enough money in your account when using your debit card…ouch, watch out. <br /><br /> I will stress this again: a debit card is NOT THE SAME as a credit card.
+          Know the difference, and make good decisions!
+        </p>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part6Cred = !part6Cred; part5Cred = !part5Cred; scrollToTop()">
                     Previous
                 </button>
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred; scrollToTop()">
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part6Cred = !part6Cred; part7Cred = !part7Cred; scrollToTop()">
                     Next
                 </button>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!--Seven Section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
-            <div class="item item-text-wrap">
-                <p>
-                    Finally, a prepaid card is like the cousin of Credit Cards and Debit cards,
-                    but not really. Unlike a credit card and a debit card, prepaid cards are not linked to any bank account.
-                    Instead, you are using money that has already been put into the card. The money doesn’t even have to
-                    do with the bank—there are prepaid cards with many popular stores, such a Starbucks, Walmart,
-                    EB Games…the list goes on. Once they’re empty, you can throw them out or reload, if it’s an option.
-                </p>
-            </div>
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred; scrollToTop()">
+    <!--Seven Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part7Cred">
+      <div class="item item-text-wrap">
+        <p>
+          Finally, a prepaid card is like the cousin of Credit Cards and Debit cards, but not really. Unlike a credit card and a debit card, prepaid cards are not linked to any bank account. Instead, you are using money that has already been put into the card.
+          The money doesn’t even have to do with the bank—there are prepaid cards with many popular stores, such a Starbucks, Walmart, EB Games…the list goes on. Once they’re empty, you can throw them out or reload, if it’s an option.
+        </p>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part7Cred = !part7Cred; part6Cred = !part6Cred; scrollToTop()">
                     Previous
                 </button>
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred; scrollToTop()">
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part7Cred = !part7Cred; part8Cred = !part8Cred; scrollToTop()">
                     Next
                 </button>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!--Eight Section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
-            <div class="item item-text-wrap">
-                <h3>A +1 TIP</h3><br />
-                <p>
-                    Some prepaid cards, such as Visa Prepaid Gift Cards, have fees upon activation,
-                    and THEN you load up the card with your desired amount. For instance,
-                    a $50 gift card with Visa would cost more than $50.
-                </p>
-            </div>
+    <!--Eight Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part8Cred">
+      <div class="item item-text-wrap">
+        <h3>A +1 TIP</h3><br />
+        <p>
+          Some prepaid cards, such as Visa Prepaid Gift Cards, have fees upon activation, and THEN you load up the card with your desired amount. For instance, a $50 gift card with Visa would cost more than $50.
+        </p>
+      </div>
 
-            <div class="button-bar">
-                <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred; scrollToTop()">
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part8Cred = !part8Cred; part7Cred = !part7Cred; scrollToTop()">
                     Previous
                 </button>
-                <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part9Cred = !part9Cred; scrollToTop()">
+        <!--QUIZ GOES AFTER THIS BUTTON CLICK-->
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="part8Cred = !part8Cred; part9Cred = !part9Cred; scrollToTop()">
                     Next
                 </button>
-            </div>
-        </div>
-          <!--Introduction to questions section-->
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
-                <div class="item item-text-wrap">
-                    <p>
-                        Now that you have finished the section on credit here are some questions.
-                        You will have 3 attempts for the question.
-                        Don't worry if you mess up. You will be brought back to the begining of the section.
-                        So you can brush up on what you missed and then you can try again!
-                    </p>
-                </div>
+      </div>
+    </div>
+    <!--Introduction to questions section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="part9Cred">
+      <div class="item item-text-wrap">
+        <p>
+          Now that you have finished the section on credit here are some questions. You will have 3 attempts for the question. Don't worry if you mess up. You will be brought back to the begining of the section. So you can brush up on what you missed and then you
+          can try again!
+        </p>
+      </div>
 
-                <div class="button-bar">
-                    <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred; scrollToTop()">
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="part9Cred = !part9Cred; part8Cred = !part8Cred; scrollToTop()">
                         Previous
                     </button>
-                    <!--first question-->
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; scrollToTop(); updatelives(); setNumQuestions(6)">
+        <!--first question-->
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQCred = !partQCred; part9Cred = !part9Cred; scrollToTop(); updatelives(); setNumQuestions(6)">
                         Next
                     </button>
-                </div>
-            </div>
-         <!--Questions Section-->
-            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
-                <div class="item item-text-wrap">
-                    <p>
-                       1.	How are Debit cards and Credit Cards fundamentally different?
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q1A1" ng-click="wrong($event)">a.	Debit cards use other people’s money to pay for the purchase, until you dispute it with your bank. </ion-item>
-                        <ion-item id="Q1A2" ng-click="wrong($event)">b.	Credit cards are the toys of Captain Credit, the hero of Credit.</ion-item>
-                        <ion-item id="Q1A3" ng-click="wrong($event)">c.	Debit cards require the immediate amount of money to be in your account</ion-item>
-                        <ion-item id="Q1A4" ng-click="wrong($event)">d.	Credit Cards will be using other people’s money to make the purchase. </ion-item>
-                        <ion-item id="Q1A5" ng-click="wrong($event)">e.	None of the above</ion-item>
-                        <ion-item id="Q1A6" ng-click="wrong($event)">f.	All of the above.</ion-item>
-                        <ion-item id="Q1A7" ng-click="wrong($event)">g.	A and B, but not C and D.</ion-item>
-                        <ion-item id="Q1A8" ng-click="right($event, 'one', 5)">h. C and D, but not A and B </ion-item>
-                    </ion-list>
-                </div>
-                <div class="button-bar">
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred;">
+      </div>
+    </div>
+    <!--Questions Section-->
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQCred">
+      <div class="item item-text-wrap">
+        <p>
+          1. How are Debit cards and Credit Cards fundamentally different?
+        </p>
+        <ion-list>
+          <ion-item id="Q1A1" ng-click="wrong($event)">a. Debit cards use other people’s money to pay for the purchase, until you dispute it with your bank. </ion-item>
+          <ion-item id="Q1A2" ng-click="wrong($event)">b. Credit cards are the toys of Captain Credit, the hero of Credit.</ion-item>
+          <ion-item id="Q1A3" ng-click="wrong($event)">c. Debit cards require the immediate amount of money to be in your account</ion-item>
+          <ion-item id="Q1A4" ng-click="wrong($event)">d. Credit Cards will be using other people’s money to make the purchase. </ion-item>
+          <ion-item id="Q1A5" ng-click="wrong($event)">e. None of the above</ion-item>
+          <ion-item id="Q1A6" ng-click="wrong($event)">f. All of the above.</ion-item>
+          <ion-item id="Q1A7" ng-click="wrong($event)">g. A and B, but not C and D.</ion-item>
+          <ion-item id="Q1A8" ng-click="right($event, 'one', 5)">h. C and D, but not A and B </ion-item>
+        </ion-list>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred;">
                         Next
                     </button>
-                </div>
-            </div>
+      </div>
+    </div>
 
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ2">
-                <div class="item item-text-wrap">
-                    <p>
-                        2.	What is a Savings account? 
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q2A1" ng-click="wrong($event)">a.	An account that you use for daily purchase.</ion-item>
-                        <ion-item id="Q2A2" ng-click="wrong($event)">b.	An account you would choose if you wanted to store your demand loan.</ion-item>
-                        <ion-item id="Q2A3" ng-click="wrong($event)">c.	An account that the Central Bank uses when it is handling foreign funds.</ion-item>
-                        <ion-item id="Q2A4" ng-click="wrong($event)">d.	An account that is interest-bearing, and would give you money for storing money with the bank.</ion-item>
-                        <ion-item id="Q2A5" ng-click="wrong($event)">e.	An account that usually penalizes you for not maintaining a certain amount of money.</ion-item>
-                        <ion-item id="Q2A6" ng-click="wrong($event)">f.	An account that 95% of Canadians prefer using.</ion-item>
-                        <ion-item id="Q2A7" ng-click="wrong($event)">g.	All the above</ion-item>
-                        <ion-item id="Q2A8" ng-click="wrong($event)">h.	A, B, C, D but not E</ion-item>
-                        <ion-item id="Q2A9" ng-click="right($event , 'one' , 5)">i.	D and E but not A, B, C</ion-item>
-                    </ion-list>
-                </div>
-                <div class="button-bar">
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2;">
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ2">
+      <div class="item item-text-wrap">
+        <p>
+          2. What is a Savings account?
+        </p>
+        <ion-list>
+          <ion-item id="Q2A1" ng-click="wrong($event)">a. An account that you use for daily purchase.</ion-item>
+          <ion-item id="Q2A2" ng-click="wrong($event)">b. An account you would choose if you wanted to store your demand loan.</ion-item>
+          <ion-item id="Q2A3" ng-click="wrong($event)">c. An account that the Central Bank uses when it is handling foreign funds.</ion-item>
+          <ion-item id="Q2A4" ng-click="wrong($event)">d. An account that is interest-bearing, and would give you money for storing money with the bank.</ion-item>
+          <ion-item id="Q2A5" ng-click="wrong($event)">e. An account that usually penalizes you for not maintaining a certain amount of money.</ion-item>
+          <ion-item id="Q2A6" ng-click="wrong($event)">f. An account that 95% of Canadians prefer using.</ion-item>
+          <ion-item id="Q2A7" ng-click="wrong($event)">g. All the above</ion-item>
+          <ion-item id="Q2A8" ng-click="wrong($event)">h. A, B, C, D but not E</ion-item>
+          <ion-item id="Q2A9" ng-click="right($event , 'one' , 5)">i. D and E but not A, B, C</ion-item>
+        </ion-list>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ2 = !partQ2; partQCred = !partQCred; scrollToTop()">
+                        Previous
+                    </button>
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2;">
                         Next
                     </button>
-                </div>
-            </div>
+      </div>
+    </div>
 
-            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ3">
-                <div class="item item-text-wrap">
-                    <p>
-                        3.	What is a Chequing Account?
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q3A1" ng-click="wrong($event)">a.	An account used for day-to-day access, but usually bears a lot of interest.</ion-item>
-                        <ion-item id="Q3A2" ng-click="wrong($event)">b.	An account used for limited use, since it usually has high fees for using it.</ion-item>
-                        <ion-item id="Q3A3" ng-click="right($event, 'one', 5)">c. An account for day-to-day access, but thus bears a little interest.</ion-item>
-                        <ion-item id="Q3A4" ng-click="wrong($event)">d.	An account that </ion-item>
-                    </ion-list>
-                </div>
-                <div class="button-bar">
-                    <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3;">
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ3">
+      <div class="item item-text-wrap">
+        <p>
+          3. What is a Chequing Account?
+        </p>
+        <ion-list>
+          <ion-item id="Q3A1" ng-click="wrong($event)">a. An account used for day-to-day access, but usually bears a lot of interest.</ion-item>
+          <ion-item id="Q3A2" ng-click="wrong($event)">b. An account used for limited use, since it usually has high fees for using it.</ion-item>
+          <ion-item id="Q3A3" ng-click="right($event, 'one', 5)">c. An account for day-to-day access, but thus bears a little interest.</ion-item>
+          <ion-item id="Q3A4" ng-click="wrong($event)">d. An account that </ion-item>
+        </ion-list>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ3 = !partQ3; partQ2 = !partQ2; scrollToTop()">
+                        Previous
+                    </button>
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3;">
                         Next
                     </button>
-                </div>
-              </div>
+      </div>
+    </div>
 
-        <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ4">
-            <div class="item item-text-wrap">
-                <p>
-                    4.	Why would it be a bad idea to use a debit card when your account has insufficient funds?
-                </p>
-                <ion-list>
-                    <ion-item id="Q4A1" ng-click="wrong($event)">a.	A person has a higher chance of committing debit card fraud if they do so.</ion-item>
-                    <ion-item id="Q4A2" ng-click="right($event, 'one', 5)">b. Most banks have fees that penalize a person for not having sufficient money in the account when using the debit card.</ion-item>
-                    <ion-item id="Q4A3" ng-click="wrong($event)">c.	A debit card is a complex form of payment; you should be using a credit card.</ion-item>
-                    <ion-item id="Q4A4" ng-click="wrong($event)">d.	It is not a bad idea at all, you would recommend it. </ion-item>
-                    <ion-item id="Q4A5" ng-click="wrong($event)">e.	A person has a lower chance of committing debit card fraud, so you would encourage this action. </ion-item>
-                </ion-list>
-            </div>
-            <div class="button-bar">
-                <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ5 = !partQ5; partQ4 = !partQ4;">
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ4">
+      <div class="item item-text-wrap">
+        <p>
+          4. Why would it be a bad idea to use a debit card when your account has insufficient funds?
+        </p>
+        <ion-list>
+          <ion-item id="Q4A1" ng-click="wrong($event)">a. A person has a higher chance of committing debit card fraud if they do so.</ion-item>
+          <ion-item id="Q4A2" ng-click="right($event, 'one', 5)">b. Most banks have fees that penalize a person for not having sufficient money in the account when using the debit card.</ion-item>
+          <ion-item id="Q4A3" ng-click="wrong($event)">c. A debit card is a complex form of payment; you should be using a credit card.</ion-item>
+          <ion-item id="Q4A4" ng-click="wrong($event)">d. It is not a bad idea at all, you would recommend it. </ion-item>
+          <ion-item id="Q4A5" ng-click="wrong($event)">e. A person has a lower chance of committing debit card fraud, so you would encourage this action. </ion-item>
+        </ion-list>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ4 = !partQ4; partQ3 = !partQ3; scrollToTop()">
+                    Previous
+                </button>
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ5 = !partQ5; partQ4 = !partQ4;">
                     Next
                 </button>
-            </div>
-        </div>
+      </div>
+    </div>
 
-                <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ5">
-                    <div class="item item-text-wrap">
-                        <p>
-                            5.	A girl named Cindy was invited to a party and wants to give her friend a gift card. She asks you for advice about getting a Prepaid card, since she has never gotten one before. What is one important thing, involving the concept of Prepaid Cards, you should tell her?
-                        </p>
-                        <ion-list>
-                            <ion-item id="Q4A1" ng-click="wrong($event)">a.	You would recommend a better gift, since prepaid cards show a lack of thought and consideration.</ion-item>
-                            <ion-item id="Q4A2" ng-click="wrong($event)">b.	You would recommend your friend buy a prepaid card of a company that her friend enjoys.</ion-item>
-                            <ion-item id="Q4A3" ng-click="right($event, 'one', 5)">c. You would tell your friend that some gift cards, such as Visa Prepaid, have activation fees, to watch out for. </ion-item>
-                            <ion-item id="Q4A4" ng-click="wrong($event)">d.	You would tell her to watch out for Prepaid Card contests on Facebook.</ion-item>
-                            <ion-item id="Q4A5" ng-click="wrong($event)">e.	You would recommend a company you think is worth getting a Prepaid card for.</ion-item>
-                        </ion-list>
-                    </div>
-                    <div class="button-bar">
-                        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ6 = !partQ6; partQ5 = !partQ5;">
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ5">
+      <div class="item item-text-wrap">
+        <p>
+          5. A girl named Cindy was invited to a party and wants to give her friend a gift card. She asks you for advice about getting a Prepaid card, since she has never gotten one before. What is one important thing, involving the concept of Prepaid Cards, you
+          should tell her?
+        </p>
+        <ion-list>
+          <ion-item id="Q4A1" ng-click="wrong($event)">a. You would recommend a better gift, since prepaid cards show a lack of thought and consideration.</ion-item>
+          <ion-item id="Q4A2" ng-click="wrong($event)">b. You would recommend your friend buy a prepaid card of a company that her friend enjoys.</ion-item>
+          <ion-item id="Q4A3" ng-click="right($event, 'one', 5)">c. You would tell your friend that some gift cards, such as Visa Prepaid, have activation fees, to watch out for. </ion-item>
+          <ion-item id="Q4A4" ng-click="wrong($event)">d. You would tell her to watch out for Prepaid Card contests on Facebook.</ion-item>
+          <ion-item id="Q4A5" ng-click="wrong($event)">e. You would recommend a company you think is worth getting a Prepaid card for.</ion-item>
+        </ion-list>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ5 = !partQ5; partQ4 = !partQ4; scrollToTop()">
+                            Previous
+                        </button>
+        <button class="button button-block icon-right ion-chevron-right button-light" ng-click="partQ6 = !partQ6; partQ5 = !partQ5;">
                             Next
                         </button>
-                    </div>
-                </div>
+      </div>
+    </div>
 
-            <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ6">
-                <div class="item item-text-wrap">
-                    <p>
-                        6.	Your friend Alfred decided to use a debit card with insufficient funds, drew out money from an ATM not in his bank’s network (eg. Use a TD machine when in CIBC), and decides to carelessly use his debit card to pay for purchases overseas, even though he had the right amount of cash on him. Why would it be a good idea to tell Alfred to refrain from these actions?
-                    </p>
-                    <ion-list>
-                        <ion-item id="Q4A1" ng-click="wrong($event)">a.	By doing these habits, Alfred will accumulate fees on the accounts from his debit card. This will become a vicious cycle—his bad habits will incur more fees, and the bank will continue penalizing him for using a card with not enough money.</ion-item>
-                        <ion-item id="Q4A2" ng-click="wrong($event)">b.	Alfred will end up owing more money to the bank than if he had simply had enough money in his account to begin with.</ion-item>
-                        <ion-item id="Q4A3" ng-click="wrong($event)">c.	His bank will eventually hate him for having these habits. </ion-item>
-                        <ion-item id="Q4A4" ng-click="wrong($event)">d.	He is committing debit card fraud </ion-item>
-                        <ion-item id="Q4A5" ng-click="wrong($event)">e.	None of the above.</ion-item>
-                        <ion-item id="Q4A5" ng-click="wrong($event)">f.	All of the above.</ion-item>
-                        <ion-item id="Q4A5" ng-click="wrong($event)">g.	A, B, D but not C</ion-item>
-                        <ion-item id="Q4A5" ng-click="right($event, 'one', 5)">h. A and B only</ion-item>
-                    </ion-list>
-                </div>
-            </div>
+    <div ng-cloak class="card ng-cloak ng-hide" ng-show="partQ6">
+      <div class="item item-text-wrap">
+        <p>
+          6. Your friend Alfred decided to use a debit card with insufficient funds, drew out money from an ATM not in his bank’s network (eg. Use a TD machine when in CIBC), and decides to carelessly use his debit card to pay for purchases overseas, even though
+          he had the right amount of cash on him. Why would it be a good idea to tell Alfred to refrain from these actions?
+        </p>
+        <ion-list>
+          <ion-item id="Q4A1" ng-click="wrong($event)">a. By doing these habits, Alfred will accumulate fees on the accounts from his debit card. This will become a vicious cycle—his bad habits will incur more fees, and the bank will continue penalizing him for using a card with not enough money.</ion-item>
+          <ion-item id="Q4A2" ng-click="wrong($event)">b. Alfred will end up owing more money to the bank than if he had simply had enough money in his account to begin with.</ion-item>
+          <ion-item id="Q4A3" ng-click="wrong($event)">c. His bank will eventually hate him for having these habits. </ion-item>
+          <ion-item id="Q4A4" ng-click="wrong($event)">d. He is committing debit card fraud </ion-item>
+          <ion-item id="Q4A5" ng-click="wrong($event)">e. None of the above.</ion-item>
+          <ion-item id="Q4A5" ng-click="wrong($event)">f. All of the above.</ion-item>
+          <ion-item id="Q4A5" ng-click="wrong($event)">g. A, B, D but not C</ion-item>
+          <ion-item id="Q4A5" ng-click="right($event, 'one', 5)">h. A and B only</ion-item>
+        </ion-list>
+      </div>
+      <div class="button-bar">
+        <button class="button button-block icon-left ion-chevron-left button-light" ng-click="partQ6 = !partQ6; partQ5 = !partQ5; scrollToTop()">
+                        Previous
+                    </button>
+      </div>
+    </div>
 
-    </ion-content>
-    <ion-footer-bar align-title="center" class="bar-balanced">
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar-balanced">
     <h1 class="title">
         You have <span id="liv"></span> attempts remaining
     </h1>
-</ion-footer-bar>
+  </ion-footer-bar>
 </ion-view>

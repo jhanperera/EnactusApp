@@ -1,30 +1,31 @@
 ﻿//This creates a new module called 'controllers' that will hold all of the controllers for our app
 angular.module('controllers', ['services'])
 
-.controller('MainCtrl', function ($scope, $state, data) {
+.controller('MainCtrl', function ($scope, $state) {
+
+    //When the scope is on we grab all the data. 
     $scope.$on('$ionicView.enter', function () {
-        data.create();
-        
+
+        if (window.localStorage.getItem("prog1") == undefined) {
+            document.getElementById("chap1").value = 0;
+        } else {
+            document.getElementById("chap1").value = window.localStorage.getItem("prog1");
+        }
+        if (window.localStorage.getItem("prog2") == undefined) {
+            document.getElementById("chap2").value = 0;
+        } else {
+            document.getElementById("chap2").value = window.localStorage.getItem("prog2");
+        }
+      
     })
-    $scope.chapter = data.chapterProgress();
-    console.log('MainCtrl');
-    if (window.localStorage.getItem("prog1") == undefined) {
-        document.getElementById("chap1").value = 0;
-    } else {
-        document.getElementById("chap1").value = window.localStorage.getItem("prog1");
-    }
-    
-    if (window.localStorage.getItem("prog2") == undefined) {
-        document.getElementById("chap2").value = 0;
-    } else {
-        document.getElementById("chap2").value = window.localStorage.getItem("prog2");
-    }
 })
 .controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate, $cordovaVibration, $state, $ionicPopup, $ionicModal, $window, $timeout) {
+    //Some variables
    	var live = 3;
 	var clickedOn = [];
 	var numQuestions;
 
+    //The hidden documents
     $scope.part2Cred = false;
     $scope.part3Cred = false;
     $scope.part4Cred = false;
@@ -72,8 +73,8 @@ angular.module('controllers', ['services'])
     //Game over try again
 	$scope.gameOver = function () {
 	    var alertPopup = $ionicPopup.alert({
-	        title: 'Oh dear. ',
-	        template: 'You\'re out of lives. Give it one more try. '
+	        title: 'Oh dear',
+	        template: 'You\'re out of lives. Give it one more try.'
 	    });
 	}
 
@@ -149,24 +150,43 @@ angular.module('controllers', ['services'])
 	}
 
     //Save the progress to the corresponding chapter. 
-	$scope.save = function (chapter) {
+	$scope.save = function (chapter, section) {
 	    if (chapter == "one") {
 	        var temp;
+            //If the progress 1 is undefined or the prog1Section is undefined 
 	        if (window.localStorage.getItem("prog1") == undefined) {
 	            temp = 0;
+	            temp++;
+	            window.localStorage.setItem("prog1", temp);
+	            window.localStorage.setItem("prog1Sec" + section.toString(), "true");
 	        } else {
-	            temp = window.localStorage.getItem("prog1");
+                //if this section has never been done before we increment.
+	            if(window.localStorage.getItem("prog1Sec" + section.toString()) == undefined)
+	            {
+	                window.localStorage.setItem("prog1Sec" + section.toString(), "true");
+	                temp = window.localStorage.getItem("prog1");
+	                temp++;
+	                window.localStorage.setItem("prog1", temp);
+	            }
+                //do nothing if it has been done before. 
 	        }
-	        temp++;
-	        window.localStorage.setItem("prog1", temp);
 	    } else if (chapter == "two") {
+	        //If the progress 2 is undefined or the prog2Section is undefined 
 	        if (window.localStorage.getItem("prog2") == undefined) {
 	            temp = 0;
+	            temp++;
+	            window.localStorage.setItem("prog2", temp);
+	            window.localStorage.setItem("prog2" + section.toString(), "true");
 	        } else {
-	            temp = window.localStorage.getItem("prog2");
+	            //if this section has never been done before we increment.
+	            if (window.localStorage.getItem("prog2Sec" + section.toString()) == undefined) {
+	                window.localStorage.setItem("prog2Sec" + section.toString(), "true");
+	                temp = window.localStorage.getItem("prog2");
+	                temp++;
+	                window.localStorage.setItem("prog2", temp);
+	            }
+	            //do nothing if it has been done before. ;
 	        }
-	        temp++;
-	        window.localStorage.setItem("prog2", temp);
 	    }
 	}
 
@@ -190,7 +210,7 @@ angular.module('controllers', ['services'])
         the updated progress. 
     */
 	$scope.win = function (chapter, section) {
-	    $scope.save(chapter);
+	    $scope.save(chapter, section);
 
         //Check if we are on mobile then run a splash screen to do a smooth refresh
 	    if (isAndroid || isIOS){
