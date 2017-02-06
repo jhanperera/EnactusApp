@@ -253,9 +253,9 @@ module.exports.metadata =
 {
     "com.telerik.plugins.nativepagetransitions": "0.6.5",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-console": "1.0.4",
+    "cordova-plugin-console": "1.0.5",
     "cordova-plugin-crosswalk-webview": "2.3.0",
-    "cordova-plugin-device": "1.1.3",
+    "cordova-plugin-device": "1.1.4",
     "cordova-plugin-dialogs": "1.3.1",
     "cordova-plugin-file": "4.3.1",
     "cordova-plugin-splashscreen": "3.2.2",

@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.telerik.plugins.nativepagetransitions": {
-            "PACKAGE_NAME": "com.enactus.ifinance"
-        },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.enactus.ifinance"
         },
@@ -44,5 +41,9 @@
             "PACKAGE_NAME": "com.enactus.ifinance"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "com.telerik.plugins.nativepagetransitions": {
+            "PACKAGE_NAME": "com.enactus.ifinance"
+        }
+    }
 }
