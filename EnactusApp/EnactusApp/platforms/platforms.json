@@ -1,3 +1,4 @@
 {
-    "ios": "latest"
+    "ios": "latest",
+    "android": "latest"
 }
