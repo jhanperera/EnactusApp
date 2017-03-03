@@ -9,6 +9,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider android:authorities="com.enactus.ifinance.plugins.emailcomposer.provider" android:name="com.jcjee.plugins.EmailAttachmentProvider" />
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

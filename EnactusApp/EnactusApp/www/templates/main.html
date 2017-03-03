@@ -1,5 +1,5 @@
 
-<ion-view hide-back-button="true" view-title="iFinance" ng-controller="FeedBackCtrl">
+<ion-view hide-back-button="true" view-title="iFinance" ng-controller='FeedBackCtrl'>
   <ion-content>
     <center>
       <h4>Welcome to iFinance</h4>
@@ -48,26 +48,27 @@
         </div>
 
         <!-- Add a feedback feature here -->
-        <div ng-cloak class="ng-cloak" ng-show="feedback">
-            <form>
+        <div ng-cloak class="ng-cloak" ng-show="feedback" >
+            <form class="animated fadeIn">
                 <small class="form-text text-muted">We are constantly trying to improve this app and we want to hear from you.</small>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Your Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="Name" placeholder="Your Name Here">
+                    <label for="nameInput">Your Name</label>
+                    <input type="text" ng-model='name' class="form-control" id="nameInput" aria-describedby="Name" placeholder="Your Name">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" ng-model='email' class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Your Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleTextarea">Example textarea</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    <label for="commentInput">Comments/Notes</label>
+                    <textarea ng-model='comment' class="form-control" id="commentInput" rows="3" placeholder="Your Comments"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-success" ng-click="sendFeedback(name, email, comment);">Submit</button>
             </form>
         </div>
     </div>
 
   </ion-content>
-    <button class="button button-float" ng-click="chapters = !chapters; feedback = !feedback"><i class="icon ion-plus"></i></button>  
+    <button class="button button-float" ng-click="chapters = !chapters; feedback = !feedback"><i class="icon ion-chatbox-working"></i></button>  
 </ion-view>

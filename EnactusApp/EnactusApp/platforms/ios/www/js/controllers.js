@@ -19,6 +19,9 @@ angular.module('controllers', ['services'])
       
     })
 })
+.controller('FeedBackCtrl', function($scope) {
+    $scope.feedback = false;    
+})
 .controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate, $cordovaVibration, $state, $ionicPopup, $ionicModal, $window, $timeout) {
     //Some variables
    	var live = 3;

@@ -13,7 +13,7 @@
   <preference name="android-minSdkVersion" value="16" />
   <preference name="BackupWebStorage" value="local" />
   <preference name="windows-target-version" value="8.1" />
-  <preference name="Fullscreen" value="True" />
+  <preference name="Fullscreen" value="false" />
   <preference name="KeepRunning" value="True" />
   <preference name="target-device" value="universal" />
   <preference name="SplashScreen" value="splash" />
@@ -95,4 +95,5 @@
   </platform>
   <icon src="resources/ios/icon/icon-small@3x.png" />
   <engine name="android" spec="~6.0.0" />
+  <plugin name="com.jcjee.plugins.emailcomposer" version="1.4.6" />
 </widget>

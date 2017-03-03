@@ -1,3 +1,4 @@
 {
-    "AudioToolbox.framework": 2
+    "AudioToolbox.framework": 2,
+    "MessageUI.framework": 1
 }

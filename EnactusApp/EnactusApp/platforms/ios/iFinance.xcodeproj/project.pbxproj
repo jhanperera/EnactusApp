@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		080436F1138D482480B63632 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C17B22C46A1345659ED437C8 /* IonicKeyboard.m */; };
@@ -29,6 +28,9 @@
 		DA7706A668C84E2B987936CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22C2AF1AE244F22B72A4155 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DFD0E7B545C1494E979F8D99 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 285A3373016947B59767338C /* CDVLogger.m */; };
 		F5F0C79652EE486A8B098340 /* NativePageTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 374CD3F0D79D4859B7B3FAFB /* NativePageTransitions.m */; };
+		A0B4E308B04241E5B2B41148 /* EmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = D58DC16BF569455EAB9A709B /* EmailComposer.m */; };
+		4D3FADD6E62D49BF97E389F0 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB19598AFD428E9212145A /* NSData+Base64.m */; };
+		C60E002E826D460C90AC4775 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E12ECD1E897488D8ABA80A9 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,11 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F74C61F4A3534A00A0B2B5F3 /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = iFinance/config.xml; sourceTree = "<group>"; };
+		D58DC16BF569455EAB9A709B /* EmailComposer.m */ = {isa = PBXFileReference; name = "EmailComposer.m"; path = "com.jcjee.plugins.emailcomposer/EmailComposer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		08CB19598AFD428E9212145A /* NSData+Base64.m */ = {isa = PBXFileReference; name = "NSData+Base64.m"; path = "com.jcjee.plugins.emailcomposer/NSData+Base64.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		BB4640508962497999D1BB58 /* EmailComposer.h */ = {isa = PBXFileReference; name = "EmailComposer.h"; path = "com.jcjee.plugins.emailcomposer/EmailComposer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E573D1C09CF74A71A92BEAF5 /* NSData+Base64.h */ = {isa = PBXFileReference; name = "NSData+Base64.h"; path = "com.jcjee.plugins.emailcomposer/NSData+Base64.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0E12ECD1E897488D8ABA80A9 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,7 @@
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				DA7706A668C84E2B987936CC /* AudioToolbox.framework in Frameworks */,
+				C60E002E826D460C90AC4775 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				D22C2AF1AE244F22B72A4155 /* AudioToolbox.framework */,
+				0E12ECD1E897488D8ABA80A9 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,6 +238,10 @@
 				2355E24588B34260AD31567B /* CDVVibration.h */,
 				C17B22C46A1345659ED437C8 /* IonicKeyboard.m */,
 				5D1AEB959E6142BD83BDB429 /* IonicKeyboard.h */,
+				D58DC16BF569455EAB9A709B /* EmailComposer.m */,
+				08CB19598AFD428E9212145A /* NSData+Base64.m */,
+				BB4640508962497999D1BB58 /* EmailComposer.h */,
+				E573D1C09CF74A71A92BEAF5 /* NSData+Base64.h */,
 			);
 			name = Plugins;
 			path = iFinance/Plugins;
@@ -363,6 +376,8 @@
 				BA587558694D4646B1295B7C /* CDVStatusBar.m in Sources */,
 				94C5DD2C092042519B302D56 /* CDVVibration.m in Sources */,
 				080436F1138D482480B63632 /* IonicKeyboard.m in Sources */,
+				A0B4E308B04241E5B2B41148 /* EmailComposer.m in Sources */,
+				4D3FADD6E62D49BF97E389F0 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

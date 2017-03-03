@@ -51,6 +51,10 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"ios-package\" value=\"EmailComposer\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -92,6 +96,9 @@
             "PACKAGE_NAME": "com.enactus.ifinance"
         },
         "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.enactus.ifinance"
+        },
+        "com.jcjee.plugins.emailcomposer": {
             "PACKAGE_NAME": "com.enactus.ifinance"
         }
     },
@@ -343,6 +350,14 @@
                 "cordova.plugins.Keyboard"
             ],
             "runs": true
+        },
+        {
+            "file": "plugins/com.jcjee.plugins.emailcomposer/www/EmailComposer.js",
+            "id": "com.jcjee.plugins.emailcomposer.EmailComposer",
+            "pluginId": "com.jcjee.plugins.emailcomposer",
+            "clobbers": [
+                "EmailComposer"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -357,6 +372,7 @@
         "cordova-plugin-statusbar": "2.1.3",
         "cordova-plugin-vibration": "2.1.3",
         "cordova-plugin-whitelist": "1.2.2",
-        "ionic-plugin-keyboard": "2.2.1"
+        "ionic-plugin-keyboard": "2.2.1",
+        "com.jcjee.plugins.emailcomposer": "1.4.6"
     }
 }

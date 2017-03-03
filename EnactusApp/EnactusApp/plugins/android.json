@@ -44,6 +44,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.enactus.ifinance"
+        },
+        "com.jcjee.plugins.emailcomposer": {
+            "PACKAGE_NAME": "com.enactus.ifinance"
         }
     },
     "dependent_plugins": {}

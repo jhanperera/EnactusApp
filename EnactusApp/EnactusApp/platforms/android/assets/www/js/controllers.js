@@ -19,6 +19,29 @@ angular.module('controllers', ['services'])
       
     })
 })
+.controller('FeedBackCtrl', function($scope) {
+    $scope.feedback = false;
+
+    $scope.sendFeedback = function (name, email, body) {
+        $scope.name = name;
+        $scope.email = email;
+        $scope.body = body;
+
+        if (window.plugins && window.plugins.emailComposer) {
+            window.plugins.emailComposer.showEmailComposerWithCallback(function (result) {
+                console.log("Response -> " + result);
+            },
+            "Feedback for Gen i-Finance - " + $scope.name + " - " + $scope.email, // Subject
+             $scope.body,                      // Body
+            ["jhanperera@live.com"],    // To
+            null,                    // CC
+            null,                    // BCC
+            false,                   // isHTML
+            null,                    // Attachments
+            null);                   // Attachment Data
+        }
+    }
+})
 .controller("BtnClick", function ($scope, lives, data, $cordovaFile, $ionicScrollDelegate, $cordovaVibration, $state, $ionicPopup, $ionicModal, $window, $timeout) {
     //Some variables
    	var live = 3;

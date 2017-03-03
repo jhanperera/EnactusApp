@@ -71,6 +71,10 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"com.jcjee.plugins.EmailComposer\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -94,6 +98,12 @@
                     "/manifest": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "application": [
+                        {
+                            "xml": "<provider android:authorities=\"com.enactus.ifinance.plugins.emailcomposer.provider\" android:name=\"com.jcjee.plugins.EmailAttachmentProvider\" />",
                             "count": 1
                         }
                     ]
@@ -138,6 +148,9 @@
             "PACKAGE_NAME": "com.enactus.ifinance"
         },
         "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.enactus.ifinance"
+        },
+        "com.jcjee.plugins.emailcomposer": {
             "PACKAGE_NAME": "com.enactus.ifinance"
         }
     },
@@ -373,6 +386,14 @@
                 "cordova.plugins.Keyboard"
             ],
             "runs": true
+        },
+        {
+            "id": "com.jcjee.plugins.emailcomposer.EmailComposer",
+            "file": "plugins/com.jcjee.plugins.emailcomposer/www/EmailComposer.js",
+            "pluginId": "com.jcjee.plugins.emailcomposer",
+            "clobbers": [
+                "EmailComposer"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -386,6 +407,7 @@
         "cordova-plugin-statusbar": "2.1.3",
         "cordova-plugin-vibration": "2.1.3",
         "cordova-plugin-whitelist": "1.2.2",
-        "ionic-plugin-keyboard": "2.2.1"
+        "ionic-plugin-keyboard": "2.2.1",
+        "com.jcjee.plugins.emailcomposer": "1.4.6"
     }
 }
